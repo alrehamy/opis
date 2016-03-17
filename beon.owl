@@ -1,0 +1,2022 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/thiago/ontologies/2015/BeOn"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/thiago/ontologies/2015/BeOn">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.oclc.org/NET/ssnx/ssn</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">BeON - Behavior Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">0.6</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An ontology for describing personal information based on behaviors</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Thiago Moreira da Costa</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDT#OntoDT_487147"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionableKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionableObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Behavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehaviorAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehaviorPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralEntityProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralGranularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralSemanticPerception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehavioralSensing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalCoverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReferencePlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticDataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionImplementation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionInputCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionObjective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticPerceptionScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualSensorExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualSensorInput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualSensorOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000081"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#QualityOfSemanticPerceptionObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SemanticPerceptionObservationResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assumes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#believesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carriesOutIntention"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromFeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGeoLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSemanticPerceptionCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSemanticPerceptionProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpatialBoundaries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inSemanticPerceptionInputCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includesBehavior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interactsWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCarriedOutIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCoverageAreaFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPropertyOfBehavioralEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#knowsAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedFromProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#onCoverageAreaOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#perceives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#perceivesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reasonsAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typefies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <Class IRI="http://www.ifomis.org/bfo/1.1#Entity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ifomis.org/bfo/1.1#Entity"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VirtualSensor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <Class IRI="#VirtualSensorInput"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <Class IRI="#VirtualSensorOutput"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <Class IRI="#SemanticPerceptionObjective"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <Class IRI="#SemanticPerceptionScenario"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+                <Class IRI="#BehavioralSensing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observes"/>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasSemanticPerceptionCapability"/>
+                <Class IRI="#SemanticPerceptionCapability"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#observesFrom"/>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#perceives"/>
+                <Class IRI="#BehavioralEntity"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#perceivesFrom"/>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_201436"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_201436"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+            <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableKnowledge"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableKnowledge"/>
+        <Class IRI="#Knowledge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableKnowledge"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"/>
+            <Class IRI="#BehavioralAssociation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableKnowledge"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+            <Class IRI="#ReferencePlace"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGeoLocation"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionableObject"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGeoLocation"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+            <Class IRI="#Behavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isCarriedOutIn"/>
+            <Class IRI="#Intention"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behavior"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAction"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAction"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAction"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorPlan"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorPlan"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
+            <Class IRI="#BehavioralGoal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+            <Class IRI="#ReferencePlace"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasGeoLocation"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#assumes"/>
+            <Class IRI="#ActionableKnowledge"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#believesIn"/>
+            <Class IRI="#ActionableKnowledge"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#knowsAbout"/>
+            <Class IRI="#ActionableKnowledge"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#reasonsAbout"/>
+            <Class IRI="#ActionableKnowledge"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAgent"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGeoLocation"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAssociation"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAssociation"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralAssociation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralEntity"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralEntity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralEntityProfile"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralEntityProfile"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralEntityProfile"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasMember"/>
+            <Class IRI="#BehavioralEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGoal"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGoal"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGoal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGranularity"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGranularity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"/>
+            <Class IRI="#Behavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGroup"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGroup"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
+                <Class IRI="#SocialInteraction"/>
+            </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralObservationValue"/>
+        <Class IRI="#SemanticObservationValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+        <Class IRI="#SemanticPerceptionObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+            <Class IRI="#BehavioralEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+            <Class IRI="#Behavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+            <Class IRI="#BehavioralEntity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralSemanticPerception"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralSemanticPerception"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="#BehavioralSensing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralSemanticPerception"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#perceives"/>
+            <Class IRI="#BehavioralEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralSensing"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralSensing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasInput"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Input"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehavioralSensing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Output"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSpecification"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSpecification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#typefies"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalCoverage"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalCoverage"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalCoverage"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGeoLocation"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An &apos;Environment Coverage&apos; is location of at least one &apos;Behavioral Agent&apos;. Since environmental properties are not directly related to behaviors, they should be considered as &apos;Behavioral Entity Properties&apos; if they are associated with (&apos;is located of&apos;)  at least one &apos;Behavioral Agent&apos;.</Literal>
+        </Annotation>
+        <Class IRI="#EnvironmentalCoverage"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isCoverageAreaFor"/>
+            <Class IRI="#BehavioralAgent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalCoverage"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSpatialBoundaries"/>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intention"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#EventType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intention"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">An intention can be described in terms of other intentions.</Literal>
+        </Annotation>
+        <Class IRI="#Intention"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+            <Class IRI="#Intention"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intention"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isCarriedOutIn"/>
+            <Class IRI="#Behavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectInteraction"/>
+        <Class IRI="#BehavioralAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectInteraction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#BehavioralAgent"/>
+                <ObjectMinCardinality cardinality="1">
+                    <ObjectProperty IRI="#uses"/>
+                    <Class IRI="#ActionableObject"/>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ontology"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReferencePlace"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReferencePlace"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticDataset"/>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticDataset"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticDataset"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="#VirtualSensorExecution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticObservationValue"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticObservationValue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"/>
+            <Class IRI="#VirtualSensorOutput"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionCapability"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionCapability"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionCapability"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSemanticPerceptionProperty"/>
+            <Class IRI="#SemanticPerceptionProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionCapability"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#inSemanticPerceptionInputCondition"/>
+            <Class IRI="#SemanticPerceptionInputCondition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionExecution"/>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_285570"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionExecution"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+            <Class IRI="#SemanticPerceptionImplementation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionImplementation"/>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_478450"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionInputCondition"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObjective"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObjective"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObjective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+            <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_757135"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObjective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+            <Class IRI="#VirtualSensor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"/>
+            <Class IRI="#BehavioralSensing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SemanticPerceptionObservationResult"/>
+            <Class IRI="#VirtualSensorOutput"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#fromFeatureOfInterest"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#observedFromProperty"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observationResultTime"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#QualityOfSemanticPerceptionObservation"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observedBy"/>
+            <Class IRI="#VirtualSensor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionObservation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"/>
+            <Class IRI="#BehavioralSensing"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionProperty"/>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000130"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionProperty"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionScenario"/>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_603253"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionScenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+            <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionScenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+            <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionScenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+            <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_997152"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionScenario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+            <Class IRI="#SemanticPerceptionObjective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticPerceptionScenario"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000058"/>
+            <Class IRI="#SemanticPerceptionImplementation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialInteraction"/>
+        <Class IRI="#BehavioralAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialInteraction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Behavior"/>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#BehavioralAgent"/>
+                        <ObjectMinCardinality cardinality="1">
+                            <ObjectProperty IRI="#interactsWith"/>
+                            <Class IRI="#BehavioralAgent"/>
+                        </ObjectMinCardinality>
+                    </ObjectIntersectionOf>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <Class IRI="#BehavioralEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorExecution"/>
+        <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_147247"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorExecution"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://kt.ijs.si/panovp/OntoDM#OntoDM_000144"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="#SemanticDataset"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="#SemanticPerceptionObjective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorInput"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorInput"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorInput"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                <Class IRI="#VirtualSensor"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorOutput"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorOutput"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+            <Class IRI="#BehavioralObservationValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualSensorOutput"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+            <Class IRI="#VirtualSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#QualityOfSemanticPerceptionObservation"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#SemanticPerceptionObservationResult"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observationResult"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assumes"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#believesIn"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#carriesOutIntention"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fromFeatureOfInterest"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGeoLocation"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSemanticPerceptionCapability"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSemanticPerceptionProperty"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSpatialBoundaries"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inSemanticPerceptionInputCondition"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#inCondition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#includesBehavior"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#interactsWith"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCarriedOutIn"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCoverageAreaFor"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPropertyOfBehavioralEntity"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#knowsAbout"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#observedFromProperty"/>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#observedProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#onCoverageAreaOf"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#reasonsAbout"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typefies"/>
+        <ObjectProperty IRI="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isCarriedOutIn"/>
+        <ObjectProperty IRI="#carriesOutIntention"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPropertyOfBehavioralEntity"/>
+        <ObjectProperty IRI="#hasSemanticPerceptionProperty"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#onCoverageAreaOf"/>
+        <ObjectProperty IRI="#isCoverageAreaFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#uses"/>
+        <ObjectProperty IRI="#isUsedBy"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#interactsWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SemanticPerceptionObservationResult"/>
+        <Class IRI="#SemanticPerceptionObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assumes"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#believesIn"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carriesOutIntention"/>
+        <Class IRI="#Behavior"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGeoLocation"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSemanticPerceptionProperty"/>
+        <Class IRI="#BehavioralEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpatialBoundaries"/>
+        <Class IRI="#EnvironmentalCoverage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includesBehavior"/>
+        <Class IRI="#BehavioralPerceptionObservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interactsWith"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCarriedOutIn"/>
+        <Class IRI="#Intention"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCoverageAreaFor"/>
+        <Class IRI="#EnvironmentalCoverage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPropertyOfBehavioralEntity"/>
+        <Class IRI="#BehavioralEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#knowsAbout"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#onCoverageAreaOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+            <Class IRI="#BehavioralEntity"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reasonsAbout"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#QualityOfSemanticPerceptionObservation"/>
+        <Class IRI="#SemanticPerceptionProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SemanticPerceptionObservationResult"/>
+        <Class IRI="#VirtualSensorOutput"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assumes"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#believesIn"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#carriesOutIntention"/>
+        <Class IRI="#Intention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGeoLocation"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpatialBoundaries"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includesBehavior"/>
+        <Class IRI="#Behavior"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interactsWith"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCarriedOutIn"/>
+        <Class IRI="#Behavior"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCoverageAreaFor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+            <Class IRI="#BehavioralEntity"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#knowsAbout"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#onCoverageAreaOf"/>
+        <Class IRI="#EnvironmentalCoverage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#perceives"/>
+        <Class IRI="#BehavioralEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reasonsAbout"/>
+        <Class IRI="#Knowledge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uses"/>
+        <Class IRI="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://kt.ijs.si/panovp/OntoDM#OntoDM_000238</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">data mining scenario description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://kt.ijs.si/panovp/OntoDM#OntoDM_242219</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">predicting primitive output task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://kt.ijs.si/panovp/OntoDM#OntoDM_600958</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">predicting structured output task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://kt.ijs.si/panovp/OntoDM#OntoDM_675141</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">descriptive set of discrete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://kt.ijs.si/panovp/OntoDM#OntoDM_692808</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">labeled dataset with structured output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://kt.ijs.si/panovp/OntoDM#OntoDM_843203</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">labeled structure-based dataset with primitive output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionableKnowledge</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An &apos;Actionable Knowledge&apos; is a knowledge that may support direct or indirectly the behavior. &apos;Actionable Knowledge&apos; is a description of the informational state, belief, or knowledge hold by a &apos;Behavioral Agent&apos; about the world in any knowledge domain that is related to a Behavior. 
+It can be related to some Description of any type, including about the &apos;Actionable Knowledge&apos; itself, &apos;Behavior&apos;, contract, design, diagnosis, goals, and so forth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActionableKnowledge</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Actionable knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionableObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Any designed artifact that participate in a &apos;Behavior&apos; used by some &apos;Behavioral Agent&apos;. 
+
+The &apos;Actionable Object&apos; participates in the behavior as transformation agent. For examples: computer is an &apos;Actionable Object&apos; used in the behavior of working (computer was a tool to change a task status to achieved); tennis shoes is an &apos;Actionable Object&apos; used in the behavior of running (it changes the state of running). However, a step sensor installed in a tennis shoes is not considered an &apos;Actionable Object&apos;, because it is part of tennis shoes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActionableObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Actionable object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://kt.ijs.si/panovp/OntoDM#Definition"/>
+        <IRI>#Behavior</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavior is the action or reaction of human to situations or stimuli in its environment. (adapted from L. Cao, “In-depth behavior understanding and use: The behavior informatics approach,” Inf. Sci. (Ny)., vol. 180, no. 17, pp. 3067–3085, Sep. 2010.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Behavior</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Event on which a behavior is observed. 
+
+The Event &apos;Behavior&apos; exists in order to contextualize &apos;Behavioral Entities&apos; and &apos;Behavioral Entity Properties&apos;.
+
+For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; where an specific &apos;Behavioral Agent&apos; participates in, using an &apos;Actionable object&apos; car.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Behavior</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavior</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehaviorAction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An action that is observed during a &apos;Behavior Event&apos; which at least one &apos;Behavioral Agent&apos; is defined. 
+
+&apos;Behavioral Action&apos; extends Action (DUL) by specifying the minimum of one agent per action or a group of agents, therefore, it is always possible to determine who executed the action. Furthermore, the relations of constraints can be represented using &apos;Parameters&apos;
+
+A &apos;Behavioral Action&apos; can be result of a &apos;Behavioral Intention&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehaviorAction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavior action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehaviorPlan</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavior plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A &apos;Natural Person&apos; that exists in a &apos;Situation&apos; of &apos;Behavior Event&apos;.
+
+In the context of a &apos;Behavior&apos;, &apos;Behavioral Entities&apos; must be related to at least one &apos;Behavioral Agent&apos;. This individual-centric approach guarantees to determine if a given information or entity is related to an agent. 
+
+Since &apos;Behavioral Entities&apos; are associated with &apos;Behavioral Agent&apos;&apos;s time and space, &apos;Behavioral Agent&apos; have exactly one geo location and several places. While geolocation is related to the spatiotemporal dimension, places are associated with descriptions of the place (&apos;Behavioral place&apos;). 
+
+In terms of intelectual capacity, &apos;Behavioral Agent&apos; can believe, know, reason about, and assume &apos;Behavioral Knowledges&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralAssociation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A &apos;Behavioral Association&apos; is a relation between &apos;Behavioral Entities&apos; that are associated. This relation can be in terms of precedence, cause-effect, orchastration, or any &apos;relation-like&apos; entity that models &apos;Behavior&apos; according to the relations among &apos;Behavioral Entities&apos; and its properties (&apos;Behavioral Entity Property&apos;).
+
+For example, the relation of precedence between the &apos;Behaviors&apos; of &quot;authetication&quot; and &quot;payment&quot; in internet banking system; or the relation of consequence between the &apos;Behavior Profile&apos; of &quot;sportive profile&quot; and the &apos;Behavior&apos; of &quot;running&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralAssociation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Behaviora Entity is a Feature Of Interest that participates in Behavioral Observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralEntityProfile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Collection of behavioral entities. Behavioral profile describes a generalization about behavioral entities according to one or several Behavioral Entity Property. For example, Sportive Profile is a collection of Behavior that has Property Class of type &quot;BehaviorClass&quot; that includes &quot;Running&quot;, &quot;Biking&quot;, &quot;WorkingOut&quot;.
+
+Since Behavioral Profile is also a Behavioral Entity, self-collection properties can be used to describe High-Level Behavioral Profiles. For example, Health Life Style Profile is a collection of Behavior Profiles that has Property Class of type &quot;HealthRelated&quot;=&quot;positive&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralEntityProfile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral entity profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralGoal</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The &apos;Description&apos; of a &apos;Situation&apos; that is desired by a &apos;Behavioral Agent&apos;.
+The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally associated with a &apos;Behavioral Plan&apos; that describes how to achieve it. The main difference between &apos;Behavioral Goal&apos; and its superclass &apos;Goal&apos; (DUL) is the association of at least one &apos;Behavioral Agent&apos; who conceptualize it.
+
+&apos;Behavioral Goal&apos; is also different from &apos;Behavioral Intention&apos;, since this latter classifies &apos;Behavioral Action&apos;. While &apos;Behavioral Goal&apos; sets a desirable future &apos;Situation&apos;, &apos;Behavioral Intention&apos; classifies an action that was observed (past).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralGoal</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavior goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#BehavioralGranularity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral Granularity is used to specify the level of granularity (level of detail) of the behavior representation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralGranularity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Ascending in granularity level, one can describe behavior in terms of sensing, describing behaviors in the same granularity as sensor observations. For example, a &apos;driving&apos; behavior can be describe in each geolocation, or in the level of cities. 
+
+The granularity can be described in the level of behavior endurance observation of a &apos;Feature of Interest&apos;. 
+
+&apos;Behavior Granularity&apos; can also be used to represent an hierarchical structure of behaviors, since Behavior is a Social Object (and for being so, it can be described using has part relation, i.e., hierarchical structure).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralGranularity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavior granularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralGroup</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Collective Agent whose agents are Behavioral Agents conceptualize Social Behavioral Interaction (thaat can be based on interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralGroup</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralObservationValue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral Observation Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralPerceptionObservation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral perception observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralSemanticPerception</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral Semantic Perception is an instatiation (execution) of a data mining algorithm (DM:DataMiningAlgorithm) that generates perception of Behavioral Entities from sensor dataset (DM:Dataset has_representation DM:DataRepresentation is_about SSN:ObservationValue) using generalizations (DM:Generalization).  
+
+Behavioral Semantic Perception is a subclass of DM:DataMiningOperator which has settings (DM:Parameter) and executes a specific role (DM:AgentRole).   For example, SVM-Markov is a Data Mining Task (defined in OntoDM-core) that is part of the Behavioral Recognition Algorithm Implementation X, by definitiing a parameter setting Y, SVM-Markov can identify Behavior W. In this case, Behavioral Recognition Digital Perception is the Data Mining Task SVM-Markov, using the parameter setting Y. 
+
+In OntoDM-core, a data mining operator is defined as sub- class of the role class . In that context, a data mining operator is-role-of a data mining algorithm implementation that is-realized-by a data mining algorithm execution. Role is a class imported from BFO ontology  that is defined as a realizable entity the manifestation of which brings about some result or end that is not essential to a continuant in virtue of the kind of thing that it is, but that can be served or participated in by that kind of continuant in some kinds of natural, social or institutional contexts (e.g., training set, test set).
+
+ADD HASINFORMATION RELATION TO BR PROPERTY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralSemanticPerception</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Behavioral semantic perception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BehavioralSensing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&apos;Semantic Perception&apos; is the process of generating explanations in a form of &apos;Properties&apos; of &apos;Features of Interest&apos; for a set of observations of &apos;Properties&apos;, where &apos;Feature of Interest&apos; represents the perceived semantic. 
+
+&apos;Semantic Perception&apos; is a &apos;Social Object&apos;, therefore, it exists to describe a process of semantic perception implemented by a &apos;Virtual Sensor&apos;. The description can contain literal text or structured language, such as BigML, formula, ontoDM and so forth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BehavioralSensing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic Perception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataSpecification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Parameter of Data Specification for Region. This is a subclass of Data Specification from ontoDT that specifies the structured data. This is used to represent data to provide representational mechanisms to support a presentation of mining structured data.  
+
+Datatype in OntoDT: http://kt.ijs.si/panovp/OntoDT#OntoDT_487147</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataSpecification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Data specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnvironmentalCoverage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Coverage where &apos;Behavioral Entities&apos; are located. The coverage area &apos;has spatial boundaries&apos; defined in SpatialRegion (2D or 3D) and &apos;has geolocation&apos; defined in SpatioTemporalRegion. 
+
+&apos;Environmental coverage&apos; is an Feature of Interest that describe environment temperature, pressure, humidity, and any other property that can be observed related to an environment. The difference between &apos;Environment coverage&apos; and a simple coverage area relies on the fact that some characteristics of an agent&apos;s behavior can be identified. For this reason, a minimum of one &apos;Behavioral Agent&apos; is required to describe an &apos;Environmental coverage&apos;. 
+
+The property &apos;is coverage area for&apos; allows to specify any &apos;Behavioral Entities&apos; that are &apos;Physical Object&apos;, such as &apos;Actionable object&apos; and  &apos;Behavioral Agent&apos;. 
+
+&apos;Behavioral Entities&apos; can share the same &apos;Environmental Coverage&apos; while being place in different geolocation. This is specially observed in large coverage areas where different &apos;Behavioral Entities&apos; are positioned separetely enough to have different geolocation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnvironmentalCoverage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Environmental coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Intention</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An event type that classifies a &apos;Behavior&apos; according to the agent&apos;s intention. In other words, an intention is carried out by some &apos;Behavior&apos;. 
+A &apos;Behavior&apos; may have different intentions, for example, a behavior of running can be observed from an agent that intents to flee or to practice sport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Intention</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Intention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Knowledge</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Knowledge is a description of the informational state and knowledge hold by a physical agent about the world in any knowledge domain.
+It can be related to some Description of any type (Behavior description, Contract, Design, Diagnosis, Goal, and so forth, including another Knowledge).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ObjectInteraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation to describe a reference of association between &apos;Behavioral Agent&apos; and &apos;Actionable Object&apos; during a &apos;Behavioral Action&apos;. For example: handling, wearing, within, over, near to, observing from inside, observing near by.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ObjectInteraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Object interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QualityOfSemanticPerceptionObservation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">quality of semantic perception observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReferencePlace</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Social object that describes the place where the behavior was observed. This may containt spatiotemporal, but a textual description is also possible, for example, over the sofa, in the kitchen, and so forth. This concept can be extended with an ontology of place to describe indoor spaces or referencial positions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ReferencePlace</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Reference place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SemanticDataset</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&apos;Semantic Dataset&apos; is an aggregation of semantic entities from DOLCE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticDataset</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticObservationValue</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic observation value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SemanticPerceptionCapability</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Collects together &apos;Semantic Perception Properties) (accuracy, range, precision, etc) and the &apos;Input Conditions&apos; in which those properties hold, representing a specification of a &apos;Virtual Sensor&apos;&apos;s capability in those conditions.
+
+The conditions specified here are those that affect the &apos;Semantic Perception Properties&apos;, while those in &apos;Semantic Operating Range&apos; represent the &apos;Virtual Sensor&apos;&apos;s standard operating conditions, including conditions that don&apos;t affect the observations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionCapability</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionExecution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionImplementation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception implementation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SemanticPerceptionInputCondition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Property used to specify ranges for qualities that act as conditions on a &apos;Virtual Sensor&apos;&apos;s operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SemanticPerceptionInputCondition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">For example, identification of types of running behavior is expressed as a condition linking a quality, movement type, an domain-specific ontology, QualiTraj, and a set of values, Slow Jogging, Mild Jogging, Fast Jogging, Running Level1, Running Marathon, Spring, and may be used as the condition on a &apos;Semantic Perception Property&apos;, for example, to state that a &apos;Virtual Sensor&apos; has a particular accuracy in that condition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionInputCondition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception input condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SemanticPerceptionObjective</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&apos;Semantic perception objetive&apos; is an &apos;Objective Specification&apos; where the end point that an information processing process needs to achieve at its end is the perception of semantic entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionObjective</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception objetive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionObservation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SemanticPerceptionObservationResult</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation to link &apos;Semantic Perception Observation&apos; to its results (Virtual Sensor Output).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionObservationResult</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">semantic perception observation result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#SemanticPerceptionProperty</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An identifiable and observable characteristic of a &apos;Virtual Sensor&apos;&apos;s observations or ability to make observations, defined according to the algorithm implementation parameters. .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionProperty</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticPerceptionScenario</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Semantic perception scenario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialInteraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Interaction among two or more &apos;Behavioral Agents&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialInteraction</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Social interaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Status</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#VirtualSensor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A &apos;Virtual Sensor&apos; can do (implements) &apos;Semantic Perception&apos;: that is, a &apos;Virtual Sensor&apos; is any entity that can follow a &apos;Semantic Perception&apos; method and thus observe some Property of a FeatureOfInterest.  &apos;Virtual Sensor&apos; differs from Physical Sensors because they are attached to a physical system and they use &apos;Observation Value&apos; of a &apos;Property&apos; of a &apos;Feature of Interest&apos; to derive some semantic entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VirtualSensor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Virtual sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VirtualSensorExecution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Virtual sensor execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VirtualSensorInput</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Virtual sensor input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VirtualSensorOutput</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Virtual sensor output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#assumes</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation according to which a Natural Person assumes a Concept or a Description that represent a premisse needed to conceive a mental model, mapping, hypothesis or rational.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#believesIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation according to which a Natural Person believes that a Concept or a Description is stated as his/her personal beliefs. The main difference between &apos;Believes In&apos; and &apos;Assumes&apos; is that this latter involve premisses and hypothesis to ratione about something, while the first personally states as true or acceptable according a set of personal values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#believesIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">believes in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#carriesOutIntention</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation between a Behavioral Intention and a Behavioral Action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#carriesOutIntention</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">carries out intention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fromFeatureOfInterest</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">from feature of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGeoLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation between Physical Object and a region to determine its specific geolocation (&apos;Spatio Temporal Region&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGeoLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has geolocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSemanticPerceptionCapability</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has semantic perception capability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSemanticPerceptionProperty</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has semantic perception property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSpatialBoundaries</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Property of &apos;Physical Object&apos; for its Spatial Coverage Area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSpatialBoundaries</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has spatial boundaries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inSemanticPerceptionInputCondition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">in semantic perception input condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#includesBehavior</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">includes behavior</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#interactsWith</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A relation between two Natural Persons participating in a same Behavior; e.g., &apos;Vitas and Jimmy are talking to each other&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#interactsWith</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">interacts with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCarriedOutIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A relation between a Behavioral Intention and a Behavioral Event, Example: Fleeing carries out a running behavior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCarriedOutIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is carried out in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCoverageAreaFor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A relation of coverage holded by &apos;Environmental Coverage Area&apos; and any physical &apos;Behavioral Entity&apos; inside that coverage. 
+For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos;is coverage area for&apos; a car (&apos;Actionable Object&apos;) and a person (&apos;Behavioral Agent&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCoverageAreaFor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is coverage area for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPropertyOfBehavioralEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation to describe that a property describes a behavioral entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPropertyOfBehavioralEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is property of behavioral entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation that describes the use of a Physical Object by a Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is used by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#knowsAbout</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation according to which a Natural Person is sure about a Concept or a Description that represent a concept conceived and used in a mental model, mapping, hypothesis or rational.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#knowsAbout</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">knows about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observedFromProperty</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">observed from property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observesFrom</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">observes from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#onCoverageAreaOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation to describe that a &apos;Behavioral Entity&apos; of the type &apos;Physical Object&apos; (e.g., a car) is inside of coverage area (DUL:&apos;Spatial Region&apos;) defined in a &apos;Environmental Coverage&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#onCoverageAreaOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">on coverage area of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#perceives</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">perceives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#perceivesFrom</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation between a &apos;Virtual Sensor&apos; and a &apos;Feature of Interest&apos; which Properties are observed in order to perceive higher-level semantic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#perceivesFrom</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">perceives from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reasonsAbout</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation according to which a Natural Person reasons about a Concept or a Description. This relation is different from other conceptualization, because it does not assume as true or not, indeed it conceive the Concept or Description in a possibility degree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#reasonsAbout</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">reasons about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#typefies</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation between a Datatype a Region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uses</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relation that an Agent holds with a Physical Object.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
