@@ -1,2 +1,2 @@
 # beon
-Behavioral Ontology for Personal Information Classification and Analysis
+An Ontology for Personal Information Classification on the Sensor Web based on the Behavioral Computing
