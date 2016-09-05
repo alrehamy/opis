@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/thiagomoreirac/opis/blob/master/external_sio.owl#"
+     xml:base="https://github.com/thiagomoreirac/opis/blob/master/external_sio.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="https://github.com/thiagomoreirac/opis/blob/master/external_sio.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/subset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000005 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000005">
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+        <terms:description xml:lang="en">A quality is an attribute that is intrinsically associated with its bearer (or its parts), but whose presence/absence and observed/measured value may vary.</terms:description>
+        <resource:subset>core</resource:subset>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000027 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000027">
+        <rdfs:label xml:lang="en">process quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000005"/>
+        <terms:description xml:lang="en">A process quality is quality that is associated with a process.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000033 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000033">
+        <rdfs:label xml:lang="en">process status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000027"/>
+        <terms:description xml:lang="en">process status is a process quality that describes the state of a process.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000034 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000034">
+        <rdfs:label xml:lang="en">completed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
+        <terms:description xml:lang="en">completed is that status of a process that successfully unfolds.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000035 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000035">
+        <rdfs:label xml:lang="en">ongoing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
+        <terms:description xml:lang="en">ongoing is the status of a process that is not yet complete.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000963 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000963">
+        <rdfs:label xml:lang="en">not started</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
+        <terms:description xml:lang="en">not started is the status of a process that is predicted to exist but has not yet begun.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000995 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000995">
+        <rdfs:label xml:lang="en">suspended</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
+        <terms:description xml:lang="en">suspended is the status of a process that is no longer progressing towards completion.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000996 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000996">
+        <rdfs:label xml:lang="en">cancelled</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000963"/>
+        <terms:description xml:lang="en">cancelled is a process status in which the process, while planned to occur, will not occur.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000997 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000997">
+        <rdfs:label xml:lang="en">aborted</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
+        <terms:description xml:lang="en">aborted is a process status in which a started process will not complete as intended.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001060 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001060">
+        <rdfs:label xml:lang="en">planned</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000963"/>
+        <terms:description xml:lang="en">planned is a process status for a process that has not yet started, but is referred to in a plan.</terms:description>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
