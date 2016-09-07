@@ -16,6 +16,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:edamontology="http://edamontology.org#"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
@@ -31,11 +32,10 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn">
         <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
         <owl:imports rdf:resource="http://kt.ijs.si/panovp/OntoDM.owl"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn/external.owl"/>
-        <rdfs:label xml:lang="en">BeON - Behavior Ontology</rdfs:label>
+        <owl:imports rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/opis/external.owl"/>
+        <rdfs:label xml:lang="en">OPIS - Ontology for Personal Information on the Sensor Web</rdfs:label>
+        <owl:versionInfo xml:lang="en">0.95</owl:versionInfo>
         <rdfs:isDefinedBy xml:lang="en">Thiago Moreira da Costa</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An ontology for describing personal information based on behaviors</rdfs:comment>
-        <owl:versionInfo xml:lang="en">0.93</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -82,6 +82,12 @@
     <!-- http://www.w3.org/2002/07/owl#minCardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
     
 
 
@@ -212,41 +218,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#assumes -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#assumes">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAssumedBy"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#believesIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#believesIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isBelievedBy"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
-        <rdfs:label xml:lang="en">believes in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#contributesTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#contributesTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#supportedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal"/>
-        <rdfs:label xml:lang="en">contributes to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasGeoLocation -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasGeoLocation">
@@ -254,7 +225,7 @@
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
         <rdfs:label xml:lang="en">Relation between Physical Object and a region to determine its specific geolocation (&apos;Spatio Temporal Region&apos;).</rdfs:label>
-        <rdfs:label xml:lang="en">has geolocation</rdfs:label>
+        <rdfs:label xml:lang="en">has geographic location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -263,10 +234,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasSpatialBoundaries">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#EnvironmentalCoverage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
         <rdfs:comment xml:lang="en">Property of &apos;Physical Object&apos; for its Spatial Coverage Area.</rdfs:comment>
-        <rdfs:label xml:lang="en">has spatial boundaries</rdfs:label>
+        <rdfs:label xml:lang="en">has spatial region</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -310,7 +281,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isCoverageAreaFor">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#onCoverageAreaOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#EnvironmentalCoverage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -330,7 +301,6 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isKnownBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#knowsAbout"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:label xml:lang="en">is known by</rdfs:label>
@@ -342,7 +312,6 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReasonedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#reasonsAbout"/>
         <rdfs:label xml:lang="en">is reasoned by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -352,7 +321,6 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReferencedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#refers"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:label xml:lang="en">is referenced by</rdfs:label>
@@ -372,18 +340,6 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#knowsAbout -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#knowsAbout">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
-        <rdfs:comment xml:lang="en">Relation according to which a Natural Person is sure about a Concept or a Description that represent a concept conceived and used in a mental model, mapping, hypothesis or rational.</rdfs:comment>
-        <rdfs:label xml:lang="en">knows about</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#onCoverageAreaOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#onCoverageAreaOf">
@@ -396,7 +352,7 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#EnvironmentalCoverage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
         <rdfs:label xml:lang="en">Relation to describe that a &apos;Behavioral Entity&apos; of the type &apos;Physical Object&apos; (e.g., a car) is inside of coverage area (DUL:&apos;Spatial Region&apos;) defined in a &apos;Environmental Coverage&apos;.</rdfs:label>
         <rdfs:label xml:lang="en">on coverage area of</rdfs:label>
     </owl:ObjectProperty>
@@ -408,27 +364,6 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#perceivedSemantic">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">perceived semantic</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#reasonsAbout -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#reasonsAbout">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
-        <rdfs:label xml:lang="en">reasons about</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#refers -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#refers">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
     </owl:ObjectProperty>
     
 
@@ -479,6 +414,20 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000313"/>
     
 
 
@@ -547,6 +496,7 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ActionableObject -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ActionableObject">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -579,6 +529,7 @@ The &apos;Actionable Object&apos; participates in the behavior as transformation
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000313"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -612,6 +563,7 @@ For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; wh
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorAction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorAction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Action"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -631,6 +583,7 @@ For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; wh
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorPlan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorPlan">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Plan"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -655,6 +608,7 @@ For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; wh
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -716,6 +670,7 @@ In terms of intelectual capacity, &apos;Behavioral Agent&apos; can believe, know
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Goal"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -767,12 +722,6 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#contributesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Belief is a description of the informational state and knowledge hold by a physical agent about the world in any knowledge domain.</rdfs:comment>
     </owl:Class>
     
@@ -781,6 +730,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Context -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Context">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -805,9 +755,10 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#EnvironmentalCoverage -->
+    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#EnvironmentalCoverage">
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000000"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -829,29 +780,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:onClass rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Coverage where &apos;Behavioral Entities&apos; are located. The coverage area &apos;has spatial boundaries&apos; defined in SpatialRegion (2D or 3D) and &apos;has geolocation&apos; defined in SpatioTemporalRegion. 
-
-&apos;Environmental coverage&apos; is an Feature of Interest that describe environment temperature, pressure, humidity, and any other property that can be observed related to an environment. The difference between &apos;Environment coverage&apos; and a simple coverage area relies on the fact that some characteristics of an agent&apos;s behavior can be identified. For this reason, a minimum of one &apos;Behavioral Agent&apos; is required to describe an &apos;Environmental coverage&apos;. 
-
-The property &apos;is coverage area for&apos; allows to specify any &apos;Behavioral Entities&apos; that are &apos;Physical Object&apos;, such as &apos;Actionable object&apos; and  &apos;Behavioral Agent&apos;. 
-
-&apos;Behavioral Entities&apos; can share the same &apos;Environmental Coverage&apos; while being place in different geolocation. This is specially observed in large coverage areas where different &apos;Behavioral Entities&apos; are positioned separetely enough to have different geolocation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Environmental coverage</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#EnvironmentalCoverage"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isCoverageAreaFor"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-        <rdfs:comment>Changed from
-&apos;is coverage area for&apos; only 
-    (&apos;Behavioral agent&apos;
-     and (&apos;has geolocation&apos; only Geolocation))</rdfs:comment>
-    </owl:Axiom>
     
 
 
@@ -884,6 +813,7 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ReferencePlace -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ReferencePlace">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:comment xml:lang="en">Social object that describes the place where the behavior was observed. This may containt spatiotemporal, but a textual description is also possible, for example, over the sofa, in the kitchen, and so forth. This concept can be extended with an ontology of place to describe indoor spaces or referencial positions.</rdfs:comment>
         <rdfs:label xml:lang="en">Reference place</rdfs:label>
@@ -937,15 +867,8 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionObjective"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
@@ -980,14 +903,13 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:onClass>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
@@ -1038,7 +960,13 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:onClass>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionObjective"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Semantic perception process</rdfs:label>
@@ -1049,8 +977,7 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
@@ -1085,10 +1012,10 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:onClass>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">A semantic perception process is a protocol that has at least one algorithm which objective specification contains a data specification that has a property mapping specification or a feature mapping specification.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A semantic perception process is a protocol that has at least one algorithm which objective specification contains a data specification that specifies (is about) some datatype that referes (is about) an observation value, or that specifies some semantic class datatype that referes a semantic observation value.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
@@ -1096,8 +1023,7 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
@@ -1148,10 +1074,10 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:onClass>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <rdfs:comment xml:lang="en">A semantic perception process is a protocol that has at least one algorithm which objective specification contains a data specification that specifies (is about) some datatype that referes (is about) an observation value, or that specifies some semantic class datatype that referes a semantic observation value.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A semantic perception process is a protocol that has at least one algorithm which objective specification contains a data specification that has a property mapping specification or a feature mapping specification.</rdfs:comment>
     </owl:Axiom>
     
 
@@ -1159,6 +1085,7 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Status -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Status">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -1179,15 +1106,8 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
@@ -1217,7 +1137,13 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:onClass>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Virtual sensor</rdfs:label>
@@ -1228,8 +1154,7 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
         <owl:annotatedTarget>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass>
+                <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
@@ -1259,7 +1184,7 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
-                </owl:onClass>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </owl:annotatedTarget>
         <rdfs:comment xml:lang="en">Virtual sensor are workflow (concretization of some protocol/scenario) that should contain operators which represent algorithm implementation of those algorithms defined in the semantic perception process.</rdfs:comment>
@@ -1270,8 +1195,18 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorExecution -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorExecution">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_285570"/>
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_285570"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0400107"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -1458,6 +1393,54 @@ The property &apos;is coverage area for&apos; allows to specify any &apos;Behavi
     <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionValueSpace -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionValueSpace"/>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
 </rdf:RDF>
 
 

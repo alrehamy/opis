@@ -1,0 +1,18 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_ico.owl
+
+[Source ontology]
+ICO
+
+[Low level source term URIs]
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C90492   #personal information
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

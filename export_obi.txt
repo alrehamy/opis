@@ -1,0 +1,46 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_obi.owl
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0302911  #validation
+http://purl.obolibrary.org/obo/OBI_0000293  #has specified input
+http://purl.obolibrary.org/obo/OBI_0000299  #has specified output
+http://purl.obolibrary.org/obo/OBI_0000312  #is specified output of
+http://purl.obolibrary.org/obo/OBI_0000417  #achieves planned objective
+http://purl.obolibrary.org/obo/OBI_0000011  #planned process
+http://purl.obolibrary.org/obo/OBI_0000227  #data encoding
+http://purl.obolibrary.org/obo/OBI_0000245  #organization
+http://purl.obolibrary.org/obo/OBI_0000272  #protocol
+http://purl.obolibrary.org/obo/OBI_0000338  #drawing a conclusion based on data (interpreting data)
+http://purl.obolibrary.org/obo/OBI_0000343  #inductive reasoning
+http://purl.obolibrary.org/obo/OBI_0000339  #planning
+http://purl.obolibrary.org/obo/OBI_0000658  #data representational model
+http://purl.obolibrary.org/obo/OBI_0200000  #data transformation
+includeAllChildren
+http://purl.obolibrary.org/obo/OBI_0200111  #visualization
+includeAllChildren
+http://purl.obolibrary.org/obo/OBI_0200166  #data transformation objective
+includeAllChildren
+http://purl.obolibrary.org/obo/OBI_0302838  #validated information
+http://purl.obolibrary.org/obo/OBI_0302874  #edited document
+http://purl.obolibrary.org/obo/OBI_0302908  #document editing
+http://purl.obolibrary.org/obo/OBI_0302910  #prediction
+http://purl.obolibrary.org/obo/OBI_0302867  #predicted data item
+http://purl.obolibrary.org/obo/OBI_0302911  #validation
+http://purl.obolibrary.org/obo/OBI_0500000  #study design
+http://purl.obolibrary.org/obo/OBI_0600008  #acquisition
+http://purl.obolibrary.org/obo/OBI_0600013  #information acquisition (previous term: data acquisition)
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011  #planned process
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

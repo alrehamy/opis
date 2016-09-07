@@ -1,0 +1,19 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_vivo-isf.owl
+
+[Source ontology]
+VIVO-ISF
+
+[Low level source term URIs]
+http://vivoweb.org/ontology/core#GeographicLocation   #Geographic Location
+includeAllChildren
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://vivoweb.org/ontology/core#Location  #location
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

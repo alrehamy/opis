@@ -1,0 +1,43 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_ro.owl
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0001025  #located in
+http://purl.obolibrary.org/obo/RO_0000058  #is concretized as
+http://purl.obolibrary.org/obo/RO_0000059  #concretizes
+http://purl.obolibrary.org/obo/RO_0000081  #is role of / role of
+http://purl.obolibrary.org/obo/RO_0000086  #has quality
+http://purl.obolibrary.org/obo/RO_0001015  #location of
+http://purl.obolibrary.org/obo/RO_0000052  #inheres in
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0000053  #bearer of
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0000056  #participates in
+http://purl.obolibrary.org/obo/RO_0000057  #has participant
+http://purl.obolibrary.org/obo/RO_0000058  #is concretized as 
+http://purl.obolibrary.org/obo/RO_0000059  #concretizes
+http://purl.obolibrary.org/obo/RO_0001000  #derives from
+http://purl.obolibrary.org/obo/RO_0001001  #derives into
+http://purl.obolibrary.org/obo/RO_0002000  #2d boundary of
+http://purl.obolibrary.org/obo/RO_0002002  #has 2d boundary
+http://purl.obolibrary.org/obo/RO_0002350  #member of
+http://purl.obolibrary.org/obo/RO_0002351  #has member
+http://purl.obolibrary.org/obo/RO_0002328  #functionally related to - specialized in isUsedBy
+http://purl.obolibrary.org/obo/RO_0002501  #causal relation between processes #impact
+http://purl.obolibrary.org/obo/RO_0002222  #temporally related to # associate
+http://purl.obolibrary.org/obo/RO_0003303  #causes condition # constraint
+
+http://purl.obolibrary.org/obo/BFO_0000051 #has part (obsolete property: http://www.obofoundry.org/ro/ro.owl#has_part)
+http://purl.obolibrary.org/obo/BFO_0000050  #part of
+http://purl.obolibrary.org/obo/RO_0002218  #has active participant (obsolete: has agent)
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

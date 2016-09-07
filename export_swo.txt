@@ -1,0 +1,20 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_swo.owl
+
+[Source ontology]
+SWO
+
+[Low level source term URIs]
+#http://www.ebi.ac.uk/swo/SWO_0000086 #has quality
+#http://www.ebi.ac.uk/swo/SWO_0000087 #has role
+http://www.ebi.ac.uk/swo/SWO_0000003 #information processing
+includeAllChildren
+
+
+
+[Top level source term URIs and target direct superclass URIs]
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

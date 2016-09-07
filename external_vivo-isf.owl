@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/thiagomoreirac/opis/blob/master/external_vivo-isf.owl#"
+     xml:base="https://github.com/thiagomoreirac/opis/blob/master/external_vivo-isf.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:core="http://vivoweb.org/ontology/core#">
+    <owl:Ontology rdf:about="https://github.com/thiagomoreirac/opis/blob/master/external_vivo-isf.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label xml:lang="en">source (dct)</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#area -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#area"/>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#disputed -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#disputed">
+        <rdfs:subClassOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#geographical_region -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#geographical_region">
+        <rdfs:subClassOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#group"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#TransnationalRegion"/>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Nations statistics department http://unstats.un.org/unsd/methods/m49/m49regin.htm</terms:source>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#group -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#group"/>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#non_self_governing -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#non_self_governing">
+        <rdfs:subClassOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UN Cartographic Section, Department of Field Support http://www.un.org/Depts/Cartographic/map/profile/world00.pdf</terms:source>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#other -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#other">
+        <rdfs:subClassOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#self_governing -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#self_governing">
+        <rdfs:label xml:lang="en">self governing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#territory"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Nations Map Library http://www.un.org/depts/dhl/maplib/countinfo.htm</terms:source>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#territory -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#territory">
+        <rdfs:subClassOf rdf:resource="http://aims.fao.org/aos/geopolitical.owl#area"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Campus -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Campus">
+        <rdfs:label xml:lang="en">campus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cornell Ithaca; Cornell Geneva; Cornell New York City; Cornell Qatar</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition taken from dictionary.com (http://dictionary.reference.com/browse/campus).</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The grounds of a school, college, university, or hospital. Or, a large, usually suburban, landscaped business or industrial site.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Continent -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Continent">
+        <rdfs:label xml:lang="en">continent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#TransnationalRegion"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large contiguous landmass  that is at least partially surrounded by water, together with any islands on its continental shelf.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition take from http://en.wiktionary.org/wiki/continent.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The seven commonly recognized continents are Africa; Antarctica; Asia; Australia; Europe; North America; South America</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Country -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Country">
+        <rdfs:label xml:lang="en">country (vivo)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Afghanistan; Antigua and Barbuda; Cameroon; Iceland; Jamaica; Nigeria; United States of America</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area of land distinguished by its political autonomy. Politically independent territories.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source of the Short Definition: http://www.thefreedictionary.com/country.  This is also the same as geopolitical.owl:self_governing.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#County -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#County">
+        <rdfs:label xml:lang="en">county</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alachua; Baker; Bradford; Kenora; Ottawa; Waterloo</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition modified from the one found here: http://www.thefreedictionary.com/county.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The largest administrative division of most states or provinces.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicLocation -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation">
+        <rdfs:label xml:lang="en">geographic location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Location"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location having coordinates in geographic space.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removed the word &quot;stable&quot; because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. I&#39;ve also copied this definition to core:Geographic Location.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Geographic Location subclasses instead of this class if possible.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion">
+        <rdfs:label xml:lang="en">geographic region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location having coordinates in geographic space.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removed the word &quot;stable&quot; because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. This definition was originally in core:Geographic Location.  I simply copied the definition from there.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Geographic Region subclasses instead of this class if possible.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeopoliticalEntity -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity">
+        <rdfs:label xml:lang="en">geopolitical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical area which is associated with some sort of political  structure.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition obtained here: http://en.wiktionary.org/wiki/geopolitical_entity.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:GeopoliticalEntity subclasses instead of this class if possible.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Location -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Location">
+        <rdfs:label xml:lang="en">location</rdfs:label>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It&#39;s anticipated that the subclasses will be used when classifying items. And, all locations can be viewable via this class.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top level of all location classes.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Location when classsifying items.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#PopulatedPlace -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PopulatedPlace">
+        <rdfs:label xml:lang="en">populated place</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Either city or town - a thickly populated area having fixed boundaries and certain local powers of government.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#StateOrProvince -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#StateOrProvince">
+        <rdfs:label xml:lang="en">state or province</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minnesota; Michigan; Indiana; New York; Quebec; Manitoba; Ontario</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of a number of areas or communities having their own governments and forming a federation under a sovereign government, as in the US.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source of the Short Definition: http://www.thefreedictionary.com/state.</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#SubnationalRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#SubnationalRegion">
+        <rdfs:label xml:lang="en">subnational region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boroughs; townships; districts; the Midwest</obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, the Midwest, northeast U.S.</rdfs:comment>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition was partially taken from http://en.wikipedia.org/wiki/Subnational_entity.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smaller administrative division into which a country may be divided.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#TransnationalRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#TransnationalRegion">
+        <rdfs:label xml:lang="en">transnational region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region that goes beyond national boundaries and does not fit into any subclass of core:TransnationalRegion.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None as yet.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not sure how to access the &quot;Editor&#39;s Comments&quot;. But as North America is a continent, it would be placed directly into the continent subclass and viewable through this class along with any other subclass entities.</obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sub-Saharan Africa, North America</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

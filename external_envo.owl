@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://github.com/thiagomoreirac/opis/blob/master/external_envo.owl#"
      xml:base="https://github.com/thiagomoreirac/opis/blob/master/external_envo.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="https://github.com/thiagomoreirac/opis/blob/master/external_envo.owl"/>
     
 
@@ -19,39 +20,78 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -69,9 +109,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:label xml:lang="en">continuant</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
     </owl:Class>
     
 
@@ -79,10 +119,10 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
     </owl:Class>
     
 
@@ -90,14 +130,14 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic feature</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002297"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Geographic_feature</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macroscopic spatial feature</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000000</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May appear on a map.</rdfs:comment>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Geographic_feature</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macroscopic spatial feature</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic feature</rdfs:label>
     </owl:Class>
     
 
@@ -105,12 +145,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_00002297 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00002297">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental feature</rdfs:label>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity determines an environmental system when its removal would cause the collapse of that system. For example, a seamount determines a seamount environment, acting as its &#39;hub&#39;. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised.</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity which determines an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00002297</oboInOwl:id>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity determines an environmental system when its removal would cause the collapse of that system. For example, a seamount determines a seamount environment, acting as its &apos;hub&apos;. This class is currently being aligned to the Basic Formal Ontology. Following this alignment, its definition and the definitions of its subclasses will be revised.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental feature</rdfs:label>
     </owl:Class>
     
 
@@ -118,15 +158,15 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000203">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:35:18Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environmental condition is a range of a determinate quality  or combination of qualities that are present in an environmental system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:35:18Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000203</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental class created in EnvO. A condition defines a restricted range of a given quality or combination of qualities. If an environment class, E, has_condition C, then all qualities listed in C are restricted to the ranges defined in C in E. This is not intended as a logical conditional.</rdfs:comment>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental condition</rdfs:label>
     </owl:Class>
     
 
@@ -134,16 +174,16 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000204 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000204">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tropical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tropical condition is an environmental condition in which an environmental system receives high yearly solar irradiance per unit area and, on Earth, the Sun reaches a subsolar point at least once during the solar year. This results in a hot and moist year-round climate at low elevations, which have a monthly average temperature above 18 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoLexicon:the_tropics</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPIRE:Tropical</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000204</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoLexicon:the_tropics</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPIRE:Tropical</oboInOwl:hasDbXref>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tropical</rdfs:label>
     </owl:Class>
     
 
@@ -151,14 +191,14 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000205 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000205">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subtropical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subtropical condition is an environmental condition in which an envrionmental system receives more solar irradiance than those with temperate conditions, but less than those with tropical conditions. At low elevations, this typically results in eight months of the year having average temperatures greater than or equal to 10 degrees Celsius with the coldest monthly temperature averaging between 2 and 13 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000205</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subtropical</rdfs:label>
     </owl:Class>
     
 
@@ -166,17 +206,17 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000206 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000206">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A temperate condition is an environmental condition in which an environmental system receives less solar irradiance than those with subpolar conditions, but greater than those with subtropical conditions.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPIRE:Temperate</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tepid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000206</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPIRE:Temperate</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class&#39; definition is less satisfactory than the other latitudinal conditoins.</rdfs:comment>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tepid</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class&apos; definition is less satisfactory than the other latitudinal conditoins.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperate</rdfs:label>
     </owl:Class>
     
 
@@ -184,15 +224,15 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000207 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000207">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediterranean</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000205"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mediterranean condition is a subtropical condition in which hot dry summers and winters with moderate to high rainfall.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000207</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These regions are under the constant influence of the subtropical ridge.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediterranean</rdfs:label>
     </owl:Class>
     
 
@@ -200,15 +240,15 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000230 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000230">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arid</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-24T13:28:18Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arid condition is an environmental condition in which annual precipitation is less than half of annual potential evapotranspiration.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-24T13:28:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoLexicon:aridity</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000230</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoLexicon:aridity</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arid</rdfs:label>
     </owl:Class>
     
 
@@ -216,18 +256,18 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000238">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-05-08T07:49:36Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A polar condition is an environmental condition in which an environmental system receives low, yearly solar irradiance per unit area, resulting in colder climatic conditions. On Earth, polar conditions are such that every month has average temperature lower than 10 degrees Celsius.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000238</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that  this class refers to a climatic rather than a positional condition.</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-05-08T07:49:36Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPIRE:Polar</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWEETRealm:Polarization</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frigid</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000238</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that  this class refers to a climatic rather than a positional condition.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polar</rdfs:label>
     </owl:Class>
     
 
@@ -235,17 +275,17 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000251 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000251">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subpolar</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-09-04T07:08:34Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subpolar condition is an environmental condition in which an environmental system receives low, yearly solar irradiance per unit area and is surrounded by large land masses. This results in very cold winters with temperatures potentially falling to around -40 degrees Celsius and summers which last no more than 3 months of the year with a 24-hour average temperature of at least 10 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-09-04T07:08:34Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boreal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subarctic</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000251</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that  this class refers to a climatic rather than a positional condition.</rdfs:comment>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boreal</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subarctic</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subpolar</rdfs:label>
     </owl:Class>
     
 
@@ -253,13 +293,13 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000340 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000340">
-        <rdfs:label>alpine</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000343"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alpine condition is an environmental condition in which the monthly mean temperature is less than 10 degrees Celsius and which occurs at altitudes above the tree line and below the snowline.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTER:26</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requested term with preliminary def. See Issue 29 on the envo tracker.  </rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTER:26</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requested term with preliminary def. See Issue 29 on the envo tracker.  </rdfs:comment>
+        <rdfs:label>alpine</rdfs:label>
     </owl:Class>
     
 
@@ -267,12 +307,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000341">
-        <rdfs:label>subalpline</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000343"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subalpine condition is an environmental condition in which  an altitude range falls immediately below the tree line.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requested in Issue 33 of our tracker. The lower boundry of this condition&#39;s range, that is, the lower altitudinal limit of an elevation that is considuered subalpine, is not clear in this definition. </rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requested in Issue 33 of our tracker. The lower boundry of this condition&apos;s range, that is, the lower altitudinal limit of an elevation that is considuered subalpine, is not clear in this definition. </rdfs:comment>
+        <rdfs:label>subalpline</rdfs:label>
     </owl:Class>
     
 
@@ -280,13 +320,13 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000342">
-        <rdfs:label>montane</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000343"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A montane condition is an environmental condition in which an altitude range falls between mid-altitude forests and the tree line.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTER:350</oboInOwl:hasDbXref>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exact level of the tree line varies with local climate, but typically the tree line is found where mean monthly soil temperatures never exceed 10.0 degrees C and the mean annual soil temperatures are around 6.7 degrees C. In the tropics, this region is typified by montane rain forest (above 3,000 ft) while at higher latitudes coniferous forests often dominate.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LTER:350</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The exact level of the tree line varies with local climate, but typically the tree line is found where mean monthly soil temperatures never exceed 10.0 degrees C and the mean annual soil temperatures are around 6.7 degrees C. In the tropics, this region is typified by montane rain forest (above 3,000 ft) while at higher latitudes coniferous forests often dominate.</rdfs:comment>
+        <rdfs:label>montane</rdfs:label>
     </owl:Class>
     
 
@@ -294,12 +334,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000343">
-        <rdfs:label>altitudinal condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An altitudinal condition is an environmental condition in which ranges of factors such as temperature, humidity, soil composition, solar irradiation, and tree density vary with ranges in altitude.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depending on the latitude (and, to a lesser extent, other factors), the actual location of the zones where these conditions are in effect will change.</rdfs:comment>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depending on the latitude (and, to a lesser extent, other factors), the actual location of the zones where these conditions are in effect will change.</rdfs:comment>
+        <rdfs:label>altitudinal condition</rdfs:label>
     </owl:Class>
     
 
@@ -307,11 +347,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000344 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000344">
-        <rdfs:label>nival</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000343"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nival condition is an environmental condition in which vegetation is extremely limited, soils are silica enriched, and ground cover is dominated by snow and ice at altitudes above the snowline.</obo:IAO_0000115>
-        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:label>nival</rdfs:label>
     </owl:Class>
     
 
@@ -319,12 +359,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000345 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000345">
-        <rdfs:label>upper montane</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000342"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An upper montane condition is a montane condition in which an altitude range falls immediately below the tree line.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is somewhat odd in that it doesn&#39;t clearly define a lower boundary.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is somewhat odd in that it doesn&apos;t clearly define a lower boundary.</rdfs:comment>
+        <rdfs:label>upper montane</rdfs:label>
     </owl:Class>
     
 
@@ -332,12 +372,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000346 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000346">
-        <rdfs:label>lower montane</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000342"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lower montane condition is a montane condition in which an altitude range falls immediately above mid-altitude forests.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition does not define an upper boundary.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label>lower montane</rdfs:label>
     </owl:Class>
     
 
@@ -345,11 +385,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000354 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000354">
-        <rdfs:label>ice cap climatic condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000238"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ice cap climatic condition is a polar condition in which the montly average temperature does not exceed 0 degrees Celsius.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:label>ice cap climatic condition</rdfs:label>
     </owl:Class>
     
 
@@ -357,11 +397,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000370 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000370">
-        <rdfs:label>tundra climatic condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000238"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An tundra climatic condition is a polar condition in which at least one month&#39;s average temperature  exceeds 0 degrees Celsius.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An tundra climatic condition is a polar condition in which at least one month&apos;s average temperature  exceeds 0 degrees Celsius.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:label>tundra climatic condition</rdfs:label>
     </owl:Class>
     
 
@@ -369,11 +409,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000375 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000375">
-        <rdfs:label>tropical marine condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000204"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tropical marine condition is a tropical condition in which the ocean strongly influences the climate and a wet and dry season occur.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:label>tropical marine condition</rdfs:label>
     </owl:Class>
     
 
@@ -381,12 +421,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000377 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000377">
-        <rdfs:label>humid subtropical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000205"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A humid subtropical condition is a subtropical condition in which an environmental system has hot, humid summers, warm to cool dry winters, and average annual precipitation either evenly distributed throughout the year or marked by a dry season or drying trend during winter</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In cases where rainfall is evenly distributed throughout the year, this condition falls into the Cfa category of the KÃ¶ppen climate classification. In cases marked by a dry season or drying trend during winter, this condition falls into the Cwa category of the KÃ¶ppen climate classification. Environmental systems with this condition usually occur on the eastern side of continents.</rdfs:comment>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In cases where rainfall is evenly distributed throughout the year, this condition falls into the Cfa category of the KÃ¶ppen climate classification. In cases marked by a dry season or drying trend during winter, this condition falls into the Cwa category of the KÃ¶ppen climate classification. Environmental systems with this condition usually occur on the eastern side of continents.</rdfs:comment>
+        <rdfs:label>humid subtropical</rdfs:label>
     </owl:Class>
     
 
@@ -394,15 +434,15 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000378 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000378">
-        <rdfs:label>arid subtropical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000205"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arid subtropical condition is a subtropical condition in which an environmental system has an annual average temperature near 18.2 degrees Celsius with their coldest month averaging between 2 and 13 degrees Celsius, the absence of regular rainfall, and high humidity. </obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild variants are generally located in areas adjacent to powerful cold ocean currents.</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">desert climate</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-arid climate</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-desert climate</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-arid climate</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild variants are generally located in areas adjacent to powerful cold ocean currents.</rdfs:comment>
+        <rdfs:label>arid subtropical</rdfs:label>
     </owl:Class>
     
 
@@ -410,12 +450,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000379 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000379">
-        <rdfs:label>highland subtropical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000205"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A highland subtropical condition is a subtropical condition in which increased elevation results in mild summers, cooler winters, and, in some instances,  snowfall associated with montly temperature averages below 22 but above -3 degrees Celsius.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an interesting overlap of a latitudinal and altitudinal condition. Some link between this condition and the altitudinal conditions should be considered. This condition corresponds to the Cfb and Cwb categories of KÃ¶ppen climate classification. </rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label>highland subtropical</rdfs:label>
     </owl:Class>
     
 
@@ -423,12 +463,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000380 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000380">
-        <rdfs:label>oceanic temperate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000206"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An oceanic temperate condition is a temperate condition which is strongly influenced by oceans and oceanic winds. Summers are cool and winters are cool, but not cold, and there is little frozen precipitation at lower elevations.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This condition is typically present on the western coasts of large continental landmasses.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <rdfs:label>oceanic temperate</rdfs:label>
     </owl:Class>
     
 
@@ -436,11 +476,11 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000381 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000381">
-        <rdfs:label>continental temperate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000206"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continental temperate condition is a temperate condition which is influenced by large land masses. Summers are warm to hot and winters are often  long, cold, and snowy.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <rdfs:label>continental temperate</rdfs:label>
     </owl:Class>
     
 
@@ -448,14 +488,14 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000589>quality (PATO)</obo:IAO_0000589>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <obo:IAO_0000589>quality (PATO)</obo:IAO_0000589>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 

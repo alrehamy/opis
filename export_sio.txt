@@ -1,0 +1,18 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_sio.owl
+
+[Source ontology]
+SIO
+
+[Low level source term URIs]
+http://semanticscience.org/resource/SIO_000033  #process status
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://semanticscience.org/resource/SIO_000005  #quality (this is different from PATO quality. Future improvement aims integrating 
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

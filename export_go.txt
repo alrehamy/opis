@@ -1,0 +1,28 @@
+[URI of the OWL(RDF/XML) output file]
+https://github.com/thiagomoreirac/opis/blob/master/external_go.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0002118
+http://purl.obolibrary.org/obo/GO_0007601
+http://purl.obolibrary.org/obo/GO_0007622
+http://purl.obolibrary.org/obo/GO_0009314
+http://purl.obolibrary.org/obo/GO_0009414
+http://purl.obolibrary.org/obo/GO_0009416
+http://purl.obolibrary.org/obo/GO_0030431
+http://purl.obolibrary.org/obo/GO_0040011
+http://purl.obolibrary.org/obo/GO_0042747
+http://purl.obolibrary.org/obo/GO_0042748
+http://purl.obolibrary.org/obo/GO_0050802
+http://purl.obolibrary.org/obo/GO_0050882
+
+[Top level source term URIs and target direct superclass URIs]
+#http://purl.obolibrary.org/obo/GO_0008150 #biological process
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
