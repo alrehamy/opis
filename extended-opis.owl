@@ -1,0 +1,531 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/thiagomoreirac/opis/blob/master/extended#"
+     xml:base="https://github.com/thiagomoreirac/opis/blob/master/extended"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo1="http://purl.obofoundry.org/obo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:BeOn="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended">
+        <owl:versionIRI rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended/1.0"/>
+        <owl:imports rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn"/>
+        <rdfs:comment>Subdomain extension of OPIS</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControl -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControl">
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingTechnique"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000027"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                                                <owl:hasValue rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_397256"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlObjective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlObjective -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlObjective">
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor">
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#AtHome -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#AtHome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIHome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#HealthCaring -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#HealthCaring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIHospital"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIPharmacy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#Partying -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#Partying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIClub"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIBank -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIBank">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#can_have_k_atm"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoICafe -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoICafe">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_cafe"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIClub -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIClub">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_nightclub"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIGym -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIGym">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_gymnastics"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIHome -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIHome">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_residential"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIHospital -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIHospital">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_hospital"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIMall -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIMall">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_shop"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIOffice -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIOffice">
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIPharmacy -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIPharmacy">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_pharmacy"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIReligiousTemple -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIReligiousTemple">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_religion"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoIRestaurant -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIRestaurant">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#can_have_k_cuisine"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PoISportCenter -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PoISportCenter">
+        <owl:equivalentClass rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_sport"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PointOfInterest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
+        <rdfs:label xml:lang="en">point of interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PracticingSport -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PracticingSport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoISportCenter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingObjective -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingObjective">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingTechnique -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingTechnique">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingTechnique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_487147"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#propertyMappingSpecification"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingObjective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingTechnique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#ReligiousPracticing -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#ReligiousPracticing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIReligiousTemple"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#Shopping -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#Shopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIMall"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#Socializing -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#Socializing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoICafe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#Working -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#Working">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIOffice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#havingDinner -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#havingDinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIRestaurant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/thiagomoreirac/opis/blob/master/extended#havingLunch -->
+
+    <owl:Class rdf:about="https://github.com/thiagomoreirac/opis/blob/master/extended#havingLunch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PoIRestaurant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#can_have_k_atm -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#can_have_k_atm"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#can_have_k_cuisine -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#can_have_k_cuisine"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_religion -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_religion"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_shop -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_shop"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_sport -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_sport"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_cafe -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_cafe"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_gymnastics -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_gymnastics"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_hospital -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_hospital"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_nightclub -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_nightclub"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_pharmacy -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_pharmacy"/>
+    
+
+
+    <!-- https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_residential -->
+
+    <rdf:Description rdf:about="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_residential"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
