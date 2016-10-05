@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#"
+     xml:base="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo1="http://purl.obofoundry.org/obo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:BeOn="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy">
+        <owl:imports rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended/1.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesAccessControlVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesAccessControlVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+        <rdfs:range rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesInformationObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesInformationObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
+        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
+        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+        <rdfs:label xml:lang="en">includes information object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesPrivacyPreservingVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesPrivacyPreservingVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+        <rdfs:range rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesInformationObject"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isAccessControlVirtualSensorIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isAccessControlVirtualSensorIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn"/>
+        <rdfs:domain rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isInformationObjectIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isInformationObjectIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
+        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
+        <rdfs:label xml:lang="en">is information object included in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isPrivacyPreservingVirtualSensorIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isPrivacyPreservingVirtualSensorIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn"/>
+        <rdfs:domain rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isInformationObjectIncludedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval -->
+
+    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#AccessControlCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#AccessControlCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesAccessControlVirtualSensor"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">access control condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
+        <rdfs:label xml:lang="en">life style</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesPrivacyPreservingVirtualSensor"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">privacy enforcement condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#healthrealted -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#healthrealted">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+        <rdfs:label xml:lang="en">health related</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#leisure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#leisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#professional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#professional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#publicfigure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#publicfigure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+        <rdfs:label xml:lang="en">public figure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sociallife -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sociallife">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
