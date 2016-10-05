@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#"
-     xml:base="http://www.semanticweb.org/thiago/ontologies/2015/BeOn"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#"
+     xml:base="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl"
      xmlns:edamontology1="http://edamontology.org/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swo="http://www.ebi.ac.uk/swo/"
-     xmlns:beon="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#"
+     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl/1.0"
      xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -30,14 +30,15 @@
      xmlns:swo3="http://www.ebi.ac.uk/efo/swo/"
      xmlns:odt="http://kt.ijs.si/panovp/OntoDT#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl/1.0"/>
         <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
         <owl:imports rdf:resource="http://kt.ijs.si/panovp/OntoDM.owl"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/opis/external.owl"/>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
         <rdfs:label xml:lang="en">OPIS - Ontology for Personal Information on the Sensor Web</rdfs:label>
         <rdfs:isDefinedBy xml:lang="en">Thiago Moreira da Costa</rdfs:isDefinedBy>
         <protege:defaultLanguage>en</protege:defaultLanguage>
-        <owl:versionInfo xml:lang="en">0.98</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -50,28 +51,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutFeatureOfInterest -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutFeatureOfInterest">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutSemanticEntity"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutSemanticEntity"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutSemanticEntity -->
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAboutSemanticEntity"/>
     
 
 
@@ -96,6 +75,28 @@
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutFeatureOfInterest -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutFeatureOfInterest">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutSemanticEntity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutProperty -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutProperty">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutSemanticEntity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutSemanticEntity -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAboutSemanticEntity"/>
     
 
 
@@ -220,9 +221,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasGeoLocation -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasGeoLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasGeoLocation">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasGeoLocation">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
@@ -232,21 +233,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasIRI">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasSpatialBoundaries -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasSpatialBoundaries -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasSpatialBoundaries">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasSpatialBoundaries">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
         <rdfs:comment xml:lang="en">Property of &apos;Physical Object&apos; for its Spatial Coverage Area.</rdfs:comment>
         <rdfs:label xml:lang="en">has spatial region</rdfs:label>
@@ -254,51 +255,51 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#interactsWith -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#interactsWith -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#interactsWith">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#interactsWith">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
         <rdfs:label xml:lang="en">interacts with</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAssumedBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAssumedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAssumedBy">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAssumedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:label xml:lang="en">is assumed by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isBelievedBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isBelievedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isBelievedBy">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isBelievedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:label xml:lang="en">is believed by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isCoverageAreaFor -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isCoverageAreaFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isCoverageAreaFor">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isCoverageAreaFor">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#onCoverageAreaOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#onCoverageAreaOf"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
@@ -309,29 +310,29 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isKnownBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isKnownBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isKnownBy">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isKnownBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:label xml:lang="en">is known by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReasonedBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isReasonedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReasonedBy">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isReasonedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
         <rdfs:label xml:lang="en">is reasoned by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReferencedBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isReferencedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReferencedBy">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isReferencedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Place"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
@@ -340,10 +341,10 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isUsedBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isUsedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isUsedBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#uses"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isUsedBy">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#uses"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:comment xml:lang="en">Relation that describes the use of a Physical Object by a Agent</rdfs:comment>
@@ -352,39 +353,39 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#onCoverageAreaOf -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#onCoverageAreaOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#onCoverageAreaOf">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#onCoverageAreaOf">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature"/>
         <rdfs:label xml:lang="en">Relation to describe that a &apos;Behavioral Entity&apos; of the type &apos;Physical Object&apos; (e.g., a car) is inside of coverage area (DUL:&apos;Spatial Region&apos;) defined in a &apos;Environmental Coverage&apos;.</rdfs:label>
         <rdfs:label xml:lang="en">on coverage area of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#supportedBy -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#supportedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#supportedBy">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#supportedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralGoal"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief"/>
         <rdfs:label xml:lang="en">supported by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#uses -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#uses -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#uses">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#uses">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
         <rdfs:comment xml:lang="en">Relation that an Agent holds with a Physical Object.</rdfs:comment>
@@ -403,9 +404,9 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasCertification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasCertification -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasCertification">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasCertification">
         <rdfs:label xml:lang="en">has certification</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -425,7 +426,7 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal"/>
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralGoal"/>
     </rdf:Description>
     
 
@@ -442,13 +443,13 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -482,7 +483,7 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Place -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Place">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ReferencePlace"/>
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace"/>
     </owl:Class>
     
 
@@ -517,23 +518,23 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ActionableObject -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ActionableObject -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ActionableObject">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ActionableObject">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ReferencePlace"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isUsedBy"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isUsedBy"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Any designed artifact that participate in a &apos;Behavior&apos; used by some &apos;Behavioral Agent&apos;. 
@@ -544,23 +545,23 @@ The &apos;Actionable Object&apos; participates in the behavior as transformation
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomAssertion -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomAssertion">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">axiom assertion</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomDeclarations -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomDeclarations -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomDeclarations">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomDeclarations">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">axiom declarations</rdfs:label>
@@ -568,20 +569,20 @@ The &apos;Actionable Object&apos; participates in the behavior as transformation
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomsAttributeSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomsAttributeSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_925110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#axiomsAttributeIdentifier"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#axiomsAttributeIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">axioms attribute specification</rdfs:label>
@@ -589,29 +590,29 @@ The &apos;Actionable Object&apos; participates in the behavior as transformation
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000313"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Event on which a behavior is observed. 
@@ -624,17 +625,17 @@ For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; wh
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorAction -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehaviorAction -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorAction">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehaviorAction">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Action"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An action that is observed during a &apos;Behavior Event&apos; which at least one &apos;Behavioral Agent&apos; is defined. 
@@ -645,24 +646,24 @@ For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; wh
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorPlan -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehaviorPlan -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehaviorPlan">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehaviorPlan">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Plan"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAssumedBy"/>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAssumedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -672,17 +673,17 @@ For example, the &apos;Behavior&apos; of driving a car is a &apos;Event&apos; wh
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An agent that exists in a &apos;Situation&apos; of &apos;Behavior Event&apos;.
@@ -697,14 +698,14 @@ In terms of intelectual capacity, &apos;Behavioral Agent&apos; can believe, know
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity">
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticProperty"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Behavioral entity</rdfs:label>
@@ -712,14 +713,14 @@ In terms of intelectual capacity, &apos;Behavioral Agent&apos; can believe, know
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIFieldListSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIFieldListSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIFieldListSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIFieldListSpecification">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityFieldComponent"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityFieldComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity IRI field-list specification</rdfs:label>
@@ -727,14 +728,14 @@ In terms of intelectual capacity, &apos;Behavioral Agent&apos; can believe, know
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIListSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIListSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIListSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIListSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_589006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISelectItemSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISelectItemSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity IRI list specification</rdfs:label>
@@ -742,24 +743,24 @@ In terms of intelectual capacity, &apos;Behavioral Agent&apos; can believe, know
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralGoal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralGoal">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralGoal">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Goal"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAssumedBy"/>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAssumedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -772,33 +773,33 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Belief">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isAssumedBy"/>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isAssumedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isBelievedBy"/>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isBelievedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isKnownBy"/>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isKnownBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isReasonedBy"/>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isReasonedBy"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                        <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -808,14 +809,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAssertion -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAssertion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAssertion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomAssertion"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAssertion">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#classAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">class assertion</rdfs:label>
@@ -823,14 +824,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAssertionSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAssertionSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAssertionSet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAssertionSet"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAssertionSet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAssertionSet"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAssertion"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAssertion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">class assertion set</rdfs:label>
@@ -838,14 +839,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAxiomSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAxiomSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ClassAxiomSet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomDeclarations"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ClassAxiomSet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomDeclarations"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#classAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">class axiom set</rdfs:label>
@@ -853,43 +854,43 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Context -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Context -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Context">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Context">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasPostcondition"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Context"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Context"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasPrecondition"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Context"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Context"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#DataPropertyAssertionSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#DataPropertyAssertionSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#DataPropertyAssertionSet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAssertionSet"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#DataPropertyAssertionSet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAssertionSet"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertion"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">data property assertion set</rdfs:label>
@@ -897,14 +898,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#DataPropertyAxiomSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#DataPropertyAxiomSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#DataPropertyAxiomSet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomDeclarations"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#DataPropertyAxiomSet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomDeclarations"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">data property axiom set</rdfs:label>
@@ -912,14 +913,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyIRIFieldListSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyIRIFieldListSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyIRIFieldListSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyIRIFieldListSpecification">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyFieldComponent"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyFieldComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property IRI field-list specification</rdfs:label>
@@ -927,14 +928,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyListIRISpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyListIRISpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyListIRISpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyListIRISpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_589006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRISpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRISpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property list IRI specification</rdfs:label>
@@ -942,28 +943,28 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#GeographicFeature">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000000"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasSpatialBoundaries"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasSpatialBoundaries"/>
                 <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#isCoverageAreaFor"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#isCoverageAreaFor"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasGeoLocation"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasGeoLocation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
             </owl:Restriction>
@@ -973,14 +974,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIBaseType -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIBaseType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIBaseType">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIBaseType">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_691902"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">IRI base type</rdfs:label>
@@ -988,52 +989,52 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_321211"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIValueSpace"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIValueSpace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntitySubTypeGeneratorSpecification"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntitySubTypeGeneratorSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertySubtypeGeneratorSpecification"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertySubtypeGeneratorSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">IRI component field</rdfs:label>
@@ -1041,23 +1042,23 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldIdentifier -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldIdentifier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldIdentifier">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldIdentifier">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_507131"/>
         <rdfs:label xml:lang="en">IRI field identifier</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldListSpecification"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldListSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">IRI field-list specification</rdfs:label>
@@ -1065,20 +1066,20 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Impact -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Impact -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Impact">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Impact">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Transition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1091,14 +1092,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ObjectPropertyAssertionSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ObjectPropertyAssertionSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ObjectPropertyAssertionSet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAssertionSet"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ObjectPropertyAssertionSet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAssertionSet"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertion"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">object property assertion set</rdfs:label>
@@ -1106,14 +1107,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ObjectPropertyAxiomSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ObjectPropertyAxiomSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ObjectPropertyAxiomSet">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomDeclarations"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ObjectPropertyAxiomSet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomDeclarations"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">object property axiom set</rdfs:label>
@@ -1121,14 +1122,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAssertionSet -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAssertionSet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAssertionSet">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAssertionSet">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomAssertion"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ontology assertion set</rdfs:label>
@@ -1136,9 +1137,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
         <rdfs:label xml:lang="en">ontology axiom</rdfs:label>
@@ -1146,14 +1147,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfCharacter"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfCharacter"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">record of IRI</rdfs:label>
@@ -1161,37 +1162,37 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ReferencePlace -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ReferencePlace">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:comment xml:lang="en">Social object that describes the place where the behavior was observed. This may containt spatiotemporal, but a textual description is also possible, for example, over the sofa, in the kitchen, and so forth. This concept can be extended with an ontology of place to describe indoor spaces or referencial positions.</rdfs:comment>
         <rdfs:label xml:lang="en">Reference place</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticObservationValue -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticObservationValue -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticObservationValue">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticObservationValue">
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomDeclarations"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomDeclarations"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#DataPropertyAssertionSet"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#DataPropertyAssertionSet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#ObjectPropertyAssertionSet"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ObjectPropertyAssertionSet"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Semantic observation value</rdfs:label>
@@ -1199,14 +1200,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionDatatype -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionDatatype -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionDatatype">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionDatatype">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_598925"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">semantic perception datatype</rdfs:label>
@@ -1214,24 +1215,24 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionObjective -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionObjective">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:label xml:lang="en">Semantic perception objective</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_603253"/>
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionObjective"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1257,11 +1258,11 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                                     <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000027"/>
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionDatatype"/>
+                                                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionDatatype"/>
                                                                     </owl:Restriction>
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticEntityMappingSpecification"/>
+                                                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
                                                                     </owl:Restriction>
                                                                 </owl:intersectionOf>
                                                             </owl:Class>
@@ -1279,8 +1280,8 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                                                 <owl:someValuesFrom>
                                                                                     <owl:Class>
                                                                                         <owl:unionOf rdf:parseType="Collection">
-                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#propertyMappingSpecification"/>
-                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticEntityMappingSpecification"/>
+                                                                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification"/>
+                                                                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
                                                                                         </owl:unionOf>
                                                                                     </owl:Class>
                                                                                 </owl:someValuesFrom>
@@ -1305,7 +1306,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:label xml:lang="en">semantic perception process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
+        <owl:annotatedSource rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
@@ -1330,11 +1331,11 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                                     <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000027"/>
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionDatatype"/>
+                                                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionDatatype"/>
                                                                     </owl:Restriction>
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticEntityMappingSpecification"/>
+                                                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
                                                                     </owl:Restriction>
                                                                 </owl:intersectionOf>
                                                             </owl:Class>
@@ -1352,8 +1353,8 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                                                 <owl:someValuesFrom>
                                                                                     <owl:Class>
                                                                                         <owl:unionOf rdf:parseType="Collection">
-                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#propertyMappingSpecification"/>
-                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticEntityMappingSpecification"/>
+                                                                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification"/>
+                                                                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
                                                                                         </owl:unionOf>
                                                                                     </owl:Class>
                                                                                 </owl:someValuesFrom>
@@ -1380,17 +1381,17 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Status -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Status -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Status">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Status">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000033"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralAgent"/>
+                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Status</rdfs:label>
@@ -1398,9 +1399,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_478450"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:subClassOf>
@@ -1424,7 +1425,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
+                                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -1442,13 +1443,13 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Virtual sensor</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+        <owl:annotatedSource rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
@@ -1471,7 +1472,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionProcess"/>
+                                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -1491,9 +1492,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorExecution -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorExecution -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorExecution">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorExecution">
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1509,13 +1510,13 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionObjective"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1533,7 +1534,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                             <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -1541,11 +1542,11 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorInput"/>
+                                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorInput"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorOutput"/>
+                                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorOutput"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1555,7 +1556,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:label xml:lang="en">virtual sensor execution</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorExecution"/>
+        <owl:annotatedSource rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorExecution"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget>
             <owl:Restriction>
@@ -1572,7 +1573,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                             <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -1580,11 +1581,11 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorInput"/>
+                                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorInput"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorOutput"/>
+                                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorOutput"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1596,9 +1597,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorInput -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorInput -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorInput">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorInput">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1626,9 +1627,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorOutput -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorOutput -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensorOutput">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensorOutput">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1642,7 +1643,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                     <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_892395"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticObservationValue"/>
+                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticObservationValue"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -1656,14 +1657,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityDataPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityDataPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityDataPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDataPropertyFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityDataPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDataPropertyFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISubtype"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISubtype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity data property field component</rdfs:label>
@@ -1671,14 +1672,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityDependentTripleOfIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityDependentTripleOfIRI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityDependentTripleOfIRI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDependentTripleOfIRI"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityDependentTripleOfIRI">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDependentTripleOfIRI"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfBehavioralEntityIRIDepedentSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfBehavioralEntityIRIDepedentSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity dependent triple of IRI</rdfs:label>
@@ -1686,14 +1687,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISubtype"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISubtype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity field component</rdfs:label>
@@ -1701,41 +1702,41 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISelectItemSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISelectItemSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISelectItemSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISelectItemSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_344884"/>
         <rdfs:label xml:lang="en">behavioral entity IRI select item specification</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISubtype -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISubtype -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISubtype">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISubtype">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_316974"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIListSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIListSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIBaseType"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIBaseType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityValueSpace"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityValueSpace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntitySubTypeGeneratorSpecification"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntitySubTypeGeneratorSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity IRI subtype</rdfs:label>
@@ -1743,14 +1744,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityObjectPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityObjectPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityObjectPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyObjectPropertyFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityObjectPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyObjectPropertyFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityIRISubtype"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityIRISubtype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">behavioral entity object property field component</rdfs:label>
@@ -1758,9 +1759,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldComponent">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldComponent">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_621884"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1773,14 +1774,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldListSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldListSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldListSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldListSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_146596"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldComponent"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">character field-list specification</rdfs:label>
@@ -1788,13 +1789,13 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#classAxiom -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#classAxiom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#hasIRI"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1803,10 +1804,10 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertion -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomAssertion"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertion">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
@@ -1816,13 +1817,13 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#classAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">data property assertion</rdfs:label>
@@ -1830,9 +1831,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAtributeSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAtributeSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAtributeSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAtributeSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_925110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1840,13 +1841,13 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification"/>
+                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                                 <owl:someValuesFrom>
@@ -1857,11 +1858,11 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                                 <owl:unionOf rdf:parseType="Collection">
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#object"/>
+                                                                        <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#object"/>
                                                                     </owl:Restriction>
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#subject"/>
+                                                                        <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#subject"/>
                                                                     </owl:Restriction>
                                                                 </owl:unionOf>
                                                             </owl:Class>
@@ -1881,7 +1882,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAttributeIdentifier"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAttributeIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">data property assertions attribute specification</rdfs:label>
@@ -1889,24 +1890,24 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAxiom -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAxiom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
         <oboInOwl:hasURI rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
         <rdfs:label xml:lang="en">data property axiom</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">data property field component</rdfs:label>
@@ -1914,14 +1915,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDataPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDataPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDataPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDataPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRIDatatypeSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRIDatatypeSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property data property field component</rdfs:label>
@@ -1929,14 +1930,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDependentTripleOfIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDependentTripleOfIRI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDependentTripleOfIRI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDependentTripleOfIRI">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfFeatureOfInterestPropertyIRIDependentSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfFeatureOfInterestPropertyIRIDependentSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property dependent triple of IRI</rdfs:label>
@@ -1944,14 +1945,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRIDatatypeSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRIDatatypeSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property field componnent</rdfs:label>
@@ -1959,32 +1960,32 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRIDatatypeSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRIDatatypeSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRIDatatypeSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRIDatatypeSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_316974"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIListSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIListSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIBaseType"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIBaseType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyValueSpace"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyValueSpace"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertySubtypeGeneratorSpecification"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertySubtypeGeneratorSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property IRI datatype specification</rdfs:label>
@@ -1992,23 +1993,23 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRISpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRISpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRISpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRISpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_344884"/>
         <rdfs:label xml:lang="en">feature of interest property IRI specification</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyObjectPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyObjectPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyObjectPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyObjectPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyIRIDatatypeSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyIRIDatatypeSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature of interest property object property field component</rdfs:label>
@@ -2016,20 +2017,20 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertion -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomAssertion"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertion">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#classAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAxiom"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">object property assertion</rdfs:label>
@@ -2037,9 +2038,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_925110"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2047,22 +2048,22 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification"/>
+                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                                                 <owl:someValuesFrom>
                                                     <owl:Class>
                                                         <owl:intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+                                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                                                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#object"/>
+                                                                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#object"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -2073,10 +2074,10 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                                                 <owl:someValuesFrom>
                                                     <owl:Class>
                                                         <owl:intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+                                                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
                                                             <owl:Restriction>
                                                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                                                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#subject"/>
+                                                                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#subject"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -2094,7 +2095,7 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeIdentifier"/>
+                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">object property assertions attribute specification</rdfs:label>
@@ -2102,24 +2103,24 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAxiom -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAxiom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#OntologyAxiom"/>
-        <oboInOwl:hasURI rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticProperty"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
+        <oboInOwl:hasURI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty"/>
         <rdfs:label xml:lang="en">object property axiom</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyFieldComponent -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyFieldComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyFieldComponent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyFieldComponent">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">object property field component</rdfs:label>
@@ -2127,9 +2128,9 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#propertyMappingSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#propertyMappingSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_726490"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2149,14 +2150,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfBehavioralEntityIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfBehavioralEntityIRI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfBehavioralEntityIRI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfBehavioralEntityIRI">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityIRIFieldListSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityIRIFieldListSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">record of behavioral entity IRI</rdfs:label>
@@ -2164,14 +2165,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfCharacter -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfCharacter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfCharacter">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfCharacter">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_521859"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#characterFieldListSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#characterFieldListSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">record of character</rdfs:label>
@@ -2179,14 +2180,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfFeatureOfInterestPropertyIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfFeatureOfInterestPropertyIRI -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfFeatureOfInterestPropertyIRI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfFeatureOfInterestPropertyIRI">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyIRIFieldListSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyIRIFieldListSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">record of feature of interest property IRI</rdfs:label>
@@ -2194,14 +2195,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_521859"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">RDF term</obo:IAO_0000118>
@@ -2210,23 +2211,23 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticDataPropertyPerception -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticDataPropertyPerception -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticDataPropertyPerception">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticProperty"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticDataPropertyPerception">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty"/>
         <rdfs:label xml:lang="en">data property perception</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticEntityMappingSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticEntityMappingSpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_726490"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticObservationValue"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticObservationValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2240,58 +2241,58 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticObjectPropertyPerception -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticObjectPropertyPerception -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticObjectPropertyPerception">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticProperty"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticObjectPropertyPerception">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty"/>
         <rdfs:label xml:lang="en">object property perception</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_079536"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomsAttributeSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAtributeSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAtributeSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticProperty -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticProperty">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty">
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
         <rdfs:label xml:lang="en">semantic property</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfBehavioralEntityIRIDepedentSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfBehavioralEntityIRIDepedentSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfBehavioralEntityIRIDepedentSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfFeatureOfInterestPropertyIRIDependentSpecification"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfBehavioralEntityIRIDepedentSpecification">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfFeatureOfInterestPropertyIRIDependentSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityFieldComponent"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityFieldComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2300,8 +2301,8 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityDataPropertyFieldComponent"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntityObjectPropertyFieldComponent"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityDataPropertyFieldComponent"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntityObjectPropertyFieldComponent"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -2312,14 +2313,14 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfFeatureOfInterestPropertyIRIDependentSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfFeatureOfInterestPropertyIRIDependentSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfFeatureOfInterestPropertyIRIDependentSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfFeatureOfInterestPropertyIRIDependentSpecification">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyFieldComponent"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyFieldComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2328,10 +2329,10 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertyDataPropertyFieldComponent"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertyDataPropertyFieldComponent"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#predicate"/>
+                                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#predicate"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2343,18 +2344,18 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_507131"/>
         <rdfs:label xml:lang="en">triple of IRI field identifier</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_146596"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2362,10 +2363,10 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#predicate"/>
+                                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#predicate"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2381,12 +2382,12 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_621884"/>
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+                                    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
                                 </owl:unionOf>
                             </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#object"/>
+                                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#object"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2402,12 +2403,12 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_621884"/>
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
+                                    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
                                 </owl:unionOf>
                             </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                                <owl:hasValue rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#subject"/>
+                                <owl:hasValue rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#subject"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2430,288 +2431,288 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityValueSpace -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityValueSpace -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#BehavioralEntityValueSpace">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntityValueSpace">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_095716"/>
         <rdfs:label xml:lang="en">behavioral entity value space</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyValueSpace -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyValueSpace -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#FeatureOfInterestPropertyValueSpace">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#FeatureOfInterestPropertyValueSpace">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_095716"/>
         <rdfs:label xml:lang="en">feature of interest property value space</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIAssertionFieldComponent001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIAssertionFieldComponent001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIAssertionFieldComponent001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#assertion"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIAssertionFieldComponent001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#assertion"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype"/>
         <rdfs:label xml:lang="en">IRI datatype</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIAssertionFieldComponent001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIAssertionFieldComponent001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleObjectFieldComponent001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleObjectFieldComponent001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleObjectFieldComponent001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#object"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleObjectFieldComponent001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#object"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITriplePredicateFieldComponent001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITriplePredicateFieldComponent001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITriplePredicateFieldComponent001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#predicate"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITriplePredicateFieldComponent001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#predicate"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleSubjectFieldComponent001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleSubjectFieldComponent001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleSubjectFieldComponent001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldComponent"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIDatatype001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#subject"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleSubjectFieldComponent001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldComponent"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#subject"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIValueSpace -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIValueSpace -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIValueSpace">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIValueSpace">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_095716"/>
         <rdfs:label xml:lang="en">IRI value space</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#TripleOfIRIValueSpace -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#TripleOfIRIValueSpace -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#TripleOfIRIValueSpace">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#TripleOfIRIValueSpace">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_095716"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#assertion -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#assertion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#assertion">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldIdentifier"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#assertion">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldIdentifier"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#axiomsAttributeIdentifier -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#axiomsAttributeIdentifier -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#axiomsAttributeIdentifier">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#axiomsAttributeIdentifier">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_016936"/>
         <rdfs:label xml:lang="en">axioms attribute identifier</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#axiomsAttributeSpecification001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#axiomsAttributeSpecification001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#axiomsAttributeSpecification001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#AxiomsAttributeSpecification"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfIRI"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#axiomsAttributeSpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfIRI"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntitySubTypeGeneratorSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntitySubTypeGeneratorSpecification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#behavioralEntitySubTypeGeneratorSpecification">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#behavioralEntitySubTypeGeneratorSpecification">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_869983"/>
         <rdfs:label xml:lang="en">behavioral entity subtype generator specification</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAttributeIdentifier -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAttributeIdentifier -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAttributeIdentifier">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAttributeIdentifier">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_016936"/>
         <rdfs:label xml:lang="en">data property assertions attribute identifier</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAttributeSpecification001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAttributeSpecification001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAttributeSpecification001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAtributeSpecification"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfDataObjectDatatype001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAttributeSpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAtributeSpecification"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfDataObjectDatatype001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyTripleOfIRISpecification001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyTripleOfIRISpecification001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyTripleOfIRISpecification001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITriplePredicateFieldComponent001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleSubjectFieldComponent001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#primitiveFieldComponent001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyTripleOfIRISpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITriplePredicateFieldComponent001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleSubjectFieldComponent001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#primitiveFieldComponent001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertySubtypeGeneratorSpecification -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertySubtypeGeneratorSpecification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#featureOfInterestPropertySubtypeGeneratorSpecification">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#featureOfInterestPropertySubtypeGeneratorSpecification">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_869983"/>
         <rdfs:label xml:lang="en">feature of interest property subtype generator specification</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#humanActivity -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#humanActivity -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#humanActivity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#Behavior"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#humanActivity">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#object -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#object -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#object">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#object">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeIdentifier -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeIdentifier -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeIdentifier">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeIdentifier">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_016936"/>
         <rdfs:label xml:lang="en">object property assertions attribute identifier</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification"/>
-        <obo:IAO_0000219 rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfObjectPropertyDatatype001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification"/>
+        <obo:IAO_0000219 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfObjectPropertyDatatype001"/>
         <rdfs:label xml:lang="en">object property assertions attribute</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertytripleOfIRISpecification001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertytripleOfIRISpecification001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertytripleOfIRISpecification001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRISpecification"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleObjectFieldComponent001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITriplePredicateFieldComponent001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRITripleSubjectFieldComponent001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertytripleOfIRISpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRISpecification"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleObjectFieldComponent001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITriplePredicateFieldComponent001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRITripleSubjectFieldComponent001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#predicate -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#predicate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#predicate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#predicate">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#primitiveFieldComponent001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#primitiveFieldComponent001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#primitiveFieldComponent001">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#primitiveFieldComponent001">
         <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_621884"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfDataObjectDatatype001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfDataObjectDatatype001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfDataObjectDatatype001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#TripleOfIRIValueSpace"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyTripleOfIRISpecification001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfDataObjectDatatype001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#TripleOfIRIValueSpace"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyTripleOfIRISpecification001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfIRI -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfIRI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfIRI">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#RecordOfIRI"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#IRIFieldListSpecification001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfIRI">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#RecordOfIRI"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIFieldListSpecification001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfObjectPropertyDatatype001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfObjectPropertyDatatype001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfObjectPropertyDatatype001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#recordOfTripleOfIRIDatatype"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#TripleOfIRIValueSpace"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertytripleOfIRISpecification001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfObjectPropertyDatatype001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#recordOfTripleOfIRIDatatype"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#TripleOfIRIValueSpace"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertytripleOfIRISpecification001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatype001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatype001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatype001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#SemanticPerceptionDatatype"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatype001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionDatatype"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList001 -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList001 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#semanticPerceptionDatatypeAttributeList"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#axiomsAttributeSpecification001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#dataPropertyAssertionsAttributeSpecification001"/>
-        <ro:has_part rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#objectPropertyAssertionsAttributeSpecification001"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#axiomsAttributeSpecification001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAssertionsAttributeSpecification001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAssertionsAttributeSpecification001"/>
         <rdfs:label xml:lang="en">semantic perception datatype attribute list</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2015/BeOn#subject -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#subject -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#subject">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#tripleOfIRIFieldIdentifier"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#subject">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#tripleOfIRIFieldIdentifier"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
