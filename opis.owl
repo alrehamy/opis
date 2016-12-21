@@ -8,10 +8,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swo="http://www.ebi.ac.uk/swo/"
-     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl/1.0"
-     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:expo="http://www.hozo.jp/owl/EXPOApr19.xml/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
@@ -25,20 +24,20 @@
      xmlns:exact="http://www.owl-ontologies.com/Ontology1184060740.owl#"
      xmlns:odm="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:dul="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:vanan="http://purl.org/vocab/vanan/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:swo3="http://www.ebi.ac.uk/efo/swo/"
      xmlns:odt="http://kt.ijs.si/panovp/OntoDT#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl">
-        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl/1.0"/>
         <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
         <owl:imports rdf:resource="http://kt.ijs.si/panovp/OntoDM.owl"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/opis/external.owl"/>
-        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-external.owl"/>
         <rdfs:label xml:lang="en">OPIS - Ontology for Personal Information on the Sensor Web</rdfs:label>
+        <vanan:preferredNamespacePrefix>opis</vanan:preferredNamespacePrefix>
         <rdfs:isDefinedBy xml:lang="en">Thiago Moreira da Costa</rdfs:isDefinedBy>
-        <protege:defaultLanguage>en</protege:defaultLanguage>
     </owl:Ontology>
     
 
@@ -51,6 +50,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasURI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasURI"/>
     
 
 
@@ -111,9 +122,45 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417"/>
     
 
 
@@ -138,6 +185,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
     
 
 
@@ -218,6 +271,24 @@
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf -->
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
     
 
 
@@ -423,10 +494,248 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     
 
 
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000027 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000027"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000144 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000144"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000247 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000247"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_112569 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_147247 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_147247"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_285570 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_285570"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_478450 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_478450"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_603253 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_603253"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_726490 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_726490"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_748173 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_892395 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_892395"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_016936 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_016936"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_018988 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_018988"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_079536 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_079536"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_095716 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_095716"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_316974 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_316974"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_321211 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_321211"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_344884 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_344884"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_487147 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_487147"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_521859 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_521859"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_589006 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_589006"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_598925 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_598925"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_691902 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_691902"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_869983 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_869983"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_925110 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_925110"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_146596 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_146596"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_507131 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_507131"/>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_621884 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_621884"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000000">
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000203"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
-        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralGoal"/>
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Belief"/>
     </rdf:Description>
     
 
@@ -434,6 +743,12 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
     <!-- http://purl.obolibrary.org/obo/NBO_0000313 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000313"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400107"/>
     
 
 
@@ -453,6 +768,12 @@ For example, the &apos;Environmental Coverage Area&apos; of a parking area &apos
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000033 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000033"/>
     
 
 
@@ -872,13 +1193,6 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
                 <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Context"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -946,7 +1260,6 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000000"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace"/>
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:subClassOf>
@@ -1142,6 +1455,12 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ontology axiom</rdfs:label>
     </owl:Class>
     
@@ -1165,7 +1484,6 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#ReferencePlace">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
         <rdfs:comment xml:lang="en">Social object that describes the place where the behavior was observed. This may containt spatiotemporal, but a textual description is also possible, for example, over the sofa, in the kitchen, and so forth. This concept can be extended with an ontology of place to describe indoor spaces or referencial positions.</rdfs:comment>
         <rdfs:label xml:lang="en">Reference place</rdfs:label>
@@ -1793,12 +2111,6 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">class axiom</rdfs:label>
     </owl:Class>
     
@@ -1811,12 +2123,6 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1824,6 +2130,26 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
                 <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_018988"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">data property assertion</rdfs:label>
@@ -1894,6 +2220,12 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasURI rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
         <rdfs:label xml:lang="en">data property axiom</rdfs:label>
     </owl:Class>
@@ -2107,6 +2439,12 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#OntologyAxiom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasURI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticProperty"/>
         <rdfs:label xml:lang="en">object property axiom</rdfs:label>
     </owl:Class>
@@ -2762,9 +3100,12 @@ The desired &apos;Situation&apos; (&apos;Behavioral Goal&apos;) is normally asso
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

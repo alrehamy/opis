@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#"
-     xml:base="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#"
+     xml:base="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/"
@@ -10,18 +10,25 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:edamontology="http://edamontology.org/"
+     xmlns:classification_taxonomy="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#"
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:opis1="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vanan="http://purl.org/vocab/vanan/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:BeOn="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy">
-        <owl:imports rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended/1.0"/>
-        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl"/>
+        <rdfs:label>Privacy policy rules based on DUL.</rdfs:label>
+        <rdfs:isDefinedBy>Thiago Moreira da Costa</rdfs:isDefinedBy>
+        <vanan:preferredNamespacePrefix>ppol</vanan:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -37,19 +44,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesAccessControlVirtualSensor -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesAccessControlVirtualSensor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
-        <rdfs:range rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+        <rdfs:label xml:lang="en">includes access control virtual sensor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesInformationObject -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesInformationObject -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesInformationObject">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesInformationObject">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
@@ -58,39 +66,42 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesPrivacyPreservingVirtualSensor -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesPrivacyPreservingVirtualSensor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
-        <rdfs:range rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesVirtualSensor"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
+        <rdfs:label xml:lang="en">includes privacy preserving virtual sensor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesVirtualSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesVirtualSensor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesInformationObject"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesInformationObject"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
+        <rdfs:label xml:lang="en">includes virtual sensor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isAccessControlVirtualSensorIncludedIn -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isAccessControlVirtualSensorIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isAccessControlVirtualSensorIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn"/>
-        <rdfs:domain rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isAccessControlVirtualSensorIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isPrivacyPreservingVirtualSensorIncludedIn"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:label xml:lang="en">is accecss control virtual sensor included in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isInformationObjectIncludedIn -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isInformationObjectIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isInformationObjectIncludedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isInformationObjectIncludedIn">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
@@ -99,22 +110,24 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isPrivacyPreservingVirtualSensorIncludedIn -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isPrivacyPreservingVirtualSensorIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isPrivacyPreservingVirtualSensorIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn"/>
-        <rdfs:domain rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isPrivacyPreservingVirtualSensorIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isVirtualSensorIncludedIn"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:label xml:lang="en">is privacy preserving virtual sensor included in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isVirtualSensorIncludedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isVirtualSensorIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#isInformationObjectIncludedIn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2015/BeOn#VirtualSensor"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isVirtualSensorIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#isInformationObjectIncludedIn"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:label xml:lang="en">is virtual sensor included in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -130,22 +143,32 @@
     
 
 
-    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor -->
 
-    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval">
-        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-    </rdf:Description>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#AccessControlCondition -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#AccessControlCondition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#AccessControlCondition -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#AccessControlCondition">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#privacyPreservingCondition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesAccessControlVirtualSensor"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#AccessControlVirtualSensor"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">access control condition</rdfs:label>
@@ -153,18 +176,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:label xml:lang="en">life style</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#PrivacyEnforcementCondition">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Classification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -175,95 +189,45 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
-                <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#includesPrivacyPreservingVirtualSensor"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/thiagomoreirac/opis/blob/master/extended#PrivacyPreservingVirtualSensor"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesVirtualSensor"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">privacy enforcement condition</rdfs:label>
+        <rdfs:label xml:lang="en">privacy policy condition</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#privacyPreservingCondition -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#family -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#family">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#healthrealted -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#healthrealted">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-        <rdfs:label xml:lang="en">health related</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#leisure -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#leisure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#professional -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#professional">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#publicfigure -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#publicfigure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-        <rdfs:label xml:lang="en">public figure</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sociallife -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sociallife">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sport -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#sport">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2016/8/classificationtaxonomy#LifeStyle"/>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#privacyPreservingCondition">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">privacy preserving condition</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

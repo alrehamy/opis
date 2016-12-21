@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/thiagomoreirac/opis/master/direct_classification.owl#"
+     xml:base="https://raw.githubusercontent.com/thiagomoreirac/opis/master/direct_classification.owl"
+     xmlns:extbe="https://raw.githubusercontent.com/thiagomoreirac/opis/master/extbe"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo1="http://purl.obofoundry.org/obo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vanan="http://purl.org/vocab/vanan/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/direct_classification.owl">
+        <rdfs:label>Direct classification</rdfs:label>
+        <vanan:preferredNamespaceUri rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/direct_classification.owl"/>
+        <vanan:preferredNamespacePrefix>dcl</vanan:preferredNamespacePrefix>
+        <rdfs:isDefinedBy>Thiago Moreira da Costa</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#classifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#familyContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#familyContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#AtHome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#healthCaringContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#healthCaringContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#HealthCaring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#leisureContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#leisureContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Partying"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingLunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#professionalContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#professionalContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Working"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#shoppingContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#shoppingContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#socialContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#socialContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Partying"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#ReligiousPracticing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingLunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#sportContext -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#sportContext">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#lifeContext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#AtHome -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#AtHome"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#HealthCaring -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#HealthCaring"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Partying -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Partying"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#ReligiousPracticing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#ReligiousPracticing"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Working -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Working"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingLunch -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingLunch"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

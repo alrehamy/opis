@@ -1,0 +1,2281 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dbpedia.org/ontology/person#"
+     xml:base="http://dbpedia.org/ontology/person"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#">
+    <owl:Ontology rdf:about="http://dbpedia.org/ontology/person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Activity -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Activity">
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Actor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Actor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:comment xml:lang="en">An actor or actress is a person who acts in a dramatic production and who works in film, television, theatre, or radio in that capacity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un attore o un attrice è una persona che recita in una produzione teatrale, televisiva, cinematografica o radiofonica.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Μια ηθοποιός ή ένας ηθοποιός είναι ένα άτομο που παίζει σε μια δραματική παραγωγή και που εργάζεται στο χώρο του κινηματογράφου, της τηλεόρασης, του θεάτρου, ή το ραδιόφωνο.</rdfs:comment>
+        <rdfs:label xml:lang="de">Schauspieler</rdfs:label>
+        <rdfs:label xml:lang="fr">acteur</rdfs:label>
+        <rdfs:label xml:lang="nl">acteur</rdfs:label>
+        <rdfs:label xml:lang="en">actor</rdfs:label>
+        <rdfs:label xml:lang="es">actor</rdfs:label>
+        <rdfs:label xml:lang="pl">aktor</rdfs:label>
+        <rdfs:label xml:lang="eu">aktore</rdfs:label>
+        <rdfs:label xml:lang="pt">ator</rdfs:label>
+        <rdfs:label xml:lang="it">attore</rdfs:label>
+        <rdfs:label xml:lang="el">ηθοποιός</rdfs:label>
+        <rdfs:label xml:lang="ja">俳優</rdfs:label>
+        <rdfs:label xml:lang="zh">演員</rdfs:label>
+        <rdfs:label xml:lang="ko">영화인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Agent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Ambassador -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Ambassador">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">An ambassador is the highest ranking diplomat that represents a nation and is usually accredited to a foreign sovereign or government, or to an international organization.</rdfs:comment>
+        <rdfs:label xml:lang="de">Botschafter</rdfs:label>
+        <rdfs:label xml:lang="it">ambasciatore</rdfs:label>
+        <rdfs:label xml:lang="fr">ambassadeur</rdfs:label>
+        <rdfs:label xml:lang="nl">ambassadeur</rdfs:label>
+        <rdfs:label xml:lang="en">ambassador</rdfs:label>
+        <rdfs:label xml:lang="es">embajador</rdfs:label>
+        <rdfs:label xml:lang="el">πρεσβευτής</rdfs:label>
+        <rdfs:label xml:lang="ja">大使</rdfs:label>
+        <rdfs:label xml:lang="ko">대사 (외교관)</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Ambassador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AmericanFootballCoach -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AmericanFootballCoach">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Coach"/>
+        <rdfs:label xml:lang="de">American-Football-Trainer</rdfs:label>
+        <rdfs:label xml:lang="nl">Amerikaanse football coach</rdfs:label>
+        <rdfs:label xml:lang="it">allenatore di football americano</rdfs:label>
+        <rdfs:label xml:lang="en">american football coach</rdfs:label>
+        <rdfs:label xml:lang="el">προπονητής ράγκμπυ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:AmericanFootballCoach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Archeologist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Archeologist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Archäologe</rdfs:label>
+        <rdfs:label xml:lang="es">Arqueólogo</rdfs:label>
+        <rdfs:label xml:lang="pl">archeolog</rdfs:label>
+        <rdfs:label xml:lang="en">archeologist</rdfs:label>
+        <rdfs:label xml:lang="nl">archeoloog</rdfs:label>
+        <rdfs:label xml:lang="fr">archéologue</rdfs:label>
+        <rdfs:label xml:lang="ga">seandálaí</rdfs:label>
+        <rdfs:label xml:lang="el">Αρχαιολόγος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Archeologist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ArcherPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ArcherPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="en">Archer Player</rdfs:label>
+        <rdfs:label xml:lang="de">Bogenschütze</rdfs:label>
+        <rdfs:label xml:lang="nl">boogschutter</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:ArcherPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Architect -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Architect">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Architekt</rdfs:label>
+        <rdfs:label xml:lang="en">architect</rdfs:label>
+        <rdfs:label xml:lang="nl">architect</rdfs:label>
+        <rdfs:label xml:lang="fr">architecte</rdfs:label>
+        <rdfs:label xml:lang="it">architetto</rdfs:label>
+        <rdfs:label xml:lang="es">arquitecto</rdfs:label>
+        <rdfs:label xml:lang="el">αρχιτέκτονας</rdfs:label>
+        <rdfs:label xml:lang="ja">建築士</rdfs:label>
+        <rdfs:label xml:lang="ko">건축가</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Architect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Aristocrat -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Aristocrat">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Aristokrat</rdfs:label>
+        <rdfs:label xml:lang="nl">aristocraat</rdfs:label>
+        <rdfs:label xml:lang="en">aristocrat</rdfs:label>
+        <rdfs:label xml:lang="es">aristócrata</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Aristocrat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Artist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Artist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Künstler</rdfs:label>
+        <rdfs:label xml:lang="en">artist</rdfs:label>
+        <rdfs:label xml:lang="it">artista</rdfs:label>
+        <rdfs:label xml:lang="fr">artiste</rdfs:label>
+        <rdfs:label xml:lang="pl">artysta</rdfs:label>
+        <rdfs:label xml:lang="nl">kunstenaar</rdfs:label>
+        <rdfs:label xml:lang="el">καλλιτέχνης</rdfs:label>
+        <rdfs:label xml:lang="be">мастак</rdfs:label>
+        <rdfs:label xml:lang="ru">художник</rdfs:label>
+        <rdfs:label xml:lang="ja">芸術家</rdfs:label>
+        <rdfs:label xml:lang="ko">예술가</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Astronaut -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Astronaut">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Astronaut</rdfs:label>
+        <rdfs:label xml:lang="en">astronaut</rdfs:label>
+        <rdfs:label xml:lang="es">astronauta</rdfs:label>
+        <rdfs:label xml:lang="it">astronauta</rdfs:label>
+        <rdfs:label xml:lang="pt">astronauta</rdfs:label>
+        <rdfs:label xml:lang="fr">astronaute</rdfs:label>
+        <rdfs:label xml:lang="nl">ruimtevaarder</rdfs:label>
+        <rdfs:label xml:lang="el">αστροναύτης</rdfs:label>
+        <rdfs:label xml:lang="ja">宇宙飛行士</rdfs:label>
+        <rdfs:label xml:lang="ko">우주인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Astronaut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Athlete -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Athlete">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Athlet</rdfs:label>
+        <rdfs:label xml:lang="en">athlete</rdfs:label>
+        <rdfs:label xml:lang="fr">athlète</rdfs:label>
+        <rdfs:label xml:lang="nl">atleet</rdfs:label>
+        <rdfs:label xml:lang="it">atleta</rdfs:label>
+        <rdfs:label xml:lang="el">αθλητής</rdfs:label>
+        <rdfs:label xml:lang="ja">アスリート</rdfs:label>
+        <rdfs:label xml:lang="ko">운동 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AthleticsPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AthleticsPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Athlet</rdfs:label>
+        <rdfs:label xml:lang="en">athletics Player</rdfs:label>
+        <rdfs:label xml:lang="nl">atleet</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di atletica leggera</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:AthleticsPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/AustralianRulesFootballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AustralianRulesFootballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Australian Rules Football-Spieler</rdfs:label>
+        <rdfs:label xml:lang="en">Australian rules football player</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di football australiano</rdfs:label>
+        <rdfs:label xml:lang="el">αυστραλιανοί κανόνες ποδοσφαιριστή</rdfs:label>
+        <rdfs:label xml:lang="ja">オージーフットボール選手</rdfs:label>
+        <rdfs:label xml:lang="ko">오스트레일리아식 풋볼 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:AustralianRulesFootballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BadmintonPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BadmintonPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Badmintonspieler</rdfs:label>
+        <rdfs:label xml:lang="en">badminton player</rdfs:label>
+        <rdfs:label xml:lang="nl">badmintonspeler</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di badminton</rdfs:label>
+        <rdfs:label xml:lang="pt">jogador de badminton</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de badminton</rdfs:label>
+        <rdfs:label xml:lang="el">παίχτης του μπάντμιντον</rdfs:label>
+        <rdfs:label xml:lang="ja">バドミントン選手</rdfs:label>
+        <rdfs:label xml:lang="ko">배드민턴 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BadmintonPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BaseballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BaseballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="el">Ο αθλητής (άνδρας ή γυναίκα) που συμμετέχει σε μία ομάδα μπέιζμπολ.</rdfs:comment>
+        <rdfs:label xml:lang="de">Baseballspieler</rdfs:label>
+        <rdfs:label xml:lang="en">baseball player</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di baseball</rdfs:label>
+        <rdfs:label xml:lang="nl">honkballer</rdfs:label>
+        <rdfs:label xml:lang="pt">jogador de basebol</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de baseball</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης μπέιζμπολ</rdfs:label>
+        <rdfs:label xml:lang="ja">野球選手</rdfs:label>
+        <rdfs:label xml:lang="ko">야구 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BaseballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BasketballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BasketballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="el">Ένας αθλητής (άνδρας ή γυναίκα) που ασχολείται με το άθλημα της καλαθοσφαίρισης.</rdfs:comment>
+        <rdfs:label xml:lang="de">Basketballspieler</rdfs:label>
+        <rdfs:label xml:lang="es">Basquetbolista</rdfs:label>
+        <rdfs:label xml:lang="nl">basketbal speler</rdfs:label>
+        <rdfs:label xml:lang="en">basketball player</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di pallacanestro</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de basketball</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης καλαθοσφαίρισης</rdfs:label>
+        <rdfs:label xml:lang="ja">バスケットボール選手</rdfs:label>
+        <rdfs:label xml:lang="ko">농구 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BasketballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BeautyQueen -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BeautyQueen">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">A beauty pageant titleholder</rdfs:comment>
+        <rdfs:comment xml:lang="el">Τίτλος που αποδίδεται σε μία γυναίκα, τις περισσότερες φορές μετά από διαγωνισμό.</rdfs:comment>
+        <rdfs:label xml:lang="de">Schönheitskönigin</rdfs:label>
+        <rdfs:label xml:lang="en">beauty queen</rdfs:label>
+        <rdfs:label xml:lang="it">reginetta di bellezza</rdfs:label>
+        <rdfs:label xml:lang="nl">schoonheidskoningin</rdfs:label>
+        <rdfs:label xml:lang="el">βασίλισσα ομορφιάς</rdfs:label>
+        <rdfs:label xml:lang="ja">ミス</rdfs:label>
+        <rdfs:label xml:lang="ko">뷰티퀸</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BeautyQueen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Biologist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Biologist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Scientist"/>
+        <rdfs:label xml:lang="de">Biologe</rdfs:label>
+        <rdfs:label xml:lang="en">biologist</rdfs:label>
+        <rdfs:label xml:lang="nl">bioloog</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Biologist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Bodybuilder -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Bodybuilder">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Bodybuilder</rdfs:label>
+        <rdfs:label xml:lang="en">bodybuilder</rdfs:label>
+        <rdfs:label xml:lang="nl">bodybuilder</rdfs:label>
+        <rdfs:label xml:lang="it">culturista</rdfs:label>
+        <rdfs:label xml:lang="ko">보디빌더</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Bodybuilder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Boxer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Boxer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Boxer</rdfs:label>
+        <rdfs:label xml:lang="nl">bokser</rdfs:label>
+        <rdfs:label xml:lang="pt">boxeador</rdfs:label>
+        <rdfs:label xml:lang="en">boxer</rdfs:label>
+        <rdfs:label xml:lang="fr">boxeur</rdfs:label>
+        <rdfs:label xml:lang="it">pugile</rdfs:label>
+        <rdfs:label xml:lang="el">πυγμάχος</rdfs:label>
+        <rdfs:label xml:lang="ja">ボクサー</rdfs:label>
+        <rdfs:label xml:lang="ko">권투 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Boxer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BritishRoyalty -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BritishRoyalty">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Royalty"/>
+        <rdfs:label xml:lang="sl">Britanska kraljevska oseba</rdfs:label>
+        <rdfs:label xml:lang="de">Britisches Königshaus</rdfs:label>
+        <rdfs:label xml:lang="en">British royalty</rdfs:label>
+        <rdfs:label xml:lang="nl">Britse royalty</rdfs:label>
+        <rdfs:label xml:lang="it">reali britannici</rdfs:label>
+        <rdfs:label xml:lang="fr">royauté Britannique</rdfs:label>
+        <rdfs:label xml:lang="el">Βρετανική μοναρχία</rdfs:label>
+        <rdfs:label xml:lang="ja">イギリス王室</rdfs:label>
+        <rdfs:label xml:lang="ko">영국 왕족</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BritishRoyalty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BullFighter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BullFighter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Stierkämpfer</rdfs:label>
+        <rdfs:label xml:lang="en">bullfighter</rdfs:label>
+        <rdfs:label xml:lang="nl">stierenvechter</rdfs:label>
+        <rdfs:label xml:lang="es">torero</rdfs:label>
+        <rdfs:label xml:lang="fr">torero</rdfs:label>
+        <rdfs:label xml:lang="it">torero</rdfs:label>
+        <rdfs:label xml:lang="el">ταυρομάχος</rdfs:label>
+        <rdfs:label xml:lang="ja">闘牛士</rdfs:label>
+        <rdfs:label xml:lang="ko">투우사</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BullFighter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Bullfighter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Bullfighter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Stierkämpfer</rdfs:label>
+        <rdfs:label xml:lang="en">bullfighter</rdfs:label>
+        <rdfs:label xml:lang="nl">stierenvechter</rdfs:label>
+        <rdfs:label xml:lang="es">torreo</rdfs:label>
+        <rdfs:label xml:lang="el">ταυρομάχος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Bullfighter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/BusinessPerson -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/BusinessPerson">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="el">Με τον όρο επιχειρηματίας νοείται κυρίως κάποιος που κατέχει μία ανώτερη θέση, όπως ένα στέλεχος.</rdfs:comment>
+        <rdfs:label xml:lang="de">Unternehmer</rdfs:label>
+        <rdfs:label xml:lang="en">businessperson</rdfs:label>
+        <rdfs:label xml:lang="it">imprenditore</rdfs:label>
+        <rdfs:label xml:lang="nl">ondernemer</rdfs:label>
+        <rdfs:label xml:lang="el">επιχειρηματίας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:BusinessPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Canoeist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Canoeist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Kanute</rdfs:label>
+        <rdfs:label xml:lang="en">canoeist</rdfs:label>
+        <rdfs:label xml:lang="it">canoista</rdfs:label>
+        <rdfs:label xml:lang="nl">kanovaarder</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Canoeist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cardinal -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cardinal">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="de">Kardinal</rdfs:label>
+        <rdfs:label xml:lang="pt">cardeal</rdfs:label>
+        <rdfs:label xml:lang="en">cardinal</rdfs:label>
+        <rdfs:label xml:lang="fr">cardinal</rdfs:label>
+        <rdfs:label xml:lang="it">cardinale</rdfs:label>
+        <rdfs:label xml:lang="nl">kardinaal</rdfs:label>
+        <rdfs:label xml:lang="el">καρδινάλιος</rdfs:label>
+        <rdfs:label xml:lang="ko">카디널</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Cardinal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CareerStation -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CareerStation">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">this class marks a career step in the life of a person, e.g. a soccer player, holding information on the time span, matches and goals he or she achieved at a certain club</rdfs:comment>
+        <rdfs:label xml:lang="de">Karrierestation</rdfs:label>
+        <rdfs:label xml:lang="en">career station</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:CareerStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Celebrity -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Celebrity">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Berühmtheit</rdfs:label>
+        <rdfs:label xml:lang="nl">beroemdheid</rdfs:label>
+        <rdfs:label xml:lang="en">celebrity</rdfs:label>
+        <rdfs:label xml:lang="it">celebrità</rdfs:label>
+        <rdfs:label xml:lang="fr">célébrité</rdfs:label>
+        <rdfs:label xml:lang="el">διασημότητα</rdfs:label>
+        <rdfs:label xml:lang="ko">유명인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Celebrity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Chancellor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Chancellor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Kanzler</rdfs:label>
+        <rdfs:label xml:lang="it">cancelliere</rdfs:label>
+        <rdfs:label xml:lang="es">canciller</rdfs:label>
+        <rdfs:label xml:lang="pt">chanceler</rdfs:label>
+        <rdfs:label xml:lang="fr">chancelier</rdfs:label>
+        <rdfs:label xml:lang="en">chancellor</rdfs:label>
+        <rdfs:label xml:lang="nl">kanselier</rdfs:label>
+        <rdfs:label xml:lang="el">καγκελάριος</rdfs:label>
+        <rdfs:label xml:lang="ko">재상</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Chancellor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Chef -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Chef">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">a person who cooks professionally for other people</rdfs:comment>
+        <rdfs:comment xml:lang="es">una persona que cocina profesionalmente para otras</rdfs:comment>
+        <rdfs:label xml:lang="de">Koch</rdfs:label>
+        <rdfs:label xml:lang="en">chef</rdfs:label>
+        <rdfs:label xml:lang="fr">chef</rdfs:label>
+        <rdfs:label xml:lang="it">chef</rdfs:label>
+        <rdfs:label xml:lang="es">cocinero</rdfs:label>
+        <rdfs:label xml:lang="ga">cócaire</rdfs:label>
+        <rdfs:label xml:lang="nl">kok</rdfs:label>
+        <rdfs:label xml:lang="pl">szef kuchni</rdfs:label>
+        <rdfs:label xml:lang="el">αρχιμάγειρος</rdfs:label>
+        <rdfs:label xml:lang="ko">요리사</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Chef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ChessPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ChessPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Schachspieler</rdfs:label>
+        <rdfs:label xml:lang="en">chess player</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di scacchi</rdfs:label>
+        <rdfs:label xml:lang="nl">schaker</rdfs:label>
+        <rdfs:label xml:lang="pl">szachista</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης σκάκι</rdfs:label>
+        <rdfs:label xml:lang="ko">체스 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:ChessPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ChristianBishop -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ChristianBishop">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="nl">Christelijk bisschop</rdfs:label>
+        <rdfs:label xml:lang="en">Christian Bishop</rdfs:label>
+        <rdfs:label xml:lang="pl">biskup chrześcijański</rdfs:label>
+        <rdfs:label xml:lang="de">christlicher  Bischof</rdfs:label>
+        <rdfs:label xml:lang="it">vescovo cristiano</rdfs:label>
+        <rdfs:label xml:lang="fr">évêque chrétien</rdfs:label>
+        <rdfs:label xml:lang="el">Πληροφορίες Επισκόπου</rdfs:label>
+        <rdfs:label xml:lang="ko">기독교 주교</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:ChristianBishop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ChristianPatriarch -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ChristianPatriarch">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="en">Christian Patriarch</rdfs:label>
+        <rdfs:label xml:lang="nl">christelijk patriarch</rdfs:label>
+        <rdfs:label xml:lang="de">christlicher Patriarch</rdfs:label>
+        <rdfs:label xml:lang="it">patriarca cristiano</rdfs:label>
+        <rdfs:label xml:lang="pl">patriarcha chrześcijański</rdfs:label>
+        <rdfs:label xml:lang="el">χριστιανός πατριάρχης</rdfs:label>
+        <rdfs:label xml:lang="ko">기독교 총대주교</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:ChristianPatriarch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cleric -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cleric">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">cleric</rdfs:label>
+        <rdfs:label xml:lang="it">ecclesiastico</rdfs:label>
+        <rdfs:label xml:lang="fr">ecclésiastique</rdfs:label>
+        <rdfs:label xml:lang="nl">geestelijke</rdfs:label>
+        <rdfs:label xml:lang="de">geistlicher</rdfs:label>
+        <rdfs:label xml:lang="el">Κλήρος</rdfs:label>
+        <rdfs:label xml:lang="ja">聖職者</rdfs:label>
+        <rdfs:label xml:lang="ko">성직자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Cleric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Coach -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Coach">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Trainer</rdfs:label>
+        <rdfs:label xml:lang="it">allenatore</rdfs:label>
+        <rdfs:label xml:lang="en">coach</rdfs:label>
+        <rdfs:label xml:lang="nl">coach</rdfs:label>
+        <rdfs:label xml:lang="fr">entraîneur</rdfs:label>
+        <rdfs:label xml:lang="el">προπονητής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Coach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CollegeCoach -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CollegeCoach">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Coach"/>
+        <rdfs:label xml:lang="de">College-Trainer</rdfs:label>
+        <rdfs:label xml:lang="en">college coach</rdfs:label>
+        <rdfs:label xml:lang="fr">entraîneur universitaire</rdfs:label>
+        <rdfs:label xml:lang="el">προπονητής κολεγίου</rdfs:label>
+        <rdfs:label xml:lang="ko">대학 코치</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:CollegeCoach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Comedian -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Comedian">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Komiker</rdfs:label>
+        <rdfs:label xml:lang="en">comedian</rdfs:label>
+        <rdfs:label xml:lang="pt">comediante</rdfs:label>
+        <rdfs:label xml:lang="fr">comédien</rdfs:label>
+        <rdfs:label xml:lang="nl">komiek</rdfs:label>
+        <rdfs:label xml:lang="el">κωμικός</rdfs:label>
+        <rdfs:label xml:lang="ja">お笑い芸人</rdfs:label>
+        <rdfs:label xml:lang="ko">희극 배우</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Comedian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ComicsCharacter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ComicsCharacter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/FictionalCharacter"/>
+        <rdfs:label xml:lang="de">Comic Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">comics character</rdfs:label>
+        <rdfs:label xml:lang="pt">personagem de quadrinhos</rdfs:label>
+        <rdfs:label xml:lang="fr">personnage de bandes dessinées</rdfs:label>
+        <rdfs:label xml:lang="el">χαρακτήρας κινούμενων σχεδίων</rdfs:label>
+        <rdfs:label xml:lang="ja">コミックスのキャラクター</rdfs:label>
+        <rdfs:label xml:lang="ko">만화애니 등장인물</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:ComicsCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ComicsCreator -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ComicsCreator">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Comicautor</rdfs:label>
+        <rdfs:label xml:lang="en">comics creator</rdfs:label>
+        <rdfs:label xml:lang="fr">créateur de bandes dessinées</rdfs:label>
+        <rdfs:label xml:lang="el">δημιουργός κόμιξ</rdfs:label>
+        <rdfs:label xml:lang="ja">漫画家</rdfs:label>
+        <rdfs:label xml:lang="ko">만화가</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:ComicsCreator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Congressman -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Congressman">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Abgeordneter</rdfs:label>
+        <rdfs:label xml:lang="nl">congressist</rdfs:label>
+        <rdfs:label xml:lang="en">congressman</rdfs:label>
+        <rdfs:label xml:lang="fr">membre du Congrès</rdfs:label>
+        <rdfs:label xml:lang="el">βουλευτής</rdfs:label>
+        <rdfs:label xml:lang="ko">하원 의원</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Congressman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cricketer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cricketer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Cricketspieler</rdfs:label>
+        <rdfs:label xml:lang="en">cricketer</rdfs:label>
+        <rdfs:label xml:lang="nl">cricketspeler</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de cricket</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης του κρίκετ</rdfs:label>
+        <rdfs:label xml:lang="ko">크리켓 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Cricketer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Criminal -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Criminal">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Verbrecher</rdfs:label>
+        <rdfs:label xml:lang="en">criminal</rdfs:label>
+        <rdfs:label xml:lang="es">criminal</rdfs:label>
+        <rdfs:label xml:lang="nl">crimineel</rdfs:label>
+        <rdfs:label xml:lang="fr">criminel</rdfs:label>
+        <rdfs:label xml:lang="pt">criminoso</rdfs:label>
+        <rdfs:label xml:lang="it">delinquente</rdfs:label>
+        <rdfs:label xml:lang="el">εγκληματίας</rdfs:label>
+        <rdfs:label xml:lang="ko">범죄인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Criminal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cyclist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cyclist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Radfahrer</rdfs:label>
+        <rdfs:label xml:lang="es">ciclista</rdfs:label>
+        <rdfs:label xml:lang="pt">ciclista</rdfs:label>
+        <rdfs:label xml:lang="en">cyclist</rdfs:label>
+        <rdfs:label xml:lang="fr">cycliste</rdfs:label>
+        <rdfs:label xml:lang="nl">wielrenner</rdfs:label>
+        <rdfs:label xml:lang="el">ποδηλάτης</rdfs:label>
+        <rdfs:label xml:lang="ko">사이클 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Cyclist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Dancer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Dancer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Tänzer</rdfs:label>
+        <rdfs:label xml:lang="it">ballerino</rdfs:label>
+        <rdfs:label xml:lang="en">dancer</rdfs:label>
+        <rdfs:label xml:lang="fr">danceur</rdfs:label>
+        <rdfs:label xml:lang="nl">danser</rdfs:label>
+        <rdfs:label xml:lang="el">χορευτής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Dancer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/DartsPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/DartsPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Dartspieler</rdfs:label>
+        <rdfs:label xml:lang="nl">darter</rdfs:label>
+        <rdfs:label xml:lang="en">darts player</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης βελάκιων</rdfs:label>
+        <rdfs:label xml:lang="ko">다트 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:DartsPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Deputy -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Deputy">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Stellvertreter</rdfs:label>
+        <rdfs:label xml:lang="en">deputy</rdfs:label>
+        <rdfs:label xml:lang="es">diputado</rdfs:label>
+        <rdfs:label xml:lang="fr">député</rdfs:label>
+        <rdfs:label xml:lang="nl">gedeputeerde</rdfs:label>
+        <rdfs:label xml:lang="el">αναπληρωτής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Deputy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/DisneyCharacter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/DisneyCharacter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/FictionalCharacter"/>
+        <rdfs:label xml:lang="de">Disneyfigur</rdfs:label>
+        <rdfs:label xml:lang="nl">Disneyfiguur</rdfs:label>
+        <rdfs:label xml:lang="en">disney character</rdfs:label>
+        <rdfs:label xml:lang="el">χαρακτήρες της ντίσνευ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:DisneyCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Economist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Economist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">An economist is a professional in the social science discipline of economics.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Le terme d’économiste désigne une personne experte en science économique.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un economista es un profesional de las ciencias sociales experto en economía teórica o aplicada.</rdfs:comment>
+        <rdfs:label xml:lang="en">economist</rdfs:label>
+        <rdfs:label xml:lang="es">economista</rdfs:label>
+        <rdfs:label xml:lang="nl">econoom</rdfs:label>
+        <rdfs:label xml:lang="de">Ökonom</rdfs:label>
+        <rdfs:label xml:lang="fr">économiste</rdfs:label>
+        <rdfs:label xml:lang="el">οικονομολόγος</rdfs:label>
+        <rdfs:label xml:lang="ko">경제학자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Egyptologist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Egyptologist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">egyptologist</rdfs:label>
+        <rdfs:label xml:lang="nl">egyptoloog</rdfs:label>
+        <rdfs:label xml:lang="de">Ägyptologe</rdfs:label>
+        <rdfs:label xml:lang="el">αιγυπτιολόγος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Egyptologist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Engineer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Engineer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Ingenieur</rdfs:label>
+        <rdfs:label xml:lang="en">engineer</rdfs:label>
+        <rdfs:label xml:lang="it">ingeniere</rdfs:label>
+        <rdfs:label xml:lang="es">ingeniero</rdfs:label>
+        <rdfs:label xml:lang="nl">ingenieur</rdfs:label>
+        <rdfs:label xml:lang="fr">ingénieur</rdfs:label>
+        <rdfs:label xml:lang="el">μηχανικός</rdfs:label>
+        <rdfs:label xml:lang="ja">技術者</rdfs:label>
+        <rdfs:label xml:lang="ko">공학자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Engineer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Entomologist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Entomologist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Scientist"/>
+        <rdfs:label xml:lang="de">Entomologe</rdfs:label>
+        <rdfs:label xml:lang="en">entomologist</rdfs:label>
+        <rdfs:label xml:lang="it">entomologo</rdfs:label>
+        <rdfs:label xml:lang="nl">entomoloog</rdfs:label>
+        <rdfs:label xml:lang="el">εντομολόγος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Entomologist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Farmer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Farmer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Bauer</rdfs:label>
+        <rdfs:label xml:lang="nl">boer</rdfs:label>
+        <rdfs:label xml:lang="en">farmer</rdfs:label>
+        <rdfs:label xml:lang="fr">fermier</rdfs:label>
+        <rdfs:label xml:lang="el">αγρότης</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Farmer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/FashionDesigner -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/FashionDesigner">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Modedesigner</rdfs:label>
+        <rdfs:label xml:lang="en">fashion designer</rdfs:label>
+        <rdfs:label xml:lang="nl">modeontwerper</rdfs:label>
+        <rdfs:label xml:lang="el">σχεδιαστής μόδας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:FashionDesigner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Fencer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Fencer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Fechter</rdfs:label>
+        <rdfs:label xml:lang="en">fencer</rdfs:label>
+        <rdfs:label xml:lang="nl">schermer</rdfs:label>
+        <rdfs:label xml:lang="el">ξιφομάχος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Fencer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/FictionalCharacter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/FictionalCharacter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">fictional character</rdfs:label>
+        <rdfs:label xml:lang="de">fiktiver Charakter</rdfs:label>
+        <rdfs:label xml:lang="nl">personage (fictie)</rdfs:label>
+        <rdfs:label xml:lang="fr">personnage de fiction</rdfs:label>
+        <rdfs:label xml:lang="el">πλασματικός χαρακτήρας</rdfs:label>
+        <rdfs:label xml:lang="ja">キャラクター</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:FictionalCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GaelicGamesPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GaelicGamesPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="en">Gaelic games player</rdfs:label>
+        <rdfs:label xml:lang="de">gälischen Sportspieler</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de sports gaéliques</rdfs:label>
+        <rdfs:label xml:lang="el">Γαελικός παίκτης παιχνιδιών</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:GaelicGamesPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GolfPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GolfPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Golfspieler</rdfs:label>
+        <rdfs:label xml:lang="en">golf player</rdfs:label>
+        <rdfs:label xml:lang="fr">golfeur</rdfs:label>
+        <rdfs:label xml:lang="nl">golfspeler</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης γκολφ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:GolfPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Governor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Governor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Gouverneur</rdfs:label>
+        <rdfs:label xml:lang="fr">gouverneur</rdfs:label>
+        <rdfs:label xml:lang="nl">gouverneur</rdfs:label>
+        <rdfs:label xml:lang="en">governor</rdfs:label>
+        <rdfs:label xml:lang="el">κυβερνήτης</rdfs:label>
+        <rdfs:label xml:lang="ja">知事</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Governor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/GridironFootballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/GridironFootballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Gridiron Footballspieler</rdfs:label>
+        <rdfs:label xml:lang="en">gridiron football player</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de football américain gridiron</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:GridironFootballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Gymnast -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Gymnast">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="en">A gymnast is one who performs gymnastics</rdfs:comment>
+        <rdfs:comment xml:lang="el">Ένας γυμναστής είναι ένας που εκτελεί γυμναστικές ασκήσεις</rdfs:comment>
+        <rdfs:label xml:lang="de">Turner</rdfs:label>
+        <rdfs:label xml:lang="en">gymnast</rdfs:label>
+        <rdfs:label xml:lang="nl">turner</rdfs:label>
+        <rdfs:label xml:lang="el">γυμναστής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Gymnast"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HandballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HandballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Handballspieler</rdfs:label>
+        <rdfs:label xml:lang="en">handball player</rdfs:label>
+        <rdfs:label xml:lang="nl">handballer</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de handball</rdfs:label>
+        <rdfs:label xml:lang="es">jugador de balonmano</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης του handball</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:HandballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HighDiver -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HighDiver">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Turmspringer</rdfs:label>
+        <rdfs:label xml:lang="en">high diver</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:HighDiver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Historian -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Historian">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Historiker</rdfs:label>
+        <rdfs:label xml:lang="en">historian</rdfs:label>
+        <rdfs:label xml:lang="nl">historicus</rdfs:label>
+        <rdfs:label xml:lang="it">storico</rdfs:label>
+        <rdfs:label xml:lang="el">ιστορικός</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Historian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HorseRider -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HorseRider">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Reiter</rdfs:label>
+        <rdfs:label xml:lang="en">horse rider</rdfs:label>
+        <rdfs:label xml:lang="nl">paardrijder</rdfs:label>
+        <rdfs:label xml:lang="el">ιππέας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:HorseRider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HorseTrainer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HorseTrainer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Pferdetrainer</rdfs:label>
+        <rdfs:label xml:lang="en">horse trainer</rdfs:label>
+        <rdfs:label xml:lang="nl">paardentrainer</rdfs:label>
+        <rdfs:label xml:lang="el">εκπαιδευτής αλόγων</rdfs:label>
+        <rdfs:label xml:lang="ja">調教師</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:HorseTrainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Host -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Host">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/TelevisionPersonality"/>
+        <rdfs:comment xml:lang="el">Ο οικοδεσπότης χρησιμοποιείται συνήθως για να περιγράψει άνδρα παρουσιαστή γεγονότος.</rdfs:comment>
+        <rdfs:label xml:lang="de">Gastgeber</rdfs:label>
+        <rdfs:label xml:lang="nl">gastheer</rdfs:label>
+        <rdfs:label xml:lang="en">host</rdfs:label>
+        <rdfs:label xml:lang="el">οικοδεσπότης</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Host"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Humorist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Humorist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Humorist</rdfs:label>
+        <rdfs:label xml:lang="en">humorist</rdfs:label>
+        <rdfs:label xml:lang="el">χιουμορίστας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Humorist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Jockey -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Jockey">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Jockey (Pferderennprofi)</rdfs:label>
+        <rdfs:label xml:lang="nl">jockey</rdfs:label>
+        <rdfs:label xml:lang="en">jockey (horse racer)</rdfs:label>
+        <rdfs:label xml:lang="el">αναβάτης αλόγου αγώνων</rdfs:label>
+        <rdfs:label xml:lang="ja">騎手</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Jockey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Journalist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Journalist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Journalist</rdfs:label>
+        <rdfs:label xml:lang="it">giornalista</rdfs:label>
+        <rdfs:label xml:lang="en">journalist</rdfs:label>
+        <rdfs:label xml:lang="nl">journalist</rdfs:label>
+        <rdfs:label xml:lang="fr">journaliste</rdfs:label>
+        <rdfs:label xml:lang="es">periodista</rdfs:label>
+        <rdfs:label xml:lang="el">δημοσιογράφος</rdfs:label>
+        <rdfs:label xml:lang="ja">ジャーナリスト</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Journalist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Judge -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Judge">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="it">giudice</rdfs:label>
+        <rdfs:label xml:lang="en">judge</rdfs:label>
+        <rdfs:label xml:lang="es">juez</rdfs:label>
+        <rdfs:label xml:lang="fr">juge</rdfs:label>
+        <rdfs:label xml:lang="nl">rechter</rdfs:label>
+        <rdfs:label xml:lang="de">richter</rdfs:label>
+        <rdfs:label xml:lang="el">δικαστής</rdfs:label>
+        <rdfs:label xml:lang="ja">裁判官</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Judge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/LacrossePlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/LacrossePlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Lacrossespieler</rdfs:label>
+        <rdfs:label xml:lang="en">lacrosse player</rdfs:label>
+        <rdfs:label xml:lang="nl">lacrosse-speler</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης χόκεϋ σε χόρτο</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:LacrossePlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Lawyer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Lawyer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">a person who is practicing law.</rdfs:comment>
+        <rdfs:label xml:lang="de">Anwalt</rdfs:label>
+        <rdfs:label xml:lang="fr">Avocat</rdfs:label>
+        <rdfs:label xml:lang="en">Lawyer</rdfs:label>
+        <rdfs:label xml:lang="nl">advocaat</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Lawyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Lieutenant -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Lieutenant">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Leutnant</rdfs:label>
+        <rdfs:label xml:lang="en">lieutenant</rdfs:label>
+        <rdfs:label xml:lang="fr">lieutenant</rdfs:label>
+        <rdfs:label xml:lang="nl">luitenant</rdfs:label>
+        <rdfs:label xml:lang="pt">tenente</rdfs:label>
+        <rdfs:label xml:lang="el">υπολοχαγός</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Lieutenant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Linguist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Linguist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Sprachwissenschaftler</rdfs:label>
+        <rdfs:label xml:lang="en">linguist</rdfs:label>
+        <rdfs:label xml:lang="fr">linguiste</rdfs:label>
+        <rdfs:label xml:lang="nl">linguïst</rdfs:label>
+        <rdfs:label xml:lang="pl">lingwista</rdfs:label>
+        <rdfs:label xml:lang="ca">lingüista</rdfs:label>
+        <rdfs:label xml:lang="ga">teangeolaí</rdfs:label>
+        <rdfs:label xml:lang="el">γλωσσολόγος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Linguist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MartialArtist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MartialArtist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Kampfkünstler</rdfs:label>
+        <rdfs:label xml:lang="en">martial artist</rdfs:label>
+        <rdfs:label xml:lang="el">Πολεμικός Καλλιτέχνης</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MartialArtist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Medician -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Medician">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Scientist"/>
+        <rdfs:label xml:lang="de">Mediziner</rdfs:label>
+        <rdfs:label xml:lang="en">medician</rdfs:label>
+        <rdfs:label xml:lang="it">medico</rdfs:label>
+        <rdfs:label xml:lang="nl">medicus</rdfs:label>
+        <rdfs:label xml:lang="el">γιατρός</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Medician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MemberOfParliament -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MemberOfParliament">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Parlamentsmitglied</rdfs:label>
+        <rdfs:label xml:lang="en">member of parliament</rdfs:label>
+        <rdfs:label xml:lang="fr">membre du Parlement</rdfs:label>
+        <rdfs:label xml:lang="pt">membro do parlamento</rdfs:label>
+        <rdfs:label xml:lang="nl">parlementslid</rdfs:label>
+        <rdfs:label xml:lang="el">Μέλος κοινοβουλίου</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MemberOfParliament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MemberResistanceMovement -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MemberResistanceMovement">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="nl">Lid van een verzetsorganisatie</rdfs:label>
+        <rdfs:label xml:lang="en">Member of a Resistance Movement</rdfs:label>
+        <rdfs:label xml:lang="de">Mitglied einer Widerstandorganisation</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MemberResistanceMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MilitaryPerson -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MilitaryPerson">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="nl">militair</rdfs:label>
+        <rdfs:label xml:lang="fr">militaire</rdfs:label>
+        <rdfs:label xml:lang="it">militare</rdfs:label>
+        <rdfs:label xml:lang="en">military person</rdfs:label>
+        <rdfs:label xml:lang="de">militärische Person</rdfs:label>
+        <rdfs:label xml:lang="el">στρατιωτικός</rdfs:label>
+        <rdfs:label xml:lang="ko">군인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MilitaryPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Model -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Model">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="nl">(foto)model</rdfs:label>
+        <rdfs:label xml:lang="en">Model</rdfs:label>
+        <rdfs:label xml:lang="fr">mannequin</rdfs:label>
+        <rdfs:label xml:lang="de">model</rdfs:label>
+        <rdfs:label xml:lang="el">μοντέλο</rdfs:label>
+        <rdfs:label xml:lang="ja">モデル_(職業)</rdfs:label>
+        <rdfs:label xml:lang="ko">모델</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Monarch -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Monarch">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="es">monarca</rdfs:label>
+        <rdfs:label xml:lang="it">monarca</rdfs:label>
+        <rdfs:label xml:lang="de">monarch</rdfs:label>
+        <rdfs:label xml:lang="en">monarch</rdfs:label>
+        <rdfs:label xml:lang="nl">monarch</rdfs:label>
+        <rdfs:label xml:lang="fr">monarque</rdfs:label>
+        <rdfs:label xml:lang="el">μονάρχης</rdfs:label>
+        <rdfs:label xml:lang="ko">군주</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Monarch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MotorsportRacer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MotorsportRacer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Motorsport Fahrer</rdfs:label>
+        <rdfs:label xml:lang="en">motorsport racer</rdfs:label>
+        <rdfs:label xml:lang="nl">motorsport renner</rdfs:label>
+        <rdfs:label xml:lang="el">οδηγός αγώνων</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MotorsportRacer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MovieDirector -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MovieDirector">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">a person who oversees making of film.</rdfs:comment>
+        <rdfs:label xml:lang="de">Filmregisseur</rdfs:label>
+        <rdfs:label xml:lang="en">Movie director</rdfs:label>
+        <rdfs:label xml:lang="nl">regisseur</rdfs:label>
+        <rdfs:label xml:lang="fr">réalisateur de film</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MovieDirector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Murderer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Murderer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Criminal"/>
+        <rdfs:label xml:lang="de">Mörder</rdfs:label>
+        <rdfs:label xml:lang="it">assasino</rdfs:label>
+        <rdfs:label xml:lang="fr">assassin</rdfs:label>
+        <rdfs:label xml:lang="nl">moordenaar</rdfs:label>
+        <rdfs:label xml:lang="en">murderer</rdfs:label>
+        <rdfs:label xml:lang="el">δολοφόνος</rdfs:label>
+        <rdfs:label xml:lang="ko">연쇄 살인자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Murderer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MusicalArtist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MusicalArtist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+        <rdfs:label xml:lang="pt">artista musical</rdfs:label>
+        <rdfs:label xml:lang="en">musical artist</rdfs:label>
+        <rdfs:label xml:lang="fr">musicien</rdfs:label>
+        <rdfs:label xml:lang="de">musikalischer Künstler</rdfs:label>
+        <rdfs:label xml:lang="nl">muziekartiest</rdfs:label>
+        <rdfs:label xml:lang="el">μουσικός</rdfs:label>
+        <rdfs:label xml:lang="ko">음악가</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MusicalArtist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MythologicalFigure -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MythologicalFigure">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="it">figura mitologica</rdfs:label>
+        <rdfs:label xml:lang="en">mythological figure</rdfs:label>
+        <rdfs:label xml:lang="nl">mythologisch figuur</rdfs:label>
+        <rdfs:label xml:lang="de">mythologische Gestalt</rdfs:label>
+        <rdfs:label xml:lang="el">μυθικό πλάσμα</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:MythologicalFigure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/NarutoCharacter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NarutoCharacter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/FictionalCharacter"/>
+        <rdfs:label xml:lang="de">Naruto Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">naruto character</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:NarutoCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">NCAA</rdfs:label>
+        <rdfs:label xml:lang="fr">athlète de la national collegiate athletic association</rdfs:label>
+        <rdfs:label xml:lang="en">national collegiate athletic association athlete</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:NationalCollegiateAthleticAssociationAthlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/NetballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NetballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Korbballspieler</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di netball</rdfs:label>
+        <rdfs:label xml:lang="en">netball player</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:NetballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Noble -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Noble">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Adliger</rdfs:label>
+        <rdfs:label xml:lang="nl">edele</rdfs:label>
+        <rdfs:label xml:lang="en">noble</rdfs:label>
+        <rdfs:label xml:lang="el">ευγενής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Noble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/OfficeHolder -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/OfficeHolder">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Amtsinhaber</rdfs:label>
+        <rdfs:label xml:lang="nl">ambtsdrager</rdfs:label>
+        <rdfs:label xml:lang="es">cargo público</rdfs:label>
+        <rdfs:label xml:lang="en">office holder</rdfs:label>
+        <rdfs:label xml:lang="fr">titulaire</rdfs:label>
+        <rdfs:label xml:lang="el">κάτοχος δημόσιου αξιώματος</rdfs:label>
+        <rdfs:label xml:lang="ko">공직자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:OfficeHolder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/OrganisationMember -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/OrganisationMember">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">A member of an organisation.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Μέλος ενός οργανισμού.</rdfs:comment>
+        <rdfs:label xml:lang="es">Miembro de organización</rdfs:label>
+        <rdfs:label xml:lang="en">Organisation member</rdfs:label>
+        <rdfs:label xml:lang="de">Organisationsmitglied</rdfs:label>
+        <rdfs:label xml:lang="nl">organisatielid</rdfs:label>
+        <rdfs:label xml:lang="el">Μέλος οργανισμού</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:OrganisationMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Orphan -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Orphan">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">orphan</rdfs:label>
+        <rdfs:label xml:lang="fr">orphelin</rdfs:label>
+        <rdfs:label xml:lang="de">verwaist</rdfs:label>
+        <rdfs:label xml:lang="nl">wees</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Orphan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Painter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Painter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Maler</rdfs:label>
+        <rdfs:label xml:lang="en">painter</rdfs:label>
+        <rdfs:label xml:lang="fr">peintre</rdfs:label>
+        <rdfs:label xml:lang="nl">schilder</rdfs:label>
+        <rdfs:label xml:lang="el">ζωγράφος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Painter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <owl:equivalentClass rdf:resource="http://schema.org/Person"/>
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Agent"/>
+        <rdfs:label xml:lang="sl">Oseba</rdfs:label>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="ga">duine</rdfs:label>
+        <rdfs:label xml:lang="pl">osoba</rdfs:label>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="es">persona</rdfs:label>
+        <rdfs:label xml:lang="it">persona</rdfs:label>
+        <rdfs:label xml:lang="fr">personne</rdfs:label>
+        <rdfs:label xml:lang="nl">persoon</rdfs:label>
+        <rdfs:label xml:lang="eu">pertsona</rdfs:label>
+        <rdfs:label xml:lang="pt">pessoa</rdfs:label>
+        <rdfs:label xml:lang="el">Πληροφορίες προσώπου</rdfs:label>
+        <rdfs:label xml:lang="hy">անձ</rdfs:label>
+        <rdfs:label xml:lang="ar">شخص</rdfs:label>
+        <rdfs:label xml:lang="ja">人_(法律)</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Philosopher -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Philosopher">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Philosoph</rdfs:label>
+        <rdfs:label xml:lang="nl">filosoof</rdfs:label>
+        <rdfs:label xml:lang="fr">philosophe</rdfs:label>
+        <rdfs:label xml:lang="en">philosopher</rdfs:label>
+        <rdfs:label xml:lang="el">φιλόσοφος</rdfs:label>
+        <rdfs:label xml:lang="ja">哲学者</rdfs:label>
+        <rdfs:label xml:lang="ko">철학자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Philosopher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Photographer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Photographer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Fotograf</rdfs:label>
+        <rdfs:label xml:lang="nl">fotograaf</rdfs:label>
+        <rdfs:label xml:lang="it">fotografo</rdfs:label>
+        <rdfs:label xml:lang="fr">photographe</rdfs:label>
+        <rdfs:label xml:lang="en">photographer</rdfs:label>
+        <rdfs:label xml:lang="el">φωτογράφος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Photographer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PlayboyPlaymate -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PlayboyPlaymate">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Playboy Playmate</rdfs:label>
+        <rdfs:label xml:lang="en">Playboy Playmate</rdfs:label>
+        <rdfs:label xml:lang="el">playboy playmate</rdfs:label>
+        <rdfs:label xml:lang="fr">playmate pour Playboy</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PlayboyPlaymate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PokerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PokerPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Pokerspieler</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de poker</rdfs:label>
+        <rdfs:label xml:lang="en">poker player</rdfs:label>
+        <rdfs:label xml:lang="nl">pokerspeler</rdfs:label>
+        <rdfs:label xml:lang="el">παίχτης του πόκερ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PokerPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Politician -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Politician">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Politiker</rdfs:label>
+        <rdfs:label xml:lang="en">politician</rdfs:label>
+        <rdfs:label xml:lang="fr">politicien</rdfs:label>
+        <rdfs:label xml:lang="nl">politicus</rdfs:label>
+        <rdfs:label xml:lang="sl">politik</rdfs:label>
+        <rdfs:label xml:lang="pt">político</rdfs:label>
+        <rdfs:label xml:lang="el">πολιτικός</rdfs:label>
+        <rdfs:label xml:lang="ja">정치인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Politician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PoliticianSpouse -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PoliticianSpouse">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Ehepartner eines Politiker</rdfs:label>
+        <rdfs:label xml:lang="en">politician spouse</rdfs:label>
+        <rdfs:label xml:lang="el">σύζυγος πολιτικού</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PoliticianSpouse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Pope -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Pope">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="de">Papst</rdfs:label>
+        <rdfs:label xml:lang="fr">pape</rdfs:label>
+        <rdfs:label xml:lang="pl">papież</rdfs:label>
+        <rdfs:label xml:lang="nl">paus</rdfs:label>
+        <rdfs:label xml:lang="en">pope</rdfs:label>
+        <rdfs:label xml:lang="el">πάπας</rdfs:label>
+        <rdfs:label xml:lang="ja">教皇</rdfs:label>
+        <rdfs:label xml:lang="ko">교황</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Pope"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Presenter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Presenter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">TV or radio show presenter</rdfs:comment>
+        <rdfs:label xml:lang="de">Moderator</rdfs:label>
+        <rdfs:label xml:lang="nl">presentator</rdfs:label>
+        <rdfs:label xml:lang="en">presenter</rdfs:label>
+        <rdfs:label xml:lang="fr">présentateur</rdfs:label>
+        <rdfs:label xml:lang="el">Παρουσιαστής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Presenter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/President -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/President">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Präsident</rdfs:label>
+        <rdfs:label xml:lang="en">president</rdfs:label>
+        <rdfs:label xml:lang="nl">president</rdfs:label>
+        <rdfs:label xml:lang="pl">prezydent</rdfs:label>
+        <rdfs:label xml:lang="fr">président</rdfs:label>
+        <rdfs:label xml:lang="el">πρόεδρος</rdfs:label>
+        <rdfs:label xml:lang="ja">大統領</rdfs:label>
+        <rdfs:label xml:lang="ko">국가원수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:President"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Priest -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Priest">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="it">prete</rdfs:label>
+        <rdfs:label xml:lang="en">priest</rdfs:label>
+        <rdfs:label xml:lang="de">priester</rdfs:label>
+        <rdfs:label xml:lang="nl">priester</rdfs:label>
+        <rdfs:label xml:lang="fr">prêtre</rdfs:label>
+        <rdfs:label xml:lang="el">παπάς</rdfs:label>
+        <rdfs:label xml:lang="ja">司祭</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Priest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PrimeMinister -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PrimeMinister">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Premierminister</rdfs:label>
+        <rdfs:label xml:lang="nl">eerste minister</rdfs:label>
+        <rdfs:label xml:lang="fr">premier ministre</rdfs:label>
+        <rdfs:label xml:lang="en">prime minister</rdfs:label>
+        <rdfs:label xml:lang="el">πρωθυπουργός</rdfs:label>
+        <rdfs:label xml:lang="ko">총리</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:PrimeMinister"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Producer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Producer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">a person who manages movies or music recordings.</rdfs:comment>
+        <rdfs:label xml:lang="en">Producer</rdfs:label>
+        <rdfs:label xml:lang="fr">Producteur</rdfs:label>
+        <rdfs:label xml:lang="de">Produzent</rdfs:label>
+        <rdfs:label xml:lang="nl">producent</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Professor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Professor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Scientist"/>
+        <rdfs:label xml:lang="de">Professor</rdfs:label>
+        <rdfs:label xml:lang="ga">ollamh</rdfs:label>
+        <rdfs:label xml:lang="pl">profesor</rdfs:label>
+        <rdfs:label xml:lang="fr">professeur</rdfs:label>
+        <rdfs:label xml:lang="en">professor</rdfs:label>
+        <rdfs:label xml:lang="nl">professor</rdfs:label>
+        <rdfs:label xml:lang="el">καθηγητής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Psychologist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Psychologist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Psychologe</rdfs:label>
+        <rdfs:label xml:lang="en">psychologist</rdfs:label>
+        <rdfs:label xml:lang="nl">psycholoog</rdfs:label>
+        <rdfs:label xml:lang="el">ψυχολόγος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Psychologist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RadioHost -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RadioHost">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Presenter"/>
+        <rdfs:label xml:lang="de">Radiomoderator</rdfs:label>
+        <rdfs:label xml:lang="en">radio host</rdfs:label>
+        <rdfs:label xml:lang="nl">radiopresentator</rdfs:label>
+        <rdfs:label xml:lang="el">οικοδεσπότης ραδιοφώνου</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:RadioHost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Referee -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Referee">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">An official who watches a game or match closely to ensure that the rules are adhered to.</rdfs:comment>
+        <rdfs:label xml:lang="fr">arbitre</rdfs:label>
+        <rdfs:label xml:lang="it">arbitro</rdfs:label>
+        <rdfs:label xml:lang="en">referee</rdfs:label>
+        <rdfs:label xml:lang="nl">scheidsrechter</rdfs:label>
+        <rdfs:label xml:lang="de">schiedsrichter</rdfs:label>
+        <rdfs:label xml:lang="es">árbitro</rdfs:label>
+        <rdfs:label xml:lang="el">διαιτητής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Referee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Religious -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Religious">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="nl">religieus</rdfs:label>
+        <rdfs:label xml:lang="fr">religieux</rdfs:label>
+        <rdfs:label xml:lang="en">religious</rdfs:label>
+        <rdfs:label xml:lang="de">religiös</rdfs:label>
+        <rdfs:label xml:lang="el">θρησκευτικός</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Religious"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RomanEmperor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RomanEmperor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="nl">Romeinse keizer</rdfs:label>
+        <rdfs:label xml:lang="en">roman emperor</rdfs:label>
+        <rdfs:label xml:lang="de">römischer Kaiser</rdfs:label>
+        <rdfs:label xml:lang="el">ρωμαίος αυτοκράτορας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:RomanEmperor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Rower -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Rower">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Ruderer</rdfs:label>
+        <rdfs:label xml:lang="it">canottiere</rdfs:label>
+        <rdfs:label xml:lang="nl">roeier</rdfs:label>
+        <rdfs:label xml:lang="en">rower</rdfs:label>
+        <rdfs:label xml:lang="el">κωπηλάτης</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Rower"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Royalty -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Royalty">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Königtum</rdfs:label>
+        <rdfs:label xml:lang="sl">kraljevska oseba</rdfs:label>
+        <rdfs:label xml:lang="nl">lid koningshuis</rdfs:label>
+        <rdfs:label xml:lang="es">realeza</rdfs:label>
+        <rdfs:label xml:lang="en">royalty</rdfs:label>
+        <rdfs:label xml:lang="fr">royauté</rdfs:label>
+        <rdfs:label xml:lang="el">γαλαζοαίματος</rdfs:label>
+        <rdfs:label xml:lang="ja">王室</rdfs:label>
+        <rdfs:label xml:lang="ko">왕족</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Royalty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/RugbyPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/RugbyPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Rugbyspieler</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de rugby</rdfs:label>
+        <rdfs:label xml:lang="en">rugby player</rdfs:label>
+        <rdfs:label xml:lang="nl">rugbyspeler</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης rugby</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:RugbyPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Saint -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Saint">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="de">Heilige</rdfs:label>
+        <rdfs:label xml:lang="nl">heilige</rdfs:label>
+        <rdfs:label xml:lang="en">saint</rdfs:label>
+        <rdfs:label xml:lang="fr">saint</rdfs:label>
+        <rdfs:label xml:lang="el">Πληροφορίες Αγίου</rdfs:label>
+        <rdfs:label xml:lang="ja">聖人</rdfs:label>
+        <rdfs:label xml:lang="ko">성인</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Saint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Scientist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Scientist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Wissenschaftler</rdfs:label>
+        <rdfs:label xml:lang="fr">scientifique</rdfs:label>
+        <rdfs:label xml:lang="en">scientist</rdfs:label>
+        <rdfs:label xml:lang="nl">wetenschapper</rdfs:label>
+        <rdfs:label xml:lang="el">Επιστήμονας</rdfs:label>
+        <rdfs:label xml:lang="bn">বিজ্ঞানী</rdfs:label>
+        <rdfs:label xml:lang="ja">科学者</rdfs:label>
+        <rdfs:label xml:lang="ko">과학자</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Scientist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Sculptor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Sculptor">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="de">Bildhauer</rdfs:label>
+        <rdfs:label xml:lang="nl">beeldhouwer</rdfs:label>
+        <rdfs:label xml:lang="fr">sculpteur</rdfs:label>
+        <rdfs:label xml:lang="en">sculptor</rdfs:label>
+        <rdfs:label xml:lang="el">γλύπτης</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Sculptor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Senator -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Senator">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Senator</rdfs:label>
+        <rdfs:label xml:lang="es">senador</rdfs:label>
+        <rdfs:label xml:lang="en">senator</rdfs:label>
+        <rdfs:label xml:lang="nl">senator</rdfs:label>
+        <rdfs:label xml:lang="fr">sénateur</rdfs:label>
+        <rdfs:label xml:lang="el">γερουσιαστής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Senator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SerialKiller -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SerialKiller">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Criminal"/>
+        <rdfs:label xml:lang="de">Serienmörder</rdfs:label>
+        <rdfs:label xml:lang="en">serial killer</rdfs:label>
+        <rdfs:label xml:lang="nl">seriemoordenaar</rdfs:label>
+        <rdfs:label xml:lang="el">κατά συρροήν δολοφόνος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SerialKiller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SnookerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SnookerPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="en">An athlete that plays snooker, which is a billard derivate</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ein Sportler der Snooker spielt, eine bekannte Billardvariante</rdfs:comment>
+        <rdfs:label xml:lang="de">Snookerspieler</rdfs:label>
+        <rdfs:label xml:lang="nl">biljarter</rdfs:label>
+        <rdfs:label xml:lang="en">snooker player</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SnookerPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoapCharacter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoapCharacter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/FictionalCharacter"/>
+        <rdfs:label xml:lang="de">Soapoper Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">soap character</rdfs:label>
+        <rdfs:label xml:lang="nl">soap karakter</rdfs:label>
+        <rdfs:label xml:lang="el">χαρακτήρας σαπουνόπερας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SoapCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerManager -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerManager">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SportsManager"/>
+        <rdfs:label xml:lang="de">Fußballmanager</rdfs:label>
+        <rdfs:label xml:lang="fr">entraîneur de football</rdfs:label>
+        <rdfs:label xml:lang="es">gerente de fútbol</rdfs:label>
+        <rdfs:label xml:lang="en">soccer manager</rdfs:label>
+        <rdfs:label xml:lang="nl">voetbalmanager</rdfs:label>
+        <rdfs:label xml:lang="el">προπονητής ποδοσφαίρου</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SoccerManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SoccerPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SoccerPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Fußballspieler</rdfs:label>
+        <rdfs:label xml:lang="es">futbolista</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de football</rdfs:label>
+        <rdfs:label xml:lang="en">soccer player</rdfs:label>
+        <rdfs:label xml:lang="nl">voetballer</rdfs:label>
+        <rdfs:label xml:lang="el">παίχτης ποδοσφαίρου</rdfs:label>
+        <rdfs:label xml:lang="ko">축구 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SoccerPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsManager -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsManager">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">According to the french label sub Soccer, trainership could be meant. However, here a Sportsmanager is interpreted as a member of the board of a sporting club.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Σύμφωνα με τη γαλλική ετικέτα Soccer,μπορεί να εννοείται ο προπονητής.Παρ&apos;όλα αυτα,εδώ ένας αθλητικός μάνατζερ μεταφράζεται ως ένα μέλος συμβουλίου ενός αθλητικού κλαμπ.</rdfs:comment>
+        <rdfs:label xml:lang="de">Sportmanager</rdfs:label>
+        <rdfs:label xml:lang="es">director deportivo</rdfs:label>
+        <rdfs:label xml:lang="nl">sportbestuurder</rdfs:label>
+        <rdfs:label xml:lang="en">sports manager</rdfs:label>
+        <rdfs:label xml:lang="el">αθλητικός μάνατζερ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SportsManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsTeamMember -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsTeamMember">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/OrganisationMember"/>
+        <rdfs:comment xml:lang="en">A member of an athletic team.</rdfs:comment>
+        <rdfs:comment xml:lang="nl">lid van een athletisch team</rdfs:comment>
+        <rdfs:comment xml:lang="el">Μέλος αθλητικής ομάδας.</rdfs:comment>
+        <rdfs:label xml:lang="de">Sport Team Mitglied</rdfs:label>
+        <rdfs:label xml:lang="en">Sports team member</rdfs:label>
+        <rdfs:label xml:lang="nl">sport teamlid</rdfs:label>
+        <rdfs:label xml:lang="el">μέλος αθλητικής ομάδας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SportsTeamMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SquashPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SquashPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Squashspieler</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di squash</rdfs:label>
+        <rdfs:label xml:lang="en">squash player</rdfs:label>
+        <rdfs:label xml:lang="nl">squasher</rdfs:label>
+        <rdfs:label xml:lang="ko">스쿼시 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SquashPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Surfer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Surfer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Surfer</rdfs:label>
+        <rdfs:label xml:lang="en">surfer</rdfs:label>
+        <rdfs:label xml:lang="nl">surfer</rdfs:label>
+        <rdfs:label xml:lang="el">σέρφερ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Surfer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Swimmer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Swimmer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="en">a trained athlete who participates in swimming meets</rdfs:comment>
+        <rdfs:comment xml:lang="el">ένας εκπαιδευμένος αθλητής που συμμετέχει σε συναντήσεις κολύμβησης</rdfs:comment>
+        <rdfs:label xml:lang="el">Kολυμβητής</rdfs:label>
+        <rdfs:label xml:lang="de">Schwimmer</rdfs:label>
+        <rdfs:label xml:lang="es">nadador</rdfs:label>
+        <rdfs:label xml:lang="pt">nadador</rdfs:label>
+        <rdfs:label xml:lang="fr">nageur</rdfs:label>
+        <rdfs:label xml:lang="it">nuotatore</rdfs:label>
+        <rdfs:label xml:lang="en">swimmer</rdfs:label>
+        <rdfs:label xml:lang="nl">zwemmer</rdfs:label>
+        <rdfs:label xml:lang="ja">競泳選手</rdfs:label>
+        <rdfs:label xml:lang="ko">수영 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Swimmer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TableTennisPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TableTennisPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="en">Athlete who plays table tennis</rdfs:comment>
+        <rdfs:comment xml:lang="el">O αθλητής που παίζει πινγκ-πονγκ</rdfs:comment>
+        <rdfs:label xml:lang="de">Tischtennisspieler</rdfs:label>
+        <rdfs:label xml:lang="en">table tennis player</rdfs:label>
+        <rdfs:label xml:lang="nl">tafeltennisser</rdfs:label>
+        <rdfs:label xml:lang="el">παίκτης πινγκ-πονγκ</rdfs:label>
+        <rdfs:label xml:lang="ko">탁구 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TableTennisPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TeamMember -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TeamMember">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:comment xml:lang="en">A member of an athletic team.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Ένα μέλος μιας αθλητικής ομάδας.</rdfs:comment>
+        <rdfs:label xml:lang="en">Team member</rdfs:label>
+        <rdfs:label xml:lang="de">Teammitglied</rdfs:label>
+        <rdfs:label xml:lang="fr">coéquipier</rdfs:label>
+        <rdfs:label xml:lang="nl">teamlid</rdfs:label>
+        <rdfs:label xml:lang="el">Μέλος ομάδας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TeamMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TelevisionDirector -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TelevisionDirector">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">a person who directs the activities involved in making a television program.</rdfs:comment>
+        <rdfs:label xml:lang="de">TV-Regisseur</rdfs:label>
+        <rdfs:label xml:lang="en">Television director</rdfs:label>
+        <rdfs:label xml:lang="fr">réalisateur de télévision</rdfs:label>
+        <rdfs:label xml:lang="nl">tv-regisseur</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TelevisionDirector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TelevisionHost -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TelevisionHost">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Presenter"/>
+        <rdfs:label xml:lang="de">Fernsehmoderator</rdfs:label>
+        <rdfs:label xml:lang="fr">animateur de télévision</rdfs:label>
+        <rdfs:label xml:lang="it">presentatore televisivo</rdfs:label>
+        <rdfs:label xml:lang="nl">televisie presentator</rdfs:label>
+        <rdfs:label xml:lang="en">television host</rdfs:label>
+        <rdfs:label xml:lang="el">παρουσιαστής τηλεοπτικής εκπομπής</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TelevisionHost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TelevisionPersonality -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TelevisionPersonality">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="de">Fernsehpersönlichkeit</rdfs:label>
+        <rdfs:label xml:lang="nl">televisiepersoon</rdfs:label>
+        <rdfs:label xml:lang="en">television personality</rdfs:label>
+        <rdfs:label xml:lang="el">τηλεοπτική προσωπικότητα</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TelevisionPersonality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TennisPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TennisPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Tennisspieler</rdfs:label>
+        <rdfs:label xml:lang="pt">jogador de tennis</rdfs:label>
+        <rdfs:label xml:lang="fr">joueur de tennis</rdfs:label>
+        <rdfs:label xml:lang="es">tenista</rdfs:label>
+        <rdfs:label xml:lang="en">tennis player</rdfs:label>
+        <rdfs:label xml:lang="nl">tennisser</rdfs:label>
+        <rdfs:label xml:lang="el">παίχτης τένις</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TennisPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TheatreDirector -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TheatreDirector">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="en">A director in the theatre field who oversees and orchestrates the mounting of a theatre production.</rdfs:comment>
+        <rdfs:label xml:lang="de">Theaterdirektor</rdfs:label>
+        <rdfs:label xml:lang="en">Theatre director</rdfs:label>
+        <rdfs:label xml:lang="fr">directeur de théâtre</rdfs:label>
+        <rdfs:label xml:lang="nl">theaterdirecteur</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:TheatreDirector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Vicar -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Vicar">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Cleric"/>
+        <rdfs:label xml:lang="de">Pfarrer</rdfs:label>
+        <rdfs:label xml:lang="fr">pasteur</rdfs:label>
+        <rdfs:label xml:lang="nl">predikant</rdfs:label>
+        <rdfs:label xml:lang="en">vicar</rdfs:label>
+        <rdfs:label xml:lang="el">ιεροκήρυκας</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Vicar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VicePresident -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VicePresident">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Vizepräsident</rdfs:label>
+        <rdfs:label xml:lang="en">vice president</rdfs:label>
+        <rdfs:label xml:lang="nl">vice president</rdfs:label>
+        <rdfs:label xml:lang="fr">vice président</rdfs:label>
+        <rdfs:label xml:lang="el">αντιπρόεδρος</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:VicePresident"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VicePrimeMinister -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VicePrimeMinister">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:label xml:lang="de">Vizeministerpräsident</rdfs:label>
+        <rdfs:label xml:lang="fr">vice premier ministre</rdfs:label>
+        <rdfs:label xml:lang="en">vice prime minister</rdfs:label>
+        <rdfs:label xml:lang="nl">vicepremier</rdfs:label>
+        <rdfs:label xml:lang="el">αντιπρωθυπουργός</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:VicePrimeMinister"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VolleyballCoach -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VolleyballCoach">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Coach"/>
+        <rdfs:label xml:lang="de">Volleyballtrainer</rdfs:label>
+        <rdfs:label xml:lang="it">allenatore di pallavolo</rdfs:label>
+        <rdfs:label xml:lang="nl">volleybalcoach</rdfs:label>
+        <rdfs:label xml:lang="en">volleyball coach</rdfs:label>
+        <rdfs:label xml:lang="el">προπονητής βόλλεϋ</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:VolleyballCoach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VolleyballPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VolleyballPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Volleyballspieler</rdfs:label>
+        <rdfs:label xml:lang="pl">siatkarz</rdfs:label>
+        <rdfs:label xml:lang="en">volleyball player</rdfs:label>
+        <rdfs:label xml:lang="nl">volleyballer</rdfs:label>
+        <rdfs:label xml:lang="el">παίχτης βόλεϊ</rdfs:label>
+        <rdfs:label xml:lang="ko">배구 선수</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:VolleyballPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WaterPoloPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WaterPoloPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Wasserpolo Spieler</rdfs:label>
+        <rdfs:label xml:lang="it">giocatore di pallanuoto</rdfs:label>
+        <rdfs:label xml:lang="en">water polo Player</rdfs:label>
+        <rdfs:label xml:lang="nl">waterpoloër</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:WaterPoloPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WinterSportPlayer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WinterSportPlayer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Wintersportspieler</rdfs:label>
+        <rdfs:label xml:lang="en">winter sport Player</rdfs:label>
+        <rdfs:label xml:lang="nl">wintersporter</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:WinterSportPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Wrestler -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Wrestler">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Athlete"/>
+        <rdfs:label xml:lang="de">Ringer</rdfs:label>
+        <rdfs:label xml:lang="fr">lutteur</rdfs:label>
+        <rdfs:label xml:lang="nl">worstelaar</rdfs:label>
+        <rdfs:label xml:lang="en">wrestler</rdfs:label>
+        <rdfs:label xml:lang="el">παλαιστής</rdfs:label>
+        <rdfs:label xml:lang="ja">レスラー</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Wrestler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Writer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Writer">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:label xml:lang="nl">auteur</rdfs:label>
+        <rdfs:label xml:lang="es">escritor</rdfs:label>
+        <rdfs:label xml:lang="pl">pisarz</rdfs:label>
+        <rdfs:label xml:lang="de">schriftsteller</rdfs:label>
+        <rdfs:label xml:lang="ga">scríbhneoir</rdfs:label>
+        <rdfs:label xml:lang="en">writer</rdfs:label>
+        <rdfs:label xml:lang="fr">écrivain</rdfs:label>
+        <rdfs:label xml:lang="el">συγγραφέας</rdfs:label>
+        <rdfs:label xml:lang="ja">著作家</rdfs:label>
+        <rdfs:label xml:lang="ko">작가</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
