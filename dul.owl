@@ -4,30 +4,34 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl">
-        <owl:versionInfo>Created by Aldo Gangemi as both a simplification and extension of DOLCE and Descriptions and Situations ontologies.</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.22</owl:versionInfo>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOLCE+DnS Ultralite</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The DOLCE+DnS Ultralite ontology.
-It is a simplification of some parts of the DOLCE Lite-Plus library (cf. http://www.loa-cnr.it/ontologies/DLP397.owl). 
+It is a simplification of some parts of the DOLCE Lite-Plus library (cf. http://www.ontologydesignpatterns.org/ont/dul/DLP397.owl). 
 Main aspects in which DOLCE+DnS Ultralite departs from DOLCE Lite-Plus are the following:
 
 - The names of classes and relations have been made more intuitive
-- The DnS-related part is closer to the newer &apos;constructive DnS&apos; ontology (http://www.loa-cnr.it/ontologies/cDnS.owl).
+- The DnS-related part is closer to the newer &apos;constructive DnS&apos; ontology (http://www.ontologydesignpatterns.org/ont/dul/cDnS.owl).
 - Temporal and spatial relations are simplified
 - Axiomatization makes use of simpler constructs than DOLCE Lite-Plus
 - The architecture of the ontology is pattern-based, which means that DOLCE+DnS Ultralite is also available in modules, called &apos;content ontology design patterns&apos;, which can be applied independently in the design of domain ontologies (cf. http://www.ontologydesignpatterns.org).  If many modules are needes in a same ontology project, is anyway useful to use this integrated version.
 
 The final result is a lightweight, easy-to-apply foundational ontology for modeling either physical or social contexts.
-Several extensions of DOLCE+DnS Ultralite are being designed; see for example the extensions for information objects: http://www.loa-cnr.it/ontologies/IOLite.owl, for systems: http://www.loa-cnr.it/ontologies/SystemsLite.owl, for plans: http://www.loa-cnr.it/ontologies/PlansLite.owl, for the legal domain: http://www.loa-cnr.it/ontologies/CLO/CoreLegal.owl, for the lexical and semiotic domains: http://www.loa-cnr.it/codeps/owl/LMM_L2.owl; etc.</rdfs:comment>
-        <owl:versionInfo>In 3.2, the links between instances of Region or Parameter, and datatypes have been revised and made more powerful, in order to support efficient design patterns for data value modelling in OWL1.0.
+Several extensions of DOLCE+DnS Ultralite are being designed; see for example the extensions for information objects: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl, for systems: http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl, for plans: http://www.ontologydesignpatterns.org/ont/dul/PlansLite.owl, for the legal domain: http://www.ontologydesignpatterns.org/ont/dul/CLO/CoreLegal.owl, for the lexical and semiotic domains: http://www.loa-cnr.it/codeps/owl/LMM_L2.owl; etc.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOLCE+DnS Ultralite</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.22</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created by Aldo Gangemi as both a simplification and extension of DOLCE and Descriptions and Situations ontologies.</owl:versionInfo>
+        <rdfs:comment xml:lang="en">DOLCE+DnS Ultralite version 3.22 (with a change to the base namespace from &apos;http://www.ontologydesignpatterns.org/ont/dul/DUL.owl&apos; to &apos;http://www.loa-cnr.it/ontologies/DUL.owl#&apos;. 
+Change by Thiago Moreira</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In 3.2, the links between instances of Region or Parameter, and datatypes have been revised and made more powerful, in order to support efficient design patterns for data value modelling in OWL1.0.
 Also, the names of the related properties have been changed in order to make them more intuitive.
 Furthermore, a large comment field has been added to the &apos;expresses&apos; object property, in order to clarify some issues about the many interpretations.
 In 3.3, the relation between regions, parameters, and datatypes has been still improved.
 In 3.5, the person-related classes have been refactored: Person in 3.4 is now SocialPerson, to avoid confusion with commonsense intuition; Person is now the union of social persons and humans, therefore being a subclass of Agent.
-In 3.6, other fixes on universal restriction involving expresses. Also added the property &apos;isConstraintFor&apos; between parameters and entities. Moved the properties: &apos;assumes&apos; and &apos;adopts&apos; to the new module: http://www.loa-cnr.it/ontologies/Conceptualization.owl.
+In 3.6, other fixes on universal restriction involving expresses. Also added the property &apos;isConstraintFor&apos; between parameters and entities. Moved the properties: &apos;assumes&apos; and &apos;adopts&apos; to the new module: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.
 In 3.7, some fixes on the names of classes and properties related to FormalEntity; created a new separate module for general universal restrictions (DULGCI.owl).
 In 3.8, more fixes on the interface to formal entities and links to IOLite.owl.
 In 3.9, some naming and comment fixes.
@@ -78,6 +82,12 @@ In 3.22, added comment to Personification.</owl:versionInfo>
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
@@ -101,7 +111,7 @@ In 3.22, added comment to Personification.</owl:versionInfo>
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
-        <rdfs:comment>The relation holding between any Agent, and a SocialAgent. In principle, a SocialAgent requires at least one PhysicalAgent in order to act, but this dependency can be &apos;delegated&apos;; e.g. a university can be acted for by a department, which on its turm is acted for by physical agents.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation holding between any Agent, and a SocialAgent. In principle, a SocialAgent requires at least one PhysicalAgent in order to act, but this dependency can be &apos;delegated&apos;; e.g. a university can be acted for by a department, which on its turm is acted for by physical agents.</rdfs:comment>
         <rdfs:label xml:lang="en">acts for</rdfs:label>
         <rdfs:label xml:lang="it">agisce per</rdfs:label>
     </owl:ObjectProperty>
@@ -113,7 +123,7 @@ In 3.22, added comment to Personification.</owl:versionInfo>
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:comment>The relation holding between a PhysicalAgent and a SocialAgent. In principle, a SocialAgent requires at least one PhysicalAgent in order to act, but this dependency can be &apos;delegated&apos;, e.g. a university can be acted for by a department, which is acted for by physical agents. AKA isActedBy</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation holding between a PhysicalAgent and a SocialAgent. In principle, a SocialAgent requires at least one PhysicalAgent in order to act, but this dependency can be &apos;delegated&apos;, e.g. a university can be acted for by a department, which is acted for by physical agents. AKA isActedBy</rdfs:comment>
         <rdfs:label xml:lang="en">acts through</rdfs:label>
         <rdfs:label xml:lang="it">agisce mediante</rdfs:label>
     </owl:ObjectProperty>
@@ -126,7 +136,7 @@ In 3.22, added comment to Personification.</owl:versionInfo>
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isCharacterizedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
-        <rdfs:comment>A relation between concepts and collections, where a Concept is said to characterize a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a _proper subset of_ a (reified) class. This is different from covers, because it refers to an interpretation the entire reified class.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between concepts and collections, where a Concept is said to characterize a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a _proper subset of_ a (reified) class. This is different from covers, because it refers to an interpretation the entire reified class.
 E.g. the collection of vintage saxophones is characterized by the Concept &apos;manufactured by hand&apos;, while it gets covered by the Concept &apos;Saxophone&apos; with the Parameter &apos;Vintage&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">caratterizza</rdfs:label>
         <rdfs:label xml:lang="en">characterizes</rdfs:label>
@@ -153,8 +163,8 @@ E.g. the collection of vintage saxophones is characterized by the Concept &apos;
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
-        <rdfs:comment>A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created the solar-system metaphor for the atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force members share the attack plan&apos;.
-Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be &apos;assumed&apos;, situations can be &apos;believed&apos; or &apos;known&apos;, plans can be &apos;adopted&apos;, etc. (see ontology: http://www.loa-cnr.it/ontologies/Conceptualization.owl.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created the solar-system metaphor for the atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force members share the attack plan&apos;.
+Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be &apos;assumed&apos;, situations can be &apos;believed&apos; or &apos;known&apos;, plans can be &apos;adopted&apos;, etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.</rdfs:comment>
         <rdfs:label xml:lang="en">conceptualizes</rdfs:label>
         <rdfs:label xml:lang="it">concettualizza</rdfs:label>
     </owl:ObjectProperty>
@@ -181,7 +191,7 @@ Conceptualizations can be distinguished into different forms, primarily based on
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-        <rdfs:comment>A relation between two objects participating in a same Event; e.g., &apos;Vitas and Jimmy are playing tennis&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between two objects participating in a same Event; e.g., &apos;Vitas and Jimmy are playing tennis&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">co-participates with</rdfs:label>
         <rdfs:label xml:lang="it">copartecipa con</rdfs:label>
     </owl:ObjectProperty>
@@ -194,7 +204,7 @@ Conceptualizations can be distinguished into different forms, primarily based on
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
-        <rdfs:comment>A relation between concepts and collections, where a Concept is said to cover a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a (reified) class.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between concepts and collections, where a Concept is said to cover a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a (reified) class.
 E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxophone&apos; with the Parameter &apos;Vintage&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">covers</rdfs:label>
         <rdfs:label xml:lang="it">ricopre</rdfs:label>
@@ -250,7 +260,7 @@ E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxoph
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>The relation between a Description and an Entity : a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system).
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Description and an Entity : a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system).
 A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.</rdfs:comment>
         <rdfs:label xml:lang="en">describes</rdfs:label>
         <rdfs:label xml:lang="it">descrive</rdfs:label>
@@ -263,7 +273,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#follows"/>
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes"/>
-        <rdfs:comment>The intransitive follows relation. For example, Wednesday directly precedes Thursday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intransitive follows relation. For example, Wednesday directly precedes Thursday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
         <rdfs:label xml:lang="en">directly follows</rdfs:label>
         <rdfs:label xml:lang="it">segue direttamente</rdfs:label>
     </owl:ObjectProperty>
@@ -274,7 +284,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#precedes"/>
-        <rdfs:comment>The intransitive precedes relation. For example, Monday directly precedes Tuesday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intransitive precedes relation. For example, Monday directly precedes Tuesday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
         <rdfs:label xml:lang="en">directly precedes</rdfs:label>
         <rdfs:label xml:lang="it">precede direttamente</rdfs:label>
     </owl:ObjectProperty>
@@ -302,7 +312,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A partial order relation that holds between descriptions. It represents the proper part relation between a description and another description featuring the same properties as the former, with at least one additional one.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A partial order relation that holds between descriptions. It represents the proper part relation between a description and another description featuring the same properties as the former, with at least one additional one.
 Descriptions can be expanded either by adding other descriptions as parts, or by refining concepts that are used by them. 
 An &apos;intention&apos; to expand must be present (unless purely formal theories are considered, but even in this case a criterion of relevance is usually active).</rdfs:comment>
         <rdfs:label xml:lang="it">espande</rdfs:label>
@@ -319,7 +329,7 @@ An &apos;intention&apos; to expand must be present (unless purely formal theorie
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an InformationObject and a &apos;meaning&apos;, generalized here as a &apos;SocialObject&apos;. For example: &apos;A Beehive is a structure in which bees are kept, typically in the form of a dome or box.&apos; (Oxford dictionary)&apos;; &apos;the term Beehive expresses the concept Beehive in my apiculture ontology&apos;.
 The intuition for &apos;meaning&apos; is intended to be very broad. A separate, large comment is included for those who want to investigate more on what kind of meaning can be represented in what form.</rdfs:comment>
-        <rdfs:comment>This is a large comment field for those who want to investigate the different uses of the &apos;expresses&apos; relation for modeling different approaches to meaning characterization and modeling.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a large comment field for those who want to investigate the different uses of the &apos;expresses&apos; relation for modeling different approaches to meaning characterization and modeling.
 For example, in all these cases, some aspect of meaning is involved:
 
 - Beehive means &quot;a structure in which bees are kept, typically in the form of a dome or box.&quot; (Oxford dictionary)
@@ -356,7 +366,7 @@ These different approaches are not necessarily conflicting, and they mostly talk
 	- Distributional meaning (as for geometrical models of meaning). Here it is modelled as the expresses relation between any instance of InformationObject and any different instance of InformationObject that isFormallyRepresentedIn some (geometrical) Region (e.g. a vector space)
 
 (2) Formal meaning (as for logic and formal semantics: no distinction is assumed between informal meaning and reference, therefore between &apos;expresses&apos; and &apos;isAbout&apos;, which can be used interchangeably)
-	- Object-level formal meaning (as in the traditional first-order logic semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor (in most cases) a Set; isGroundingFor is defined in the ontology: http://www.loa-cnr.it/ontologies/IOLite.owl
+	- Object-level formal meaning (as in the traditional first-order logic semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor (in most cases) a Set; isGroundingFor is defined in the ontology: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl
 	- Modal formal meaning (as in possible-world semantics). Here it is modelled as the expresses relation between an instance of InformationObject and an instance of Collection that isGroundingFor a Set, and which isPartOf some different instance of Collection that isGroundingFor a PossibleWorld
 
 This is only a first step to provide a framework, in which one can model different aspects of meaning. A more developed ontology should approach the problem of integrating the different uses of &apos;expresses&apos;, so that different theories, resources, methods can interoperate.</rdfs:comment>
@@ -373,7 +383,7 @@ This is only a first step to provide a framework, in which one can model differe
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptExpressedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>A relation between an InformationObject and a Concept , e.g. the term &quot;dog&quot; expresses the Concept &quot;dog&quot;. For expressing a relational meaning, see the more general object property: expresses</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an InformationObject and a Concept , e.g. the term &quot;dog&quot; expresses the Concept &quot;dog&quot;. For expressing a relational meaning, see the more general object property: expresses</rdfs:comment>
         <rdfs:label xml:lang="it">esprime il concetto</rdfs:label>
         <rdfs:label xml:lang="en">expresses concept</rdfs:label>
     </owl:ObjectProperty>
@@ -387,7 +397,7 @@ This is only a first step to provide a framework, in which one can model differe
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>Generic distance relation between any Entity(s). E.g. Rome is far from Beijing, astronomy is far from necromancy.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic distance relation between any Entity(s). E.g. Rome is far from Beijing, astronomy is far from necromancy.</rdfs:comment>
         <rdfs:label xml:lang="en">far from</rdfs:label>
     </owl:ObjectProperty>
     
@@ -416,7 +426,7 @@ It can be used between tasks, processes or time intervals, and subproperties wou
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A relation to encode either formal or informal characterizations of &apos;boundaries&apos; common to two different entities: an Event that ends when another begins, two abstract regions that have a common topological boundary, two objects that are said to be &apos;in contact&apos; from a commonsense perspective, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation to encode either formal or informal characterizations of &apos;boundaries&apos; common to two different entities: an Event that ends when another begins, two abstract regions that have a common topological boundary, two objects that are said to be &apos;in contact&apos; from a commonsense perspective, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">has common boundary</rdfs:label>
     </owl:ObjectProperty>
     
@@ -429,7 +439,7 @@ It can be used between tasks, processes or time intervals, and subproperties wou
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-        <rdfs:comment>The hasPart relation without transitivity, holding between an Object (the system) and another (the component), and assuming a Design that structures the Object.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The hasPart relation without transitivity, holding between an Object (the system) and another (the component), and assuming a Design that structures the Object.</rdfs:comment>
         <rdfs:label xml:lang="it">ha componente</rdfs:label>
         <rdfs:label xml:lang="en">has component</rdfs:label>
     </owl:ObjectProperty>
@@ -442,7 +452,7 @@ It can be used between tasks, processes or time intervals, and subproperties wou
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>&apos;Constituency&apos; depends on some layering of  the world described by the ontology. For example, scientific granularities (e.g. body-organ-tissue-cell) or ontological &apos;strata&apos; (e.g. social-mental-biological-physical) are  typical layerings. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Constituency&apos; depends on some layering of  the world described by the ontology. For example, scientific granularities (e.g. body-organ-tissue-cell) or ontological &apos;strata&apos; (e.g. social-mental-biological-physical) are  typical layerings. 
 Intuitively, a constituent is a part belonging to a lower layer. Since layering is actually a partition of the world described by the ontology, constituents are not properly classified as parts, although this kinship can be intuitive for common sense.
 A desirable advantage of this distinction is that we are able to talk e.g. of physical constituents of non-physical objects (e.g. systems), while this is not possible in terms of parts.
 Example of are the persons constituting a social system, the molecules constituting a person, the atoms constituting a river, etc. 
@@ -460,7 +470,7 @@ In all these examples, we notice a typical discontinuity between the constituted
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
-        <rdfs:comment>A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
 The intended semantics (not expressible in OWL) is that a Parameter isParameterFor a Concept that classifies an Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity.</rdfs:comment>
         <rdfs:label xml:lang="it">ha vincolo</rdfs:label>
         <rdfs:label xml:lang="en">has constraint</rdfs:label>
@@ -474,7 +484,7 @@ The intended semantics (not expressible in OWL) is that a Parameter isParameterF
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A generic, relative localization, holding between any entities. E.g. &apos;the cat is on the mat&apos;, &apos;Omar is in Samarcanda&apos;, &apos;the wound is close to the femural artery&apos;.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic, relative localization, holding between any entities. E.g. &apos;the cat is on the mat&apos;, &apos;Omar is in Samarcanda&apos;, &apos;the wound is close to the femural artery&apos;.
 For &apos;absolute&apos; locations, see SpaceRegion</rdfs:comment>
         <rdfs:label xml:lang="it">ha localizzazione</rdfs:label>
         <rdfs:label xml:lang="en">has location</rdfs:label>
@@ -502,7 +512,7 @@ For &apos;absolute&apos; locations, see SpaceRegion</rdfs:comment>
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
-        <rdfs:comment>A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation, e.g. a 4WheelDriver Role definedIn the ItalianTrafficLaw has a MinimumAge parameter on the Amount 16.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation, e.g. a 4WheelDriver Role definedIn the ItalianTrafficLaw has a MinimumAge parameter on the Amount 16.</rdfs:comment>
         <rdfs:label xml:lang="it">ha parametro</rdfs:label>
         <rdfs:label xml:lang="en">has parameter</rdfs:label>
     </owl:ObjectProperty>
@@ -544,7 +554,7 @@ Subproperties and restrictions can be used to specialize hasPart for objects, ev
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isPostconditionOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:comment>Direct succession applied to situations. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct succession applied to situations. 
 E.g., &apos;A postcondition of our Plan is to have things settled&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">ha postcondizione</rdfs:label>
         <rdfs:label xml:lang="en">has postcondition</rdfs:label>
@@ -559,7 +569,7 @@ E.g., &apos;A postcondition of our Plan is to have things settled&apos;.</rdfs:c
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:comment>Direct precedence applied to situations. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct precedence applied to situations. 
 E.g., &apos;A precondition to declare war against a foreign country is claiming to find nuclear weapons in it&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">ha precondizione</rdfs:label>
         <rdfs:label xml:lang="en">has precondition</rdfs:label>
@@ -573,7 +583,7 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
-        <rdfs:comment>A relation between entities and qualities, e.g. &apos;Dmitri&apos;s skin is yellowish&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between entities and qualities, e.g. &apos;Dmitri&apos;s skin is yellowish&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">ha qualità</rdfs:label>
         <rdfs:label xml:lang="en">has quality</rdfs:label>
     </owl:ObjectProperty>
@@ -586,7 +596,7 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
-        <rdfs:comment>A relation between entities and regions, e.g. &apos;the number of wheels of that truck is 12&apos;, &apos;the time of the experiment is August 9th, 2004&apos;, &apos;the whale has been localized at 34 degrees E, 20 degrees S&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between entities and regions, e.g. &apos;the number of wheels of that truck is 12&apos;, &apos;the time of the experiment is August 9th, 2004&apos;, &apos;the whale has been localized at 34 degrees E, 20 degrees S&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">ha attributo</rdfs:label>
         <rdfs:label xml:lang="en">has region</rdfs:label>
     </owl:ObjectProperty>
@@ -710,7 +720,7 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
-        <rdfs:comment>A relation between a Description and a SocialAgent, e.g. a Constitutional Charter introduces the SocialAgent &apos;PresidentOfRepublic&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a Description and a SocialAgent, e.g. a Constitutional Charter introduces the SocialAgent &apos;PresidentOfRepublic&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">introduce</rdfs:label>
         <rdfs:label xml:lang="en">introduces</rdfs:label>
     </owl:ObjectProperty>
@@ -724,7 +734,7 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:comment>Agent participation.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agent participation.</rdfs:comment>
         <rdfs:label xml:lang="it">coinvolge agente</rdfs:label>
         <rdfs:label xml:lang="en">involves agent</rdfs:label>
     </owl:ObjectProperty>
@@ -737,7 +747,7 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A relation between information objects and any Entity (including information objects). It can be used to talk about e.g. entities are references of proper nouns: the proper noun &apos;Leonardo da Vinci&apos; isAbout the Person Leonardo da Vinci; as well as to talk about sets of entities that can be described by a common noun: the common noun &apos;person&apos; isAbout the set of all persons in a domain of discourse, which can be represented in DOLCE-Ultralite as an individual of the class: Collection .
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between information objects and any Entity (including information objects). It can be used to talk about e.g. entities are references of proper nouns: the proper noun &apos;Leonardo da Vinci&apos; isAbout the Person Leonardo da Vinci; as well as to talk about sets of entities that can be described by a common noun: the common noun &apos;person&apos; isAbout the set of all persons in a domain of discourse, which can be represented in DOLCE-Ultralite as an individual of the class: Collection .
 The isAbout relation is reflexive (not expressible in OWL1.0), because information objects are also about themselves.</rdfs:comment>
         <rdfs:label xml:lang="en">is about</rdfs:label>
         <rdfs:label xml:lang="it">si riferisce a</rdfs:label>
@@ -775,7 +785,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-        <rdfs:comment>Agent participation.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agent participation.</rdfs:comment>
         <rdfs:label xml:lang="en">is agent involved in</rdfs:label>
         <rdfs:label xml:lang="it">è un agente coinvolto in</rdfs:label>
     </owl:ObjectProperty>
@@ -788,7 +798,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:label xml:lang="en">is characterized by</rdfs:label>
-        <rdfs:label>is characterized by {@en-us}</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is characterized by {@en-us}</rdfs:label>
         <rdfs:label xml:lang="it">è caratterizzato da</rdfs:label>
     </owl:ObjectProperty>
     
@@ -799,7 +809,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>A relation between a Concept and an Entity, e.g. &apos;John is considered a typical rude man&apos;; your last concert constitutes the achievement of a lifetime; &apos;20-year-old means she&apos;s mature enough&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a Concept and an Entity, e.g. &apos;John is considered a typical rude man&apos;; your last concert constitutes the achievement of a lifetime; &apos;20-year-old means she&apos;s mature enough&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is classified by</rdfs:label>
         <rdfs:label xml:lang="it">è classificato da</rdfs:label>
     </owl:ObjectProperty>
@@ -812,7 +822,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-        <rdfs:comment>The hasPart relation without transitivity, holding between an Object (the system) and another (the component), and assuming a Design that structures the Object.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The hasPart relation without transitivity, holding between an Object (the system) and another (the component), and assuming a Design that structures the Object.</rdfs:comment>
         <rdfs:label xml:lang="en">is component of</rdfs:label>
         <rdfs:label xml:lang="it">è componente di</rdfs:label>
     </owl:ObjectProperty>
@@ -825,7 +835,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
-        <rdfs:comment>A relation between an InformationObject and a Concept , e.g. the term &quot;dog&quot; expresses the Concept &quot;dog&quot;. For expressing a relational meaning, see the more general object property: expresses</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an InformationObject and a Concept , e.g. the term &quot;dog&quot; expresses the Concept &quot;dog&quot;. For expressing a relational meaning, see the more general object property: expresses</rdfs:comment>
         <rdfs:label xml:lang="en">is concept expressed by</rdfs:label>
         <rdfs:label xml:lang="it">è un concetto espresso da</rdfs:label>
     </owl:ObjectProperty>
@@ -838,7 +848,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A more generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A more generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description</rdfs:comment>
         <rdfs:label xml:lang="en">is concept used in</rdfs:label>
         <rdfs:label xml:lang="it">è un concetto usato in</rdfs:label>
     </owl:ObjectProperty>
@@ -850,7 +860,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:comment>A relation stating that an Agent is internally representing a Description . E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created a solar-system metaphor for his atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force shares the attack plan&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation stating that an Agent is internally representing a Description . E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created a solar-system metaphor for his atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force shares the attack plan&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is conceptualized by</rdfs:label>
         <rdfs:label xml:lang="it">è concettualizzato da</rdfs:label>
     </owl:ObjectProperty>
@@ -862,7 +872,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isConcretelyExpressedBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"/>
-        <rdfs:comment>A relation between an InformationRealization and a Description, e.g. &apos;the printout of the Italian Constitution concretelyExpresses the Italian Constitution&apos;. It should be supplied also with a rule stating that the InformationRealization realizes an InformationObject that expresses the Description</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an InformationRealization and a Description, e.g. &apos;the printout of the Italian Constitution concretelyExpresses the Italian Constitution&apos;. It should be supplied also with a rule stating that the InformationRealization realizes an InformationObject that expresses the Description</rdfs:comment>
         <rdfs:label xml:lang="en">is concretely expressed by</rdfs:label>
         <rdfs:label xml:lang="it">è espresso concretamente da</rdfs:label>
     </owl:ObjectProperty>
@@ -874,7 +884,7 @@ The isAbout relation is reflexive (not expressible in OWL1.0), because informati
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>&apos;Constituency&apos; depends on some layering of  the world described by the ontology. For example, scientific granularities (e.g. body-organ-tissue-cell) or ontological &apos;strata&apos; (e.g. social-mental-biological-physical) are  typical layerings. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Constituency&apos; depends on some layering of  the world described by the ontology. For example, scientific granularities (e.g. body-organ-tissue-cell) or ontological &apos;strata&apos; (e.g. social-mental-biological-physical) are  typical layerings. 
 Intuitively, a constituent is a part belonging to a lower layer. Since layering is actually a partition of the world described by the ontology, constituents are not properly classified as parts, although this kinship can be intuitive for common sense.
 A desirable advantage of this distinction is that we are able to talk e.g. of physical constituents of non-physical objects (e.g. systems), while this is not possible in terms of parts.
 Example of are the persons constituting a social system, the molecules constituting a person, the atoms constituting a river, etc. 
@@ -891,7 +901,7 @@ In all these examples, we notice a typical discontinuity between the constituted
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
 The intended semantics (not expressible in OWL) is that a Parameter isConstraintFor and Entity if the Parameter isParameterFor a Concept that classifies that Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity. The use in OWL is therefore a shortcut to annotate what Parameter constrains what Entity</rdfs:comment>
         <rdfs:label xml:lang="en">is constraint for</rdfs:label>
         <rdfs:label xml:lang="it">è un vincolo per</rdfs:label>
@@ -904,7 +914,7 @@ The intended semantics (not expressible in OWL) is that a Parameter isConstraint
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>A relation between concepts and collections, where a Concept is said to cover a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a (reified) class.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between concepts and collections, where a Concept is said to cover a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a (reified) class.
 E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxophone&apos; with the Parameter &apos;Vintage&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is covered by</rdfs:label>
         <rdfs:label xml:lang="it">è ricoperto da</rdfs:label>
@@ -918,7 +928,7 @@ E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxoph
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role &apos;officer&apos;, or &apos;the Italian Traffic Law defines the role Vehicle&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role &apos;officer&apos;, or &apos;the Italian Traffic Law defines the role Vehicle&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is defined in</rdfs:label>
         <rdfs:label xml:lang="it">è definito in</rdfs:label>
     </owl:ObjectProperty>
@@ -930,7 +940,7 @@ E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxoph
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>The relation between an Entity and a Description: a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system).
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between an Entity and a Description: a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system).
 A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.</rdfs:comment>
         <rdfs:label xml:lang="en">is described by</rdfs:label>
         <rdfs:label xml:lang="it">è descritto da</rdfs:label>
@@ -956,7 +966,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Task"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Action"/>
-        <rdfs:comment>A relation between an action and a task, e.g. &apos;putting some water in a pot and putting the pot on a fire until the water starts bubbling&apos; executes the task &apos;boiling&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an action and a task, e.g. &apos;putting some water in a pot and putting the pot on a fire until the water starts bubbling&apos; executes the task &apos;boiling&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is executed in</rdfs:label>
         <rdfs:label xml:lang="it">è eseguito mediante</rdfs:label>
     </owl:ObjectProperty>
@@ -969,7 +979,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A partial order relation that holds between descriptions. It represents the proper part relation between a description and another description featuring the same properties as the former, with at least one additional one.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A partial order relation that holds between descriptions. It represents the proper part relation between a description and another description featuring the same properties as the former, with at least one additional one.
 Descriptions can be expanded either by adding other descriptions as parts, or by refining concepts that are used by them. 
 An &apos;intention&apos; to expand must be present (unless purely formal theories are considered, but even in this case a criterion of relevance is usually active).</rdfs:comment>
         <rdfs:label xml:lang="en">is expanded in</rdfs:label>
@@ -983,7 +993,7 @@ An &apos;intention&apos; to expand must be present (unless purely formal theorie
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
-        <rdfs:comment>A relation between a dul:SocialObject (the &apos;meaning&apos;) and a dul:InformationObject (the &apos;expression&apos;). 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a dul:SocialObject (the &apos;meaning&apos;) and a dul:InformationObject (the &apos;expression&apos;). 
 For example: &apos;A Beehive is a structure in which bees are kept, typically in the form of a dome or box.&apos; (Oxford dictionary)&apos;; &apos;the term Beehive expresses the concept Beehive in my apiculture ontology&apos;.
 The intuition for &apos;meaning&apos; is intended to be very broad. A separate, large comment is included in the encoding of &apos;expresses&apos;, for those who want to investigate more on what kind of meaning can be represented in what form.</rdfs:comment>
         <rdfs:label xml:lang="en">is expressed by</rdfs:label>
@@ -997,7 +1007,7 @@ The intuition for &apos;meaning&apos; is intended to be very broad. A separate, 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A relation between a Description and a SocialAgent, e.g. a Constitutional Charter introduces the SocialAgent &apos;PresidentOfRepublic&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a Description and a SocialAgent, e.g. a Constitutional Charter introduces the SocialAgent &apos;PresidentOfRepublic&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is introduced by</rdfs:label>
         <rdfs:label xml:lang="it">è introdotto da</rdfs:label>
     </owl:ObjectProperty>
@@ -1009,7 +1019,7 @@ The intuition for &apos;meaning&apos; is intended to be very broad. A separate, 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A generic, relative localization, holding between any entities. E.g. &apos;Rome is the seat of the Pope&apos;, &apos;the liver is the location of the tumor&apos;.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic, relative localization, holding between any entities. E.g. &apos;Rome is the seat of the Pope&apos;, &apos;the liver is the location of the tumor&apos;.
 For &apos;absolute&apos; locations, see SpaceRegion</rdfs:comment>
         <rdfs:label xml:lang="en">is location of</rdfs:label>
         <rdfs:label xml:lang="it">è una localizzazione di</rdfs:label>
@@ -1022,7 +1032,7 @@ For &apos;absolute&apos; locations, see SpaceRegion</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
-        <rdfs:comment>A relation between collections and entities, e.g. &apos;the Night Watch by Rembrandt is in the Rijksmuseum collection&apos;; &apos;Davide is member of the Pen Club&apos;, &apos;Igor is one the subjects chosen for the experiment&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between collections and entities, e.g. &apos;the Night Watch by Rembrandt is in the Rijksmuseum collection&apos;; &apos;Davide is member of the Pen Club&apos;, &apos;Igor is one the subjects chosen for the experiment&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is member of</rdfs:label>
         <rdfs:label xml:lang="it">è membro di</rdfs:label>
     </owl:ObjectProperty>
@@ -1048,7 +1058,7 @@ For &apos;absolute&apos; locations, see SpaceRegion</rdfs:comment>
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
-        <rdfs:comment>A relation to represent a (past, present or future) TimeInterval at which an Entity is observable.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation to represent a (past, present or future) TimeInterval at which an Entity is observable.
 In order to encode a specific time, a data value should be related to the TimeInterval. 
 An alternative way of representing time is the datatype property: hasIntervalDate</rdfs:comment>
         <rdfs:label xml:lang="en">is observable at</rdfs:label>
@@ -1063,7 +1073,7 @@ An alternative way of representing time is the datatype property: hasIntervalDat
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation, e.g. a 4WheelDriver Role definedIn the ItalianTrafficLaw has a MinimumAge parameter on the Amount 16.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation, e.g. a 4WheelDriver Role definedIn the ItalianTrafficLaw has a MinimumAge parameter on the Amount 16.</rdfs:comment>
         <rdfs:label xml:lang="en">is parameter for</rdfs:label>
         <rdfs:label xml:lang="it">è un parametro per</rdfs:label>
     </owl:ObjectProperty>
@@ -1077,7 +1087,7 @@ An alternative way of representing time is the datatype property: hasIntervalDat
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
-        <rdfs:comment>The relation between a Parameter, e.g. &apos;MajorAge&apos;, and a Region, e.g. &apos;&gt;17 year&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Parameter, e.g. &apos;MajorAge&apos;, and a Region, e.g. &apos;&gt;17 year&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is parametrized by</rdfs:label>
         <rdfs:label xml:lang="it">è parametrizzato da</rdfs:label>
     </owl:ObjectProperty>
@@ -1115,7 +1125,7 @@ An alternative way of representing time is the datatype property: hasIntervalDat
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:comment>Direct succession applied to situations. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct succession applied to situations. 
 E.g., &apos;Taking some rest is a postcondition of my search for a hotel&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is postcondition of</rdfs:label>
         <rdfs:label xml:lang="it">è postcondizione di</rdfs:label>
@@ -1129,7 +1139,7 @@ E.g., &apos;Taking some rest is a postcondition of my search for a hotel&apos;.<
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:comment>Direct precedence applied to situations. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct precedence applied to situations. 
 E.g., &apos;claiming to find nuclear weapons in a foreign country is a precondition to declare war against it&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is precondition of</rdfs:label>
         <rdfs:label xml:lang="it">è precondizione di</rdfs:label>
@@ -1142,7 +1152,7 @@ E.g., &apos;claiming to find nuclear weapons in a foreign country is a precondit
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A relation between entities and qualities, e.g. &apos;Dmitri&apos;s skin is yellowish&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between entities and qualities, e.g. &apos;Dmitri&apos;s skin is yellowish&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is quality of</rdfs:label>
         <rdfs:label xml:lang="it">è una qualità di</rdfs:label>
     </owl:ObjectProperty>
@@ -1155,7 +1165,7 @@ E.g., &apos;claiming to find nuclear weapons in a foreign country is a precondit
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#realizes"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"/>
-        <rdfs:comment>A relation between an information realization and an information object, e.g. the paper copy of the Italian Constitution realizes the text of the Constitution.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an information realization and an information object, e.g. the paper copy of the Italian Constitution realizes the text of the Constitution.</rdfs:comment>
         <rdfs:label xml:lang="en">is realized by</rdfs:label>
         <rdfs:label xml:lang="it">è realizzato da</rdfs:label>
     </owl:ObjectProperty>
@@ -1167,7 +1177,7 @@ E.g., &apos;claiming to find nuclear weapons in a foreign country is a precondit
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
-        <rdfs:comment>A relation between information objects and any Entity (including information objects). It can be used to talk about e.g. entities are references of proper nouns: the proper noun &apos;Leonardo da Vinci&apos; isAbout the Person Leonardo da Vinci; as well as to talk about sets of entities that can be described by a common noun: the common noun &apos;person&apos; isAbout the set of all persons in a domain of discourse, which can be represented in DOLCE-Ultralite as an individual of the class: Collection .
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between information objects and any Entity (including information objects). It can be used to talk about e.g. entities are references of proper nouns: the proper noun &apos;Leonardo da Vinci&apos; isAbout the Person Leonardo da Vinci; as well as to talk about sets of entities that can be described by a common noun: the common noun &apos;person&apos; isAbout the set of all persons in a domain of discourse, which can be represented in DOLCE-Ultralite as an individual of the class: Collection .
 The isReferenceOf relation is irreflexive, differently from its inverse isAbout.</rdfs:comment>
         <rdfs:label xml:lang="en">is reference of</rdfs:label>
         <rdfs:label xml:lang="it">è il riferimento di</rdfs:label>
@@ -1181,7 +1191,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"/>
-        <rdfs:comment>The relation between entities and information realizations, e.g. between Italy and a paper copy of the text of the Italian Constitution.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between entities and information realizations, e.g. between Italy and a paper copy of the text of the Italian Constitution.</rdfs:comment>
         <rdfs:label xml:lang="en">is reference of information realized by</rdfs:label>
         <rdfs:label xml:lang="it">è riferimento dell&apos;informazione realizzata da</rdfs:label>
     </owl:ObjectProperty>
@@ -1193,7 +1203,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A relation between entities and regions, e.g. &apos;the color of my car is red&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between entities and regions, e.g. &apos;the color of my car is red&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is region for</rdfs:label>
         <rdfs:label xml:lang="it">è una regione di</rdfs:label>
     </owl:ObjectProperty>
@@ -1207,7 +1217,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>Any relation between concepts, e.g. superordinated, conceptual parthood, having a parameter, having a task, superordination, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any relation between concepts, e.g. superordinated, conceptual parthood, having a parameter, having a task, superordination, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">is related to concept</rdfs:label>
         <rdfs:label xml:lang="it">è associato al concetto</rdfs:label>
     </owl:ObjectProperty>
@@ -1221,7 +1231,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>Any relation between descriptions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any relation between descriptions.</rdfs:comment>
         <rdfs:label xml:lang="en">is related to description</rdfs:label>
         <rdfs:label xml:lang="it">è associata alla descrizione</rdfs:label>
     </owl:ObjectProperty>
@@ -1234,7 +1244,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A relation between a description and a role, e.g. the role &apos;Ingredient&apos; is defined in the recipe for a cake.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a description and a role, e.g. the role &apos;Ingredient&apos; is defined in the recipe for a cake.</rdfs:comment>
         <rdfs:label xml:lang="en">is role defined in</rdfs:label>
         <rdfs:label xml:lang="it">è un ruolo definito in</rdfs:label>
     </owl:ObjectProperty>
@@ -1247,7 +1257,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-        <rdfs:comment>A relation between an object and a role, e.g. &apos;student&apos; is the role of &apos;John&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between an object and a role, e.g. &apos;student&apos; is the role of &apos;John&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is role of</rdfs:label>
         <rdfs:label xml:lang="it">è un ruolo di</rdfs:label>
     </owl:ObjectProperty>
@@ -1260,7 +1270,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:comment>A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</rdfs:comment>
         <rdfs:label xml:lang="en">is satisfied by</rdfs:label>
         <rdfs:label xml:lang="it">è soddisfatta da</rdfs:label>
     </owl:ObjectProperty>
@@ -1286,7 +1296,7 @@ The isReferenceOf relation is irreflexive, differently from its inverse isAbout.
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
-        <rdfs:comment>A partial order relation that holds between social objects. It represents the subsumption relation between e.g. a Concept and another Concept that is broader in extensional interpretation, but narrowe in intensional interpretation.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A partial order relation that holds between social objects. It represents the subsumption relation between e.g. a Concept and another Concept that is broader in extensional interpretation, but narrowe in intensional interpretation.
 E.g. PhDStudent Role specializes Student Role</rdfs:comment>
         <rdfs:label xml:lang="en">is specialized by</rdfs:label>
         <rdfs:label xml:lang="it">è specializzato da</rdfs:label>
@@ -1302,7 +1312,7 @@ E.g. PhDStudent Role specializes Student Role</rdfs:comment>
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>Direct succession applied to concepts. E.g. the role &apos;Officer&apos; is subordinated to &apos;Director&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct succession applied to concepts. E.g. the role &apos;Officer&apos; is subordinated to &apos;Director&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is subordinated to</rdfs:label>
         <rdfs:label xml:lang="it">è subordinato a</rdfs:label>
     </owl:ObjectProperty>
@@ -1316,7 +1326,7 @@ E.g. PhDStudent Role specializes Student Role</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>Direct precedence applied to concepts. E.g. the role &apos;Executive&apos; is superordinated to &apos;DepartmentManager&apos;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct precedence applied to concepts. E.g. the role &apos;Executive&apos; is superordinated to &apos;DepartmentManager&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">is superordinated to</rdfs:label>
         <rdfs:label xml:lang="it">è superordinato a</rdfs:label>
     </owl:ObjectProperty>
@@ -1329,7 +1339,7 @@ E.g. PhDStudent Role specializes Student Role</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Task"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A relation between a description and a task, e.g. the task &apos;boil&apos; is defined in a recipe for a cake.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a description and a task, e.g. the task &apos;boil&apos; is defined in a recipe for a cake.</rdfs:comment>
         <rdfs:label xml:lang="en">is task defined in</rdfs:label>
         <rdfs:label xml:lang="it">è un task definito in</rdfs:label>
     </owl:ObjectProperty>
@@ -1342,7 +1352,7 @@ E.g. PhDStudent Role specializes Student Role</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Task"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
-        <rdfs:comment>A relation between roles and tasks, e.g. &apos;students have the duty of giving exams&apos; (i.e. the Role &apos;student&apos; hasTask the Task &apos;giving exams&apos;).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between roles and tasks, e.g. &apos;students have the duty of giving exams&apos; (i.e. the Role &apos;student&apos; hasTask the Task &apos;giving exams&apos;).</rdfs:comment>
         <rdfs:label xml:lang="en">is task of</rdfs:label>
         <rdfs:label xml:lang="it">è un obiettivo per</rdfs:label>
     </owl:ObjectProperty>
@@ -1367,7 +1377,7 @@ E.g. PhDStudent Role specializes Student Role</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A relation to represent a (past, present or future) TimeInterval at which an Entity is observable.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation to represent a (past, present or future) TimeInterval at which an Entity is observable.
 In order to encode a specific time, a data value should be related to the TimeInterval. 
 An alternative way of representing time is the datatype property: hasIntervalDate</rdfs:comment>
         <rdfs:label xml:lang="en">is time of observation of</rdfs:label>
@@ -1382,7 +1392,7 @@ An alternative way of representing time is the datatype property: hasIntervalDat
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#unifies"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A Collection has a unification criterion, provided by a Description; for example, a community of practice can be unified by a shared theory or interest, e.g. the community that makes research on mirror neurons shares some core knowledge about mirror neurons, which can be represented as a Description MirrorNeuronTheory that unifies the community. There can be several unifying descriptions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Collection has a unification criterion, provided by a Description; for example, a community of practice can be unified by a shared theory or interest, e.g. the community that makes research on mirror neurons shares some core knowledge about mirror neurons, which can be represented as a Description MirrorNeuronTheory that unifies the community. There can be several unifying descriptions.</rdfs:comment>
         <rdfs:label xml:lang="en">is unified by</rdfs:label>
         <rdfs:label xml:lang="it">è unificato da</rdfs:label>
     </owl:ObjectProperty>
@@ -1396,7 +1406,7 @@ An alternative way of representing time is the datatype property: hasIntervalDat
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>Generic distance relation between any Entity(s). E.g. Rome is near to Florence, astronomy is near to physics.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic distance relation between any Entity(s). E.g. Rome is near to Florence, astronomy is near to physics.</rdfs:comment>
         <rdfs:label xml:lang="en">near to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1409,7 +1419,7 @@ An alternative way of representing time is the datatype property: hasIntervalDat
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A schematic relation between any entities, e.g. &apos;the chest region overlaps with the abdomen region&apos;, &apos;my spoken words overlap with hers&apos;, &apos;the time of my leave overlaps with the time of your arrival&apos;, &apos;fibromyalgia overlaps with other conditions&apos;.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A schematic relation between any entities, e.g. &apos;the chest region overlaps with the abdomen region&apos;, &apos;my spoken words overlap with hers&apos;, &apos;the time of my leave overlaps with the time of your arrival&apos;, &apos;fibromyalgia overlaps with other conditions&apos;.
 Subproperties and restrictions can be used to specialize overlaps for objects, events, time intervals, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
         <rdfs:label xml:lang="it">sovrapposto a</rdfs:label>
@@ -1423,7 +1433,7 @@ Subproperties and restrictions can be used to specialize overlaps for objects, e
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#classifies"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
-        <rdfs:comment>The relation between a Parameter, e.g. &apos;MajorAgeLimit&apos;, and a Region, e.g. &apos;18_year&apos;.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Parameter, e.g. &apos;MajorAgeLimit&apos;, and a Region, e.g. &apos;18_year&apos;.
 For a more data-oriented relation, see hasDataValue</rdfs:comment>
         <rdfs:label xml:lang="en">parametrizes</rdfs:label>
         <rdfs:label xml:lang="it">parametrizza</rdfs:label>
@@ -1464,7 +1474,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>The relation between entities and information realizations, e.g. between Italy and a paper copy of the text of the Italian Constitution.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between entities and information realizations, e.g. between Italy and a paper copy of the text of the Italian Constitution.</rdfs:comment>
         <rdfs:label xml:lang="en">realizes information about</rdfs:label>
         <rdfs:label xml:lang="it">realizza informazione che si riferisce a a</rdfs:label>
     </owl:ObjectProperty>
@@ -1489,7 +1499,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
-        <rdfs:comment>A partial order relation that holds between social objects. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A partial order relation that holds between social objects. 
 It mainly represents the subsumption relation between e.g. a Concept or Description and another Concept (resp. Description) that is broader in extensional interpretation, but narrower in intensional interpretation. For example, the role PhDStudent specializes the role Student.
 Another possible use is between a Collection that isCoveredBy a Concept A, and another Collection that isCoveredBy a Concept B that on its turm specializes A. For example, the 70,000 series Selmer Mark VI saxophone Collection specializes the Selmer Mark VI saxophone Collection.</rdfs:comment>
         <rdfs:label xml:lang="en">specializes</rdfs:label>
@@ -1503,7 +1513,7 @@ Another possible use is between a Collection that isCoveredBy a Concept A, and a
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#unifies">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
-        <rdfs:comment>A Collection has a unification criterion, provided by a Description; for example, a community of practice can be unified by a shared theory or interest, e.g. the community that makes research on mirror neurons shares some core knowledge about mirror neurons, which can be represented as a Description MirrorNeuronTheory that unifies the community. There can be several unifying descriptions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Collection has a unification criterion, provided by a Description; for example, a community of practice can be unified by a shared theory or interest, e.g. the community that makes research on mirror neurons shares some core knowledge about mirror neurons, which can be represented as a Description MirrorNeuronTheory that unifies the community. There can be several unifying descriptions.</rdfs:comment>
         <rdfs:label xml:lang="it">unifica</rdfs:label>
         <rdfs:label xml:lang="en">unifies</rdfs:label>
     </owl:ObjectProperty>
@@ -1515,7 +1525,7 @@ Another possible use is between a Collection that isCoveredBy a Concept A, and a
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description. This last condition cannot be encoded for object properties in OWL.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description. This last condition cannot be encoded for object properties in OWL.</rdfs:comment>
         <rdfs:label xml:lang="it">usa il concetto</rdfs:label>
         <rdfs:label xml:lang="en">uses concept</rdfs:label>
     </owl:ObjectProperty>
@@ -1537,7 +1547,7 @@ Another possible use is between a Collection that isCoveredBy a Concept A, and a
 
     <owl:DatatypeProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue">
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A datatype property that encodes values from a datatype for an Entity. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype property that encodes values from a datatype for an Entity. 
 There are several ways to encode values in DOLCE (Ultralite):
 
 1) Directly assert an xsd:_ value to an Entity by using hasDataValue
@@ -1562,7 +1572,7 @@ Patterns (4) and (5) should be used instead when a constraint or a selection is 
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment>A datatype property that encodes values from xsd:date for an Event; a same Event can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype property that encodes values from xsd:date for an Event; a same Event can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</rdfs:comment>
         <rdfs:label xml:lang="it">evento ha data</rdfs:label>
         <rdfs:label xml:lang="en">has event date</rdfs:label>
     </owl:DatatypeProperty>
@@ -1575,7 +1585,7 @@ Patterns (4) and (5) should be used instead when a constraint or a selection is 
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment>A datatype property that encodes values from xsd:date for a TimeInterval; a same TimeInterval can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype property that encodes values from xsd:date for a TimeInterval; a same TimeInterval can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">has interval date</rdfs:label>
         <rdfs:label xml:lang="it">intervallo ha data</rdfs:label>
     </owl:DatatypeProperty>
@@ -1587,7 +1597,7 @@ Patterns (4) and (5) should be used instead when a constraint or a selection is 
     <owl:DatatypeProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
-        <rdfs:comment>Parametrizes values from a datatype. For example, a Parameter MinimumAgeForDriving hasParameterDataValue 18 on datatype xsd:int, in the Italian traffic code. In this example, MinimumAgeForDriving isDefinedIn the Norm ItalianTrafficCodeAgeDriving.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parametrizes values from a datatype. For example, a Parameter MinimumAgeForDriving hasParameterDataValue 18 on datatype xsd:int, in the Italian traffic code. In this example, MinimumAgeForDriving isDefinedIn the Norm ItalianTrafficCodeAgeDriving.
 More complex parametrization requires workarounds. E.g. AgeRangeForDrugUsage could parametrize data value: 14 to 50 on the datatype: xsd:int. Since complex datatypes are not allowed in OWL1.0, a solution to this can only work by creating two &apos;sub-parameters&apos;: MinimumAgeForDrugUsage (that hasParameterDataValue 14) and MaximumAgeForDrugUsage (that hasParameterDataValue 50), which are components of (cf. hasComponent) the main Parameter AgeRangeForDrugUsage.
 Ordering on subparameters can be created by using or specializing the object property &apos;precedes&apos;.</rdfs:comment>
         <rdfs:label xml:lang="it">ha valore</rdfs:label>
@@ -1612,7 +1622,7 @@ Ordering on subparameters can be created by using or specializing the object pro
     <owl:DatatypeProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue">
         <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
         <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
-        <rdfs:comment>A datatype property that encodes values for a Region, e.g. a float for the Region Height.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype property that encodes values for a Region, e.g. a float for the Region Height.</rdfs:comment>
         <rdfs:label xml:lang="en">has region data value</rdfs:label>
         <rdfs:label xml:lang="it">regione ha valore</rdfs:label>
     </owl:DatatypeProperty>
@@ -1637,7 +1647,7 @@ Ordering on subparameters can be created by using or specializing the object pro
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
-        <rdfs:comment>Any Entity that cannot be located in space-time. E.g. mathematical entities: formal semantics elements, regions within dimensional spaces, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any Entity that cannot be located in space-time. E.g. mathematical entities: formal semantics elements, regions within dimensional spaces, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Abstract</rdfs:label>
         <rdfs:label xml:lang="it">Astratto</rdfs:label>
     </owl:Class>
@@ -1679,7 +1689,7 @@ Ordering on subparameters can be created by using or specializing the object pro
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
-        <rdfs:comment>Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Additional comment: a computational agent can be considered as a PhysicalAgent that realizes a certain class of algorithms (that can be considered as instances of InformationObject) that allow to obtain some behaviors that are considered typical of agents in general. For an ontology of computational objects based on DOLCE see e.g. http://www.loa-cnr.it/COS/COS.owl, and http://www.loa-cnr.it/KCO/KCO.owl.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any agentive Object , either physical (e.g. a whale, a robot, an oak), or social (e.g. a corporation, an institution, a community).</rdfs:comment>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="it">Agente</rdfs:label>
@@ -1694,7 +1704,7 @@ Ordering on subparameters can be created by using or specializing the object pro
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute"/>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
-        <rdfs:comment>A quantity, independently from how it is measured, computed, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quantity, independently from how it is measured, computed, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Amount</rdfs:label>
         <rdfs:label xml:lang="it">Quantità</rdfs:label>
     </owl:Class>
@@ -1741,7 +1751,7 @@ Ordering on subparameters can be created by using or specializing the object pro
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A special kind of Situation that allows to include time indexing for the classifies relation in situations. For example, if a Situation s &apos;my old cradle is used in these days as a flower pot&apos; isSettingFor the entity &apos;my old cradle&apos; and the TimeIntervals &apos;8June2007&apos; and &apos;10June2007&apos;, and we know that s satisfies a functional Description for aesthetic objects, which defines the Concepts &apos;flower pot&apos; and &apos;flower&apos;, then we also need to know what concept classifies &apos;my old cradle&apos; at what time.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A special kind of Situation that allows to include time indexing for the classifies relation in situations. For example, if a Situation s &apos;my old cradle is used in these days as a flower pot&apos; isSettingFor the entity &apos;my old cradle&apos; and the TimeIntervals &apos;8June2007&apos; and &apos;10June2007&apos;, and we know that s satisfies a functional Description for aesthetic objects, which defines the Concepts &apos;flower pot&apos; and &apos;flower&apos;, then we also need to know what concept classifies &apos;my old cradle&apos; at what time.
 In order to solve this issue, we need to create a sub-situation s&apos; for the classification time: &apos;my old cradle is a flower pot in 8June2007&apos;. Such sub-situation s&apos; isPartOf s.</rdfs:comment>
         <rdfs:label xml:lang="en">Classification</rdfs:label>
         <rdfs:label xml:lang="it">Classificazione</rdfs:label>
@@ -1777,7 +1787,7 @@ A collection is not a logical class: a collection is a first-order entity, while
                 <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A Collection whose members are agents, e.g. &quot;the nurses&quot;, &quot;the Italian rockabilly fans&quot;.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Collection whose members are agents, e.g. &quot;the nurses&quot;, &quot;the Italian rockabilly fans&quot;.
 Collectives, facon de parler, can act as agents, although they are not assumed here to be agents (they are even disjoint from the class SocialAgent). This is represented by admitting collectives in the range of the relations having Agent in their domain or range.</rdfs:comment>
         <rdfs:label xml:lang="en">Collective</rdfs:label>
         <rdfs:label xml:lang="it">Collettivo</rdfs:label>
@@ -1816,7 +1826,7 @@ Collectives, facon de parler, can act as agents, although they are not assumed h
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A SocialAgent that is actedBy agents that are (and act as) members of a Collective. A collective agent can have roles that are also roles of those agents.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A SocialAgent that is actedBy agents that are (and act as) members of a Collective. A collective agent can have roles that are also roles of those agents.
 For example, in sociology, a &apos;group action&apos; is the situation in which a number of people (that result to be members of a collective) in a given area behave in a coordinated way in order to achieve a (often common) goal. The Agent in such a Situation is not single, but a CollectiveAgent (a Group). This can be generalized to the notion of social movement, which assumes a large Community or even the entire Society as agents.
 The difference between a CollectiveAgent and an Organization is that a Description that introduces a CollectiveAgent is also one that unifies the corresponding Collective. In practice, this difference makes collective agents &apos;less stable&apos; than organizations, because they have a dedicated, publicly recognizable Description that is conceived to introduce them.</rdfs:comment>
         <rdfs:label xml:lang="it">Agente collettivo</rdfs:label>
@@ -1867,7 +1877,7 @@ The classifies relation relates Concept(s) to Entity(s) at some TimeInterval</rd
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Configuration">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
-        <rdfs:comment>A collection whose members are &apos;unified&apos;, i.e. organized according to a certain schema that can be represented by a Description.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection whose members are &apos;unified&apos;, i.e. organized according to a certain schema that can be represented by a Description.
 Typically, a configuration is the collection that emerges out of a composed entity: an industrial artifact, a plan, a discourse, etc.  
 E.g. a physical book has a configuration provided by the part-whole schema that holds together its cover, pages, ink. That schema, based on the individual relations between the book and its parts, can be represented in a reified way by means of a (structural) description, which is said to &apos;unify&apos; the book configuration.</rdfs:comment>
         <rdfs:label xml:lang="en">Configuration</rdfs:label>
@@ -1907,7 +1917,7 @@ For example, a Plan is a Description of some actions to be executed by agents in
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Design">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A Description of the Situation, in terms of structure and function, held by an Entity for some reason.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Description of the Situation, in terms of structure and function, held by an Entity for some reason.
 A design is usually accompanied by the rationales behind the construction of the designed Entity (i.e. of the reasons why a design is claimed to be as such). For example, the actual design (a Situation) of a car or of a law is based on both the specification (a Description) of the structure and the rationales used to construct cars or a specific law.
 While designs typically describe entities to be constructed, they can also be used to describe &apos;refunctionalized&apos; entities, or to hypothesize unknown functions.</rdfs:comment>
         <rdfs:label xml:lang="en">Design</rdfs:label>
@@ -1926,7 +1936,7 @@ While designs typically describe entities to be constructed, they can also be us
                 <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Design"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A PhysicalArtifact that is also described by a Design. This excludes simple recycling or refunctionalization of natural objects. Most common sense &apos;artifacts&apos; can be included in this class: cars, lamps, houses, chips, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PhysicalArtifact that is also described by a Design. This excludes simple recycling or refunctionalization of natural objects. Most common sense &apos;artifacts&apos; can be included in this class: cars, lamps, houses, chips, etc.</rdfs:comment>
         <rdfs:label xml:lang="it">Artefatto progettato</rdfs:label>
         <rdfs:label xml:lang="en">Designed artifact</rdfs:label>
     </owl:Class>
@@ -1946,7 +1956,7 @@ While designs typically describe entities to be constructed, they can also be us
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Diagnosis">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A Description of the Situation of a system, usually applied in order to control a normal behaviour, or to explain a notable behavior (e.g. a functional breakdown).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Description of the Situation of a system, usually applied in order to control a normal behaviour, or to explain a notable behavior (e.g. a functional breakdown).</rdfs:comment>
         <rdfs:label xml:lang="it">Diagnosi</rdfs:label>
         <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
     </owl:Class>
@@ -2049,7 +2059,7 @@ For this reason, in this ontology both events and situations are allowed, togeth
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"/>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Role"/>
-        <rdfs:comment>A Concept that classifies an Event . An event type describes how an Event should be interpreted, executed, expected, seen, etc., according to the Description that the EventType isDefinedIn (or used in)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Concept that classifies an Event . An event type describes how an Event should be interpreted, executed, expected, seen, etc., according to the Description that the EventType isDefinedIn (or used in)</rdfs:comment>
         <rdfs:label xml:lang="en">Event type</rdfs:label>
         <rdfs:label xml:lang="it">Tipo di evento</rdfs:label>
     </owl:Class>
@@ -2060,7 +2070,7 @@ For this reason, in this ontology both events and situations are allowed, togeth
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Abstract"/>
-        <rdfs:comment>Entities that are formally defined and are considered independent from the social context in which they are used. They cannot be localized in space or time. Also called &apos;Platonic entities&apos;.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entities that are formally defined and are considered independent from the social context in which they are used. They cannot be localized in space or time. Also called &apos;Platonic entities&apos;.
 Mathematical and logical entities are included in this class: sets, categories, tuples, costants, variables, etc.
 Abstract formal entities are distinguished from information objects, which are supposed to be part of a social context, and are localized in space and time, therefore being (social) objects.
 For example, the class &apos;Quark&apos; is an abstract formal entity from the purely set-theoretical perspective, but it is an InformationObject from the viewpoint of ontology design, when e.g. implemented in a logical language like OWL.
@@ -2088,7 +2098,7 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Goal">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>The Description of a Situation that is desired by an Agent, and usually associated to a Plan that describes how to actually achieve it</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Description of a Situation that is desired by an Agent, and usually associated to a Plan that describes how to actually achieve it</rdfs:comment>
         <rdfs:label xml:lang="en">Goal</rdfs:label>
         <rdfs:label xml:lang="it">Scopo</rdfs:label>
     </owl:Class>
@@ -2129,7 +2139,7 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
-        <rdfs:comment>A piece of information, be it concretely realized or not.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of information, be it concretely realized or not.</rdfs:comment>
     </owl:Class>
     
 
@@ -2163,6 +2173,30 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#realizes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2198,7 +2232,7 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Concept"/>
-        <rdfs:comment>A Concept that isDefinedIn exactly 1 Description. For example, the Concept &apos;coffee&apos; in a &apos;preparesCoffee&apos; relation can be defined in that relation, and for all other Description(s) that use it, the isConceptUsedIn property should be applied. Notice therefore that not necessarily all Concept(s) isDefinedIn exactly 1 Description.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Concept that isDefinedIn exactly 1 Description. For example, the Concept &apos;coffee&apos; in a &apos;preparesCoffee&apos; relation can be defined in that relation, and for all other Description(s) that use it, the isConceptUsedIn property should be applied. Notice therefore that not necessarily all Concept(s) isDefinedIn exactly 1 Description.</rdfs:comment>
         <rdfs:label xml:lang="en">Local concept</rdfs:label>
     </owl:Class>
     
@@ -2208,7 +2242,7 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Method">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>A method is a Description that defines or uses concepts in order to guide carrying out actions aimed at a solution with respect to a problem. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method is a Description that defines or uses concepts in order to guide carrying out actions aimed at a solution with respect to a problem. 
 It is different from a Plan, because plans could be carried out in order to follow a method, but a method can be followed by executing alternative plans.</rdfs:comment>
         <rdfs:label xml:lang="en">Method</rdfs:label>
         <rdfs:label xml:lang="it">Metodo</rdfs:label>
@@ -2230,7 +2264,7 @@ It is different from a Plan, because plans could be carried out in order to foll
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Person"/>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent"/>
-        <rdfs:comment>A person in the physical commonsense intuition: &apos;have you seen that person walking down the street?&apos;</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person in the physical commonsense intuition: &apos;have you seen that person walking down the street?&apos;</rdfs:comment>
         <rdfs:label xml:lang="en">Natural person</rdfs:label>
         <rdfs:label xml:lang="it">Persona fisica</rdfs:label>
     </owl:Class>
@@ -2251,6 +2285,14 @@ It is different from a Plan, because plans could be carried out in order to foll
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#Object -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Object">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+                    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Entity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2288,7 +2330,7 @@ It is different from a Plan, because plans could be carried out in order to foll
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Organism">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"/>
-        <rdfs:comment>A physical objects with biological characteristics, typically that organisms can self-reproduce.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical objects with biological characteristics, typically that organisms can self-reproduce.</rdfs:comment>
         <rdfs:label xml:lang="en">Organism</rdfs:label>
         <rdfs:label xml:lang="it">Organismo</rdfs:label>
     </owl:Class>
@@ -2335,7 +2377,7 @@ It is different from a Plan, because plans could be carried out in order to foll
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Pattern">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Relation"/>
-        <rdfs:comment>Any invariance detected from a dataset, or from observation; also, any invariance proposed based on top-down considerations.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any invariance detected from a dataset, or from observation; also, any invariance proposed based on top-down considerations.
 E.g. patterns detected and abstracted by an organism, by pattern recognition algorithms, by machine learning techniques, etc.
 An occurrence of a pattern is an &apos;observable&apos;, or detected Situation</rdfs:comment>
         <rdfs:label xml:lang="en">Pattern</rdfs:label>
@@ -2355,9 +2397,9 @@ An occurrence of a pattern is an &apos;observable&apos;, or detected Situation</
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
-        <rdfs:comment>Persons in commonsense intuition, which does not apparently distinguish between either natural or social persons.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persons in commonsense intuition, which does not apparently distinguish between either natural or social persons.</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
-        <rdfs:label>Persona {it}</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persona {it}</rdfs:label>
     </owl:Class>
     
 
@@ -2366,7 +2408,7 @@ An occurrence of a pattern is an &apos;observable&apos;, or detected Situation</
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Personification">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"/>
-        <rdfs:comment>A social entity with agentive features, but whose status is the result of a cultural transformation from e.g. a PhysicalObject, an Event, an Abstract, another SocialObject, etc. For example: the holy grail, deus ex machina, gods, magic wands, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A social entity with agentive features, but whose status is the result of a cultural transformation from e.g. a PhysicalObject, an Event, an Abstract, another SocialObject, etc. For example: the holy grail, deus ex machina, gods, magic wands, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Personification</rdfs:label>
     </owl:Class>
     
@@ -2376,6 +2418,7 @@ An occurrence of a pattern is an &apos;observable&apos;, or detected Situation</
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"/>
@@ -2393,6 +2436,7 @@ A PhysicalAgent is a substrate for (actsFor) a Social Agent</rdfs:comment>
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
@@ -2413,9 +2457,15 @@ Immaterial (non-physical) artifacts (e.g. texts, ideas, cultural movements, corp
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"/>
+                <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
         <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
-        <rdfs:comment>Physical value of a physical object, e.g. density, color, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical value of a physical object, e.g. density, color, etc.</rdfs:comment>
         <rdfs:label xml:lang="it">Caratteristica fisica</rdfs:label>
         <rdfs:label xml:lang="en">Physical attribute</rdfs:label>
     </owl:Class>
@@ -2425,8 +2475,27 @@ Immaterial (non-physical) artifacts (e.g. texts, ideas, cultural movements, corp
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody">
-        <rdfs:comment>Physical bodies are PhysicalObject(s), for which we tend to neutralize any possible artifactual character. They can have several granularity levels: geological, chemical, physical, biological, etc.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical bodies are PhysicalObject(s), for which we tend to neutralize any possible artifactual character. They can have several granularity levels: geological, chemical, physical, biological, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Physical body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any Object that has a proper space region. The prototypical physical object has also an associated mass, but the nature of its mass can greatly vary based on the epistemological status of the object (scientifically measured, subjectively possible, imaginary).</rdfs:comment>
+        <rdfs:label xml:lang="it">Oggetto fisico</rdfs:label>
+        <rdfs:label xml:lang="en">Physical object</rdfs:label>
     </owl:Class>
     
 
@@ -2434,6 +2503,7 @@ Immaterial (non-physical) artifacts (e.g. texts, ideas, cultural movements, corp
     <!-- http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical object that is inherently located; for example, a water area.</rdfs:comment>
         <rdfs:label xml:lang="it">Luogo fisico</rdfs:label>
         <rdfs:label xml:lang="en">Physical place</rdfs:label>
@@ -2451,7 +2521,7 @@ Immaterial (non-physical) artifacts (e.g. texts, ideas, cultural movements, corp
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the presence of other entities (&quot;the area close to Roma&quot;), pivot events or signs (&quot;the area where the helicopter fell&quot;), complements of other entities (&quot;the area under the table&quot;), etc. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a non-material location determined by the presence of other entities (&quot;the area close to Roma&quot;), pivot events or signs (&quot;the area where the helicopter fell&quot;), complements of other entities (&quot;the area under the table&quot;), etc. 
 In this generic sense, a Place is an &quot;approximate&quot; location. For an &quot;absolute&quot; location, see the class SpaceRegion</rdfs:comment>
         <rdfs:label xml:lang="it">Luogo</rdfs:label>
         <rdfs:label xml:lang="en">Place</rdfs:label>
@@ -2469,7 +2539,7 @@ In this generic sense, a Place is an &quot;approximate&quot; location. For an &q
                 <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Goal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A Description having an explicit Goal, to be achieved by executing the plan</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Description having an explicit Goal, to be achieved by executing the plan</rdfs:comment>
         <rdfs:label xml:lang="it">Piano</rdfs:label>
         <rdfs:label xml:lang="en">Plan</rdfs:label>
     </owl:Class>
@@ -2491,7 +2561,7 @@ In this generic sense, a Place is an &quot;approximate&quot; location. For an &q
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:comment>Plan executions are situations that proactively satisfy a plan. Subplan executions are proper parts of the whole plan execution.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plan executions are situations that proactively satisfy a plan. Subplan executions are proper parts of the whole plan execution.</rdfs:comment>
         <rdfs:label xml:lang="it">Esecuzione di piano</rdfs:label>
         <rdfs:label xml:lang="en">Plan execution</rdfs:label>
     </owl:Class>
@@ -2502,7 +2572,7 @@ In this generic sense, a Place is an &quot;approximate&quot; location. For an &q
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Process">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-        <rdfs:comment>This is a placeholder for events that are considered in their evolution, or anyway not strictly dependent on agents, tasks, and plans. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a placeholder for events that are considered in their evolution, or anyway not strictly dependent on agents, tasks, and plans. 
 See Event class for some thoughts on classifying events. See also &apos;Transition&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">Process</rdfs:label>
         <rdfs:label xml:lang="it">Processo</rdfs:label>
@@ -2561,7 +2631,7 @@ See Event class for some thoughts on classifying events. See also &apos;Transiti
                 <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like is a Quality, while the encoding of that Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any aspect of an Entity (but not a part of it), which cannot exist without that Entity. For example, the way the surface of a specific PhysicalObject looks like is a Quality, while the encoding of that Quality into e.g. a PhysicalAttribute should be modeled as a Region. 
 From the design viewpoint, the Quality-Region distinction is useful only when individual aspects of an Entity are considered in a domain of discourse. 
 For example, in an automotive context, it would be irrelevant to consider the aspects of car windows for a specific car, unless the factory wants to check a specific window against design parameters (anomaly detection). 
 On the other hand, in an antiques context, the individual aspects for a specific piece of furniture are a major focus of attention, and may constitute the actual added value, because the design parameters for old furniture are often not fixed, and may not be viewed as &apos;anomalies&apos;.</rdfs:comment>
@@ -2611,7 +2681,7 @@ Regions are not data values in the ordinary knowledge representation sense; in o
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Relation">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Description"/>
-        <rdfs:comment>Relations are descriptions that can be considered as the counterpart of formal relations (that are included in the FormalEntity class).
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relations are descriptions that can be considered as the counterpart of formal relations (that are included in the FormalEntity class).
 For example, &apos;givingGrantToInstitution(x,y,z)&apos; with three argument types: Provider(x),Grant(y),Recipient(z), can have a Relation counterpart: &apos;GivingGrantToInstitution&apos;, which defines three Concept instances: Provider,Grant,Recipient.
 Since social objects are not formal entities, Relation includes here any &apos;relation-like&apos; entity in common sense, including social relations.</rdfs:comment>
         <rdfs:label xml:lang="en">Relation</rdfs:label>
@@ -2670,7 +2740,7 @@ Since social objects are not formal entities, Relation includes here any &apos;r
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Set">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity"/>
-        <rdfs:label>Insieme {it}</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insieme {it}</rdfs:label>
         <rdfs:label xml:lang="en">Set</rdfs:label>
     </owl:Class>
     
@@ -2763,7 +2833,7 @@ Being dependent on communication, all social objects need to be expressed by som
                 <owl:allValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Any Region in a dimensional space that is used to represent some characteristic of a SocialObject, e.g. judgment values, social scalars, statistical attributes over a collection of entities, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any Region in a dimensional space that is used to represent some characteristic of a SocialObject, e.g. judgment values, social scalars, statistical attributes over a collection of entities, etc.</rdfs:comment>
         <rdfs:label xml:lang="it">Caratteristica sociale</rdfs:label>
         <rdfs:label xml:lang="en">Social attribute</rdfs:label>
     </owl:Class>
@@ -2784,7 +2854,7 @@ Being dependent on communication, all social objects need to be expressed by som
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A SocialAgent that needs the existence of a specific NaturalPerson in order to act (but the lifetime of the NaturalPerson has only to overlap that of the SocialPerson).</rdfs:comment>
         <rdfs:label xml:lang="it">Persona sociale</rdfs:label>
         <rdfs:label xml:lang="en">Social person</rdfs:label>
-        <owl:versionInfo>Formerly: Person (changed to avoid confusion with commonsense intuition)</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formerly: Person (changed to avoid confusion with commonsense intuition)</owl:versionInfo>
     </owl:Class>
     
 
@@ -2793,7 +2863,7 @@ Being dependent on communication, all social objects need to be expressed by som
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#SocialRelation">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Relation"/>
-        <rdfs:comment>Any social relationship</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any social relationship</rdfs:comment>
         <rdfs:label xml:lang="it">Relazione sociale</rdfs:label>
         <rdfs:label xml:lang="en">Social relation</rdfs:label>
     </owl:Class>
@@ -2836,7 +2906,7 @@ Being dependent on communication, all social objects need to be expressed by som
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Substance">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"/>
-        <rdfs:comment>Any PhysicalBody that has not necessarily specified (designed) boundaries, e.g. a pile of trash, some sand, etc. 
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any PhysicalBody that has not necessarily specified (designed) boundaries, e.g. a pile of trash, some sand, etc. 
 In this sense, an artistic object made of trash or a dose of medicine in the form of a pill would be a FunctionalSubstance, and a DesignedArtifact, since its boundaries are specified by a Design; aleatoric objects that are outcomes of an artistic process might be still considered DesignedArtifact(s), and Substance(s).</rdfs:comment>
         <rdfs:label xml:lang="it">Sostanza</rdfs:label>
         <rdfs:label xml:lang="en">Substance</rdfs:label>
@@ -2889,7 +2959,7 @@ In this sense, an artistic object made of trash or a dose of medicine in the for
                 <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Relation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A Theory is a Description that represents a set of assumptions for describing something, usually general. Scientific, philosophical, and commonsense theories can be included here.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Theory is a Description that represents a set of assumptions for describing something, usually general. Scientific, philosophical, and commonsense theories can be included here.
 This class can also be used to act as &apos;naturalized reifications&apos; of logical theories (of course, they will be necessarily incomplete in this case, because second-order entities are represented as first-order ones).</rdfs:comment>
         <rdfs:label xml:lang="it">Teoria</rdfs:label>
         <rdfs:label xml:lang="en">Theory</rdfs:label>
@@ -2948,7 +3018,7 @@ This class can also be used to act as &apos;naturalized reifications&apos; of lo
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A transition is a Situation that creates a context for three TimeInterval(s), two additional different Situation(s), one Event, one Process, and at least one Object: the Event is observed as the cause for the transition, one Situation is the state before the transition, the second Situation is the state after the transition, the Process is the invariance under some different transitions (including the one represented here), in which at least one Object is situated. Finally, the time intervals position the situations and the transitional event in time.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transition is a Situation that creates a context for three TimeInterval(s), two additional different Situation(s), one Event, one Process, and at least one Object: the Event is observed as the cause for the transition, one Situation is the state before the transition, the second Situation is the state after the transition, the Process is the invariance under some different transitions (including the one represented here), in which at least one Object is situated. Finally, the time intervals position the situations and the transitional event in time.
 This class of situations partly encodes the ontology underlying typical engineering algebras for processes, e.g. Petri Nets. 
 A full representation of the transition ontology is outside the expressivity of OWL, because we would need qualified cardinality restrictions,  coreference, property equivalence, and property composition.</rdfs:comment>
         <rdfs:label xml:lang="en">Transition</rdfs:label>
@@ -2979,7 +3049,7 @@ This class is very useful to apply a variety of the so-called &quot;ClassesAsVal
                 <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Units of measure are conceptualized here as parameters on regions, which can be valued as datatype values.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Units of measure are conceptualized here as parameters on regions, which can be valued as datatype values.</rdfs:comment>
         <rdfs:label xml:lang="en">Unit of measure</rdfs:label>
         <rdfs:label xml:lang="it">Unità di misura</rdfs:label>
     </owl:Class>
