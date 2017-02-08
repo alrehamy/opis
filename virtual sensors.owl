@@ -1,0 +1,1056 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#"
+     xml:base="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors"
+     xmlns:Ontology1184060740="http://www.owl-ontologies.com/Ontology1184060740.owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:obo1="http://purl.obofoundry.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+     xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:classification_taxonomy="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:privacy_policy="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#"
+     xmlns:vanan="http://purl.org/vocab/vanan/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor -->
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000418 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000418"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000294"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000298 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000298"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#role_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#role_of"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1184060740.owl#objectProperty_3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#objectProperty_3"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasCertification -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasCertification"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataProperty"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomAssertion">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/extended-opis.owl#PointOfInterest -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/extended-opis.owl#PointOfInterest"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#geographicLocationProperty -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#geographicLocationProperty"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001 -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#IRIDatatype001">
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#behavioralAgent_classAxiom"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivity_classAxiom"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#isLocationOf_objectPropertyAxiom"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#pointOfInterest_classAxiom"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasIRI">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#Agent007 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#Agent007">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Agent"/>
+        <ssn:hasProperty rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#Agent007Geolocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#Agent007Geolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#Agent007Geolocation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#geographicLocationProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#HumanActivityOutputSpecification001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#HumanActivityOutputSpecification001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000027"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatype001"/>
+        <ro:has_part rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_800750"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityMappingSpecification001"/>
+        <rdfs:label xml:lang="en">human activity specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#HumanActivityPerceptionVS001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#HumanActivityPerceptionVS001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionProcess001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestOperator001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestOperator001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionOperator001"/>
+        <rdfs:label xml:lang="en">human activity perception virtual sensor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracy001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracy001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000130"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracyPoICalculation001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracyPoICalculation001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_510989"/>
+        <obo:IAO_0000418 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracy001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracyPoISelection001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracyPoISelection001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_510989"/>
+        <obo:IAO_0000418 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracy001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84LatitudeFieldComponent -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84LatitudeFieldComponent">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_387565"/>
+        <obo:IAO_0000219 rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_871075"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#latitude"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84ListFieldSpecification -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84ListFieldSpecification">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_032725"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84LatitudeFieldComponent"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84LongitudeComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84LongitudeComponent -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGPS84LongitudeComponent">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_387565"/>
+        <obo:IAO_0000219 rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_871075"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#longitude"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGS84 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGS84">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_471356"/>
+        <rdfs:label xml:lang="en">WGS84 datatype</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#accessControlCondition_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#accessControlCondition_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#AccessControlCondition"/>
+        <DUL:isSettingFor rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#socialContext001"/>
+        <rdfs:label xml:lang="en">attribute-based access control condition 01</rdfs:label>
+        <privacy_policy:includesAccessControlVirtualSensor rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlVirtualSensor_01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#accessControlCondition_02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#accessControlCondition_02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#AccessControlCondition"/>
+        <DUL:isSettingFor rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#socialContext001"/>
+        <rdfs:comment xml:lang="en">access control condition 02</rdfs:comment>
+        <privacy_policy:includesAccessControlVirtualSensor rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlVirtualSensor_01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#behavioralAgent_classAxiom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#behavioralAgent_classAxiom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
+        <rdfs:label xml:lang="en">behavioral agent class axiom</rdfs:label>
+        <opis:hasIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithm001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithm001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <DUL:hasPart rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithmObjective001"/>
+        <rdfs:label xml:lang="en">calculate probability point of interest algorithm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithmObjective001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithmObjective001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#HumanActivityOutputSpecification001"/>
+        <rdfs:label xml:lang="en">calculate probability point of interest objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestOperator001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestOperator001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <OBO_REL:role_of rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfinterestAlgorithmImplementation001"/>
+        <rdfs:label xml:lang="en">calculate probability point of interest operator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfinterestAlgorithmImplementation001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfinterestAlgorithmImplementation001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithm001"/>
+        <rdfs:label xml:lang="en">calculate probability point of interest algorithm implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#descriptiveGeographiclocationDataSpecification_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#descriptiveGeographiclocationDataSpecification_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000247"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#WGS84"/>
+        <ro:has_part rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_947353"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationMappingSpecification_01"/>
+        <rdfs:label xml:lang="en">geographic location data specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationMappingSpecification_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationMappingSpecification_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#propertyMappingSpecification"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationProperty_dataPropertyAxiom"/>
+        <rdfs:label xml:lang="en">geographic location mapping specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationProperty_dataPropertyAxiom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationProperty_dataPropertyAxiom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#dataPropertyAxiom"/>
+        <rdfs:comment xml:lang="en">&apos;geographic location property&apos; data property axiom</rdfs:comment>
+        <opis:hasIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#geographicLocationProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityMappingSpecification001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityMappingSpecification001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#behavioralAgent_classAxiom"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivity_classAxiom"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#isLocationOf_objectPropertyAxiom"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#pointOfInterest_classAxiom"/>
+        <rdfs:label xml:lang="en">human activity mapping specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionDatatypeAttributeList -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionDatatypeAttributeList">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatypeAttributeList"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionDatatypeAxiomsAttribute001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionDatatypeAxiomsAttribute001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#AxiomsAttributeSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionObjective_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionObjective_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionObjective"/>
+        <rdfs:comment>human activity perception objective</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionProcess001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionProcess001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#SemanticPerceptionProcess"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithm001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivityPerceptionObjective_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithm001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithm001"/>
+        <rdfs:label xml:lang="en">human activity perception process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivity_classAxiom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#humanActivity_classAxiom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
+        <rdfs:comment xml:lang="en">human activity class axiom</rdfs:comment>
+        <opis:hasIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#PracticingSport"/>
+        <opis:hasIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#Behavior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#isLocationOf_objectPropertyAxiom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#isLocationOf_objectPropertyAxiom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#objectPropertyAxiom"/>
+        <oboInOwl:hasURI rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"/>
+        <rdfs:label xml:lang="en">&apos;is location of&apos; object property axiom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#latitude -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#latitude">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_507131"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#longitude -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#longitude">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_inst_507131"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#pointOfInterest_classAxiom -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#pointOfInterest_classAxiom">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#classAxiom"/>
+        <rdfs:comment xml:lang="en">point of interest class axiom</rdfs:comment>
+        <opis:hasIRI rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/extended-opis.owl#PointOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#privacyPreservingCondition_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#privacyPreservingCondition_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#privacyPreservingCondition"/>
+        <DUL:isSettingFor rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#sportContext001"/>
+        <privacy_policy:includesPrivacyPreservingVirtualSensor rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#kAnonymityVirtualSensor_01"/>
+        <opis:hasIRI xml:lang="en">privacy preserving condition 01</opis:hasIRI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgoithmImplementation001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgoithmImplementation001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithm001"/>
+        <obo:OBI_0000298 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracy001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithm001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithm001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <DUL:hasPart rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithmObjective001"/>
+        <ro:precedes rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#calculateProbabilityPointOfInterestAlgorithm001"/>
+        <rdfs:label xml:lang="en">select point of interest algorithm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithmObjective001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithmObjective001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        <rdfs:label xml:lang="en">select point of interest algorithm objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestOperator001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestOperator001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <OBO_REL:role_of rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgoithmImplementation001"/>
+        <Ontology1184060740:objectProperty_3 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracyPoISelection001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithm001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithm001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <DUL:hasPart rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithmObjective001"/>
+        <ro:precedes rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#selectPointOfInterestAlgorithm001"/>
+        <rdfs:label xml:lang="en">stop detection algorithm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithmImplementation001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithmImplementation001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithm001"/>
+        <obo:OBI_0000298 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracy001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithmObjective001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithmObjective001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#descriptiveGeographiclocationDataSpecification_01"/>
+        <rdfs:label xml:lang="en">stop detection algorithm objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionOperator001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionOperator001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <OBO_REL:role_of rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#stopDetectionAlgorithmImplementation001"/>
+        <Ontology1184060740:objectProperty_3 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#SpatialAccuracyPoICalculation001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#ABACAlgorithmImpl_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#ABACAlgorithmImpl_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmABAC_01"/>
+        <rdfs:label xml:lang="en">attribute-based access control implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityAlgorithmImpl_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityAlgorithmImpl_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmKAnonymity_001"/>
+        <rdfs:label xml:lang="en">k-anonymity implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityObjective_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityObjective_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingObjective"/>
+        <rdfs:label xml:lang="en">k-anonymity objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityPrivacyPreservingTechnique_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityPrivacyPreservingTechnique_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingTechnique"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityObjective_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmKAnonymity_001"/>
+        <rdfs:label xml:lang="en">k-anonymity technique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#RBACAlgorithmImpl_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#RBACAlgorithmImpl_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmRBAC_01"/>
+        <rdfs:label xml:lang="en">role-based access control algorithm implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmABAC_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmABAC_01">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec001"/>
+        <rdfs:label xml:lang="en">algorithm attribute based access control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmKAnonymity_001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmKAnonymity_001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec003"/>
+        <rdfs:label xml:lang="en">k-anonymity algorithm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmLDiversity_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmLDiversity_01">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec004"/>
+        <rdfs:label xml:lang="en">l-diversity algorithm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmRBAC_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmRBAC_01">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec002"/>
+        <rdfs:label xml:lang="en">algorithm role-based access control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlMechanism_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlMechanism_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlMechanism"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmABAC_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlObjective_01"/>
+        <rdfs:label xml:lang="en">attribute-based access control mechanism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlObjective_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlObjective_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlObjective"/>
+        <rdfs:label xml:lang="en">attribute-based access control objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlVirtualSensor_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlVirtualSensor_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#attributeBasedAccessControlMechanism_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorABAC_01"/>
+        <rdfs:label xml:lang="en">attribute-based access control virtual sensor</rdfs:label>
+        <opis:hasCertification>OK</opis:hasCertification>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityForAccessControl001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityForAccessControl001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralEntity"/>
+        <rdfs:label xml:lang="en">behavioral entity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityMappingSpec001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityMappingSpec001">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityForAccessControl001"/>
+        <rdfs:label xml:lang="en">behavioral entity mapping specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityMappingSpec002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityMappingSpec002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticEntityMappingSpecification"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationProperty_dataPropertyAxiom"/>
+        <rdfs:label xml:lang="en">behavioral entity mapping specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec001">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatype001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityForAccessControl001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec002">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <obo:IAO_0000136 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#semanticPerceptionDatatype001"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#behavioralEntityForAccessControl001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec003 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec003">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <obo:IAO_0000136 rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_871075"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationMappingSpecification_01"/>
+        <rdfs:comment xml:lang="en">data specification for k-anonymity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec004 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec004">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000168"/>
+        <obo:IAO_0000136 rdf:resource="http://kt.ijs.si/panovp/OntoDT#OntoDT_871075"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/virtualsensors#geographicLocationMappingSpecification_01"/>
+        <rdfs:comment xml:lang="en">data specification for l-diversity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#kAnonymityVirtualSensor_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#kAnonymityVirtualSensor_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityPrivacyPreservingTechnique_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorKAnonymity_01"/>
+        <rdfs:label xml:lang="en">k-anonymity virtual sensor</rdfs:label>
+        <opis:hasCertification>OK</opis:hasCertification>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityAlgorithmImpl_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityAlgorithmImpl_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmLDiversity_01"/>
+        <rdfs:label xml:lang="en">l-diversity algorithm implementation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityObjective_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityObjective_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingObjective"/>
+        <rdfs:label xml:lang="en">l-diversity objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityPrivacyPreservingTechnique_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityPrivacyPreservingTechnique_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingTechnique"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmLDiversity_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityObjective_01"/>
+        <rdfs:label xml:lang="en">l-diversity technique</rdfs:label>
+        <opis:hasCertification>OK</opis:hasCertification>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityVirtualSensor_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityVirtualSensor_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityPrivacyPreservingTechnique_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorlDiversity_01"/>
+        <rdfs:label xml:lang="en">l-diversity virtual sensor</rdfs:label>
+        <opis:hasCertification>OK</opis:hasCertification>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec001 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec003 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec003">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec003"/>
+        <rdfs:comment xml:lang="en">object specification of k-anonymity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec004 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#objSpec004">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#dataSpec004"/>
+        <rdfs:comment xml:lang="en">objective specification for l-diversity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorABAC_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorABAC_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <obo:RO_0000087 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#ABACAlgorithmImpl_01"/>
+        <rdfs:label xml:lang="en">operator attribute-based access control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorKAnonymity_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorKAnonymity_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <obo:RO_0000087 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#KAnonymityAlgorithmImpl_01"/>
+        <rdfs:label xml:lang="en">operator k-anonymity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorRBAC_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorRBAC_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <obo:RO_0000087 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#RBACAlgorithmImpl_01"/>
+        <rdfs:label xml:lang="en">operator role-based access control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorlDiversity_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorlDiversity_01">
+        <rdf:type rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+        <obo:RO_0000087 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#lDiversityAlgorithmImpl_01"/>
+        <rdfs:label xml:lang="en">operator l-diversity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlMechanism_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlMechanism_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlMechanism"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#algorithmRBAC_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlObjective_01"/>
+        <rdfs:label xml:lang="en">role-based access control mechanism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlObjective_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlObjective_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlObjective"/>
+        <rdfs:label xml:lang="en">role-based access control objective</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlVirtualSensor_01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlVirtualSensor_01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+        <obo:OBI_0000294 rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#roleBasedAccessControlMechanism_01"/>
+        <ro:has_part rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/vssemanticsignature#operatorRBAC_01"/>
+        <rdfs:label xml:lang="en">role-based access control virtual sensor</rdfs:label>
+        <opis:hasCertification>OK</opis:hasCertification>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

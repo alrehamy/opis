@@ -10,6 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:edamontology="http://edamontology.org/"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
      xmlns:classification_taxonomy="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#"
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -52,10 +53,7 @@
 
     <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject -->
 
-    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject">
-        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject"/>
     
 
 
@@ -63,7 +61,6 @@
 
     <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isInformationObjectIncludedIn">
         <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
-        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
     </owl:AnnotationProperty>
     
 
@@ -115,70 +112,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesAccessControlVirtualSensor -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesAccessControlVirtualSensor">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesVirtualSensor"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesPrivacyPreservingVirtualSensor -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesPrivacyPreservingVirtualSensor">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesVirtualSensor"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesVirtualSensor -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesVirtualSensor">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isAccessControlVirtualSensorIncludedIn -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isAccessControlVirtualSensorIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isVirtualSensorIncludedIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isInformationObjectIncludedIn -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isInformationObjectIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isPrivacyPreservingVirtualSensorIncludedIn -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isPrivacyPreservingVirtualSensorIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isVirtualSensorIncludedIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isVirtualSensorIncludedIn -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isVirtualSensorIncludedIn">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isInformationObjectIncludedIn"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasGeoLocation -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#hasGeoLocation"/>
@@ -205,6 +138,50 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#onCoverageAreaOf">
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#GeographicFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesAccessControlVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlVirtualSensor"/>
+        <rdfs:label xml:lang="en">includes access control virtual sensor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesInformationObject -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesInformationObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"/>
+        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Situation"/>
+        <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+        <rdfs:label xml:lang="en">includes information object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesPrivacyPreservingVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesVirtualSensor"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
+        <rdfs:label xml:lang="en">includes privacy preserving virtual sensor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesVirtualSensor -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesVirtualSensor">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#includesInformationObject"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
+        <rdfs:label xml:lang="en">includes virtual sensor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -628,7 +605,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingObjective"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlObjective"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -695,11 +672,56 @@
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingVirtualSensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlMechanism"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
-                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlObjective"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#accessControlMechanism"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">access control virtual sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#geographicLocationProperty -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#geographicLocationProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        <rdfs:label xml:lang="en">geographic location property</rdfs:label>
     </owl:Class>
     
 
@@ -813,8 +835,44 @@
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#VirtualSensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_748173"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_112569"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingTechnique"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
-                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingObjective"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis-extended.owl#privacyPreservingTechnique"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">privacy preserving virtual sensor</rdfs:label>
@@ -907,20 +965,9 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition -->
 
-    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#includesInformationObject">
-        <rdfs:label xml:lang="en">includes information object</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/classification_taxonomy.owl#isInformationObjectIncludedIn">
-        <rdfs:label xml:lang="en">is information object included in</rdfs:label>
-    </rdf:Description>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/privacy_policy.owl#PrivacyPolicyCondition"/>
 </rdf:RDF>
 
 

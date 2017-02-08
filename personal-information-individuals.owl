@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#"
+     xml:base="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo1="http://purl.obofoundry.org/obo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:opis="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl/1.0"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/extbe"/>
+        <rdfs:comment>This ontology contains individuals of behavioral entities that represents observations of personal information in the semantic perception process.</rdfs:comment>
+        <rdfs:isDefinedBy>Thiago Moreira da Costa</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#agent01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#agent01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis.owl#BehavioralAgent"/>
+        <DUL:isAgentInvolvedIn rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport01"/>
+        <DUL:isAgentInvolvedIn rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport02"/>
+        <DUL:isAgentInvolvedIn rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport03"/>
+        <DUL:isAgentInvolvedIn rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport04"/>
+        <DUL:isAgentInvolvedIn rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#atHome01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#atHome01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#AtHome"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#atHome02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#atHome02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#AtHome"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PoIGym"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PoIGym"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingDinner01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingDinner01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingDinner02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingDinner02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingDinner03 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingDinner03">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingDinner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingLunch01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#havingLunch01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#havingLunch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#healthCaring01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#healthCaring01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#HealthCaring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#healthCaring02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#healthCaring02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#HealthCaring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01">
+        <rdf:type rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_residential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01_geolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01_geolocation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#point"/>
+        <wgs84_pos:lat_long>48,8850189, 2,2566063</wgs84_pos:lat_long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01_timedGeolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01_timedGeolocation">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home01_geolocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home02">
+        <rdf:type rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#v_residential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home02_timedGeolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home02_timedGeolocation">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home_02_geolocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home_02_geolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#home_02_geolocation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#point"/>
+        <wgs84_pos:lat_long>48,8693357, 2,3691608</wgs84_pos:lat_long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness01_geolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness01_geolocation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#point"/>
+        <wgs84_pos:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.891815</wgs84_pos:latitude>
+        <wgs84_pos:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.235446</wgs84_pos:longitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness01_timedGeolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness01_timedGeolocation">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness01_geolocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness02_timedGeolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness02_timedGeolocation">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness_02_geolocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness_02_geolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#neoness_02_geolocation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#point"/>
+        <wgs84_pos:lat_long>48,8672554, 2,3666273</wgs84_pos:lat_long>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#partying01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#partying01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Partying"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport03 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport03">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport04 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#practicingSport04">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#PracticingSport"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#gym02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#religiousPracticing01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#religiousPracticing01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#ReligiousPracticing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping"/>
+        <DUL:hasLocation rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping03 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#shopping03">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Shopping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Socializing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Socializing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing03 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing03">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Socializing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing04 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#socializing04">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Socializing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01">
+        <rdf:type rdf:resource="https://raw.github.com/doroam/planning-do-roam/master/Ontology/tags.owl#k_shop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01_geolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01_geolocation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#point"/>
+        <wgs84_pos:altitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.866844</wgs84_pos:altitude>
+        <wgs84_pos:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.367198</wgs84_pos:latitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01_timedGeolocation -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01_timedGeolocation">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"/>
+        <DUL:hasConstituent rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#supermarket01_geolocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#working01 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#working01">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Working"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#working02 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#working02">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Working"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#working03 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/thiagomoreirac/opis/master/opis/spobservations01#working03">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/thiagomoreirac/opis/master/personal-information#Working"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
