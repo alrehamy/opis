@@ -22,9 +22,7 @@ This repository contains a use case for an privacy preservation approach in the 
 
 - The file classification_taxonomy.owl contains classes to extend the DUL class 'concept' as a classification taxonomy to be used with the privacy policy condition definition. 
 
-### SPARQL Queries
-- A set of files .sparql are provided to retrive information from the use case files
- 
+- The file direct_classification.owl contains mapping between classification concepts and personal information defined using behavioral entities. 
 
 
 
