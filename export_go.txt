@@ -19,7 +19,7 @@ http://purl.obolibrary.org/obo/GO_0050802
 http://purl.obolibrary.org/obo/GO_0050882
 
 [Top level source term URIs and target direct superclass URIs]
-#http://purl.obolibrary.org/obo/GO_0008150 #biological process
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
 
 [Source term retrieval setting]
 includeAllIntermediates

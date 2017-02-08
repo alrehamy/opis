@@ -1,0 +1,11 @@
+OBO Relational Ontology (RO):
+http://purl.obolibrary.org/obo/RO_0001025
+http://purl.obolibrary.org/obo/RO_0000058
+http://purl.obolibrary.org/obo/RO_0000059
+http://purl.obolibrary.org/obo/RO_0000081
+http://purl.obolibrary.org/obo/RO_0000086
+http://purl.obolibrary.org/obo/RO_0001019
+http://purl.obolibrary.org/obo/RO_0001018
+URI export:  https://github.com/thiagomoreirac/opis/blob/master/external_ro.owl
+
+
