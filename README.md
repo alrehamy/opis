@@ -1,6 +1,6 @@
-# opis
+# OPIS
 An Ontology for Personal Information Classification on the Sensor Web
-Version 1RC
+Version 1 RC
 
 Two versions of OPIS is provided in this repository: 
 
