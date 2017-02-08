@@ -24,5 +24,7 @@ This repository contains a use case for an privacy preservation approach in the 
 
 - The file direct_classification.owl contains mapping between classification concepts and personal information defined using behavioral entities. 
 
+- The file personal_information_individuals.owl contains instances of behavioral entity classes. 
+
 
 
