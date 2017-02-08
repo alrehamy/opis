@@ -21,6 +21,9 @@ This repository contains a use case for an privacy preservation approach in the 
 - The file privacy_policy.owl contains classes to define privacy policy conditions extending the DUL class 'classification' based on the time intervals, concept, and virtual sensors (in particular those of access control mechanisms and privacy preserving data mining techniques). 
 
 - The file classification_taxonomy.owl contains classes to extend the DUL class 'concept' as a classification taxonomy to be used with the privacy policy condition definition. 
+
+### SPARQL Queries
+- A set of files .sparql are provided to retrive information from the use case files
  
 
 
